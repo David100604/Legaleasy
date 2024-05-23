@@ -2,6 +2,7 @@
     background: var(--color-blue-50);
     width: 100%,;
     height: 100vh;
+    margin: 0;
 }
 
 #form-login{
@@ -50,10 +51,18 @@
     font-weight: bold;
 }
 
-#info-cadastro{
+.f-texto{
     font-family: 'Times New Roman', Times, serif;
     font-size: 1.1em;
     font-weight: bold;
+}
+
+#tipo-conta option{
+    color: var(--color-dark-50);
+}
+
+#tipo-conta option:first-child {
+    color: var(--color-blue-50);
 }
 
 #footer{

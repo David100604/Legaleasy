@@ -10,18 +10,27 @@
             <img id="linha-branca-direita" class="align-self-center col-xl-4  d-none d-xl-block" src="../images/linha-branca.png" alt="">
         </div>
 
-        <div id="info-cadastro" class="row">
-            <p class="text-center col-12 d-none d-md-block">
-                Escolha o tipo de conta que deseja cadastrar. 
-                Campos de informação adicionais podem ser requeridos dependendo da seleção.
-            </p>
-            <p class="text-center d-md-none">
-                Escolha o tipo de conta que deseja cadastrar. 
-            </p>
+        <div id="info-cadastro" class="row justify-content-center f-texto">
+            <div class="text-left col-9">
+                <p class="text-center col-12 d-none d-md-block">
+                    Escolha o tipo de conta que deseja cadastrar. 
+                    Campos de informação adicionais podem ser requeridos dependendo da seleção.
+                </p>
+                <p class="text-center d-md-none">
+                    Escolha o tipo de conta que deseja cadastrar. 
+                </p>
+            </div>
         </div>
 
-        <div id="inputs-cadastro" class="justify-content">
-
+        <div id="inputs-cadastro" class="row justify-content-center mt-5">
+            <div class="col-4 text-center d-flex flex-column">
+                <label for="tipo-conta" class="f-texto">Tipo de conta:</label>
+                <select id="tipo-conta" class="" aria-label="">
+                    <option selected>Selecione uma opção</option>
+                    <option value="advogado">Advogado</option>
+                    <option value="cliente">Cliente</option>
+                </select>
+            </div>
         </div>
 
     </section>
