@@ -1,0 +1,61 @@
+#login{
+    background: var(--color-blue-50);
+    width: 100%,;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#form-login{
+    background-color: var(--color-green-50);
+    height: 100vh;
+}
+
+#header-login #linha-sup{
+    margin-top: 15px;
+    width: 80%;
+}
+
+
+#linha-branca-esquerda-heitor{
+    width: 23%;
+}
+
+
+
+#linha-branca-direita-heitor{
+    width: 23%;
+    transform: rotate(180deg);
+}
+
+#login.row > * {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+#header-login #logo{
+    margin-top: 20px;
+    width: 150px;
+    height: 120px;
+}
+
+#titulo{
+    color: var(--color-blue-900);
+    font-size: 2em;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+#titulo-heitor{
+    color: var(--color-blue-900);
+    font-size: 1.2em;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+#footer{
+    background-color: #22333B;
+    height: 150px;
+}
+
+#footer p{
+    color: var(--color-light-50)
+}
