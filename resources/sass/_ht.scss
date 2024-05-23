@@ -46,8 +46,23 @@
 }
 #titulo-heitor{
     color: var(--color-blue-900);
-    font-size: 1.2em;
+    font-size: 1.8em;
     font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+#subtitulo-heitor{
+    color: var(--color-blue-900);
+    font-size: 1.3em;
+    text-decoration: underline;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    margin-left: 130px;
+}
+
+#info-cadastro-heitor{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.1em;
     font-weight: bold;
 }
 
@@ -59,3 +74,4 @@
 #footer p{
     color: var(--color-light-50)
 }
+
