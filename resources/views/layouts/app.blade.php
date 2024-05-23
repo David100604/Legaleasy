@@ -24,7 +24,7 @@
                     
                 <img id="logo" class="align-self-center" src="../images/logo.png" alt="">
                     
-                <img id="linha-sup"class="align-self-center" src="../images/linha-sup.png" alt="">
+                <img id="linha-sup" class="align-self-center" src="../images/linha-sup.png" alt="">
 
                 <div id="app">
                     <main>
