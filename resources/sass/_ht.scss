@@ -2,7 +2,6 @@
     background: var(--color-blue-50);
     width: 100%,;
     height: 100vh;
-    margin: 0;
 }
 
 #form-login{
@@ -15,21 +14,15 @@
     width: 80%;
 }
 
-#linha-branca-esquerda{
-    width: 23.5%;
-}
 
 #linha-branca-esquerda-heitor{
-    width: 20%;
+    width: 23%;
 }
 
-#linha-branca-direita{
-    width: 23.5%;
-    transform: rotate(180deg);
-}
+
 
 #linha-branca-direita-heitor{
-    width: 20%;
+    width: 23%;
     transform: rotate(180deg);
 }
 
@@ -44,32 +37,35 @@
     height: 120px;
 }
 
-#titulo{
+
+#titulo-heitor{
     color: var(--color-blue-900);
-    font-size: 2em;
+    font-size: 1.8em;
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
 }
 
-.f-texto{
+#subtitulo-heitor{
+    color: var(--color-blue-900);
+    font-size: 1.2em;
+    text-decoration: underline;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    display: inline;
+}
+
+#info-cadastro-heitor{
     font-family: 'Times New Roman', Times, serif;
     font-size: 1.1em;
     font-weight: bold;
 }
 
-#tipo-conta option{
-    color: var(--color-dark-50);
-}
-
-#tipo-conta option:first-child {
-    color: var(--color-blue-50);
-}
-
 #footer{
     background-color: #22333B;
-    height: 10vh;
+    height: 150px;
 }
 
 #footer p{
     color: var(--color-light-50)
 }
+
