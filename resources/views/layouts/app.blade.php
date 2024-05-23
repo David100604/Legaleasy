@@ -20,30 +20,30 @@
     <div id="login" class="row justify-content-center">
 
         <div id="form-login" class="col-sm-8 row justify-content-center">
-            <header id="header-login" class="d-flex flex-column" style="border: 1px solid red;">
+            <header id="header-login" class="d-flex flex-column">
                     
                 <img id="logo" class="align-self-center" src="../images/logo.png" alt="">
                     
                 <img id="linha-sup"class="align-self-center" src="../images/linha-sup.png" alt="">
+
+                <div id="app">
+                    <main>
+                        @yield('content')
+                    </main>
+                </div>
                 
             </header>
-
-            <div id="app">
-                <main>
-                    @yield('content')
-                </main>
-            </div>
 
             <footer id="footer" class="align-self-end">
                 <div class="row justify-content-around">
                     <div class="col-sm-4 text-center mt-5">
-                        <p class="m-0" style="color: white">FAQ</p>
-                        <p class="m-0" style="color: white">Perguntas Frequentes</p>
+                        <p class="m-0">FAQ</p>
+                        <p class="m-0">Perguntas Frequentes</p>
                     </div>
                     <div class="col-sm-4 text-center mt-5">
-                        <p class="m-0" style="color: white">Contato</p>
-                        <p class="m-0" style="color: white">(27) 98158-3081</p>
-                        <p class="m-0" style="color: white">mail@mail.com</p>
+                        <p class="m-0">Contato</p>
+                        <p class="m-0">(27) 98158-3081</p>
+                        <p class="m-0">mail@mail.com</p>
                     </div>
                 </div>
             </footer>
