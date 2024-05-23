@@ -16,11 +16,11 @@
 }
 
 #linha-branca-esquerda{
-    width: 20%;
+    width: 23.5%;
 }
 
 #linha-branca-direita{
-    width: 20%;
+    width: 23.5%;
     transform: rotate(180deg);
 }
 
@@ -33,6 +33,13 @@
     margin-top: 20px;
     width: 150px;
     height: 120px;
+}
+
+#titulo{
+    color: var(--color-blue-900);
+    font-size: 2em;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
 }
 
 #footer{
