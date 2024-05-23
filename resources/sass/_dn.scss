@@ -15,6 +15,15 @@
     width: 80%;
 }
 
+#linha-branca-esquerda{
+    width: 20%;
+}
+
+#linha-branca-direita{
+    width: 20%;
+    transform: rotate(180deg);
+}
+
 #login.row > * {
     padding-right: 0;
     padding-left: 0;
