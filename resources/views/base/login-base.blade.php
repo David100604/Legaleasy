@@ -1,32 +1,36 @@
-@extends('layouts.app')
+
 
 @section('content')
 
-    <div id="login">
-        <div class="row">
-            <section id="form-login" class="col-8">
-                <header id="header-login">
-                    <center>
-                        <img id="logo" src="../images/logo.png" alt="">
-                    </center>
-                    <center>
-                      <img id="linha-sup" src="../images/linha-sup.png" alt="">
-                    </center>
-                </header>
+    <div id="login" class="row justify-content-center">
 
-                <footer id="footer" class="fixed-bottom col-8">
-                    <div class="row">
-                        <div class="col-6">
-                            
-                        </div>
-                        <div class="col-6">
+        <div id="form-login" class="col-sm-8 row justify-content-center">
+            <header id="header-login" class="d-flex flex-column" style="border: 1px solid red; margin:0">
+                    
+                <img id="logo" class="align-self-center" src="../images/logo.png" alt="">
+                    
+                <img id="linha-sup" class="align-self-center" src="../images/linha-sup.png" alt="">
+                
+            </header>
 
-                        </div>
+            <footer id="footer" class="align-self-end">
+                <div class="row justify-content-around">
+                    <div class="col-sm-4 text-center mt-5">
+                        <p class="m-0" style="color: white">FAQ</p>
+                        <p class="m-0" style="color: white">Perguntas Frequentes</p>
                     </div>
-                </footer>
+                    <div class="col-sm-4 text-center mt-5">
+                        <p class="m-0" style="color: white">Contato</p>
+                        <p class="m-0" style="color: white">(27) 98158-3081</p>
+                        <p class="m-0" style="color: white">mail@mail.com</p>
+                    </div>
+                </div>
+            </footer>
 
-            </section>
-        </div>
+            
+        </div> 
+        
     </div>
+
 
 @endsection

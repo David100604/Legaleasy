@@ -8,12 +8,16 @@
 #form-login{
     background-color: var(--color-green-50);
     height: 100vh;
-    margin: auto;
 }
 
 #header-login #linha-sup{
     margin-top: 15px;
     width: 80%;
+}
+
+#login.row > * {
+    padding-right: 0;
+    padding-left: 0;
 }
 
 #header-login #logo{
@@ -23,7 +27,6 @@
 }
 
 #footer{
-    background-color: #13315C;
-    margin: auto;
+    background-color: #22333B;
     height: 150px;
 }
