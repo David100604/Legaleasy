@@ -25,12 +25,23 @@
             <div id="info-cadastro" class="row justify-content-center">
                 <div class="text-left col-9">
                     <h3 id="subtitulo-heitor" class=" col-xl-4" class="text-left">Insira suas informações nos campos abaixo:</h3>
+                    <h4 id="info-cadastro-heitor" class="col-xl-4" class="row justify-content text-left f-texto">Nome de usuário</h4>
+                    <div class="input-group flex-nowrap">
+                        <span class="input-group-text" id="addon-wrapping">@</span>
+                        <input type="text" class="form-control" placeholder="Nome de Usuário" aria-label="Username" aria-describedby="addon-wrapping">
+                    </div>  
+                    <br>
+                    <h4 id="info-cadastro-heitor" class="col-xl-4" class="row justify-content text-left f-texto">Senha</h4>
+                       
+                    </div>
                 </div>
+                
             </div>
 
-            <div id="info-cadastro-heitor" class="row justify-content-center f-texto">
-                <p>Nome de usuário</p>
-            </div>
+            
+
+            
+
             <div id="inputs-cadastro" class="justify-content">
 
             </div>
