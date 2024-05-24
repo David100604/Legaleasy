@@ -23,8 +23,6 @@
                 <label for="tipo-conta" class="f-texto">Nome de usuário</label>
                 <input type="text" class="p-2" placeholder="Insira seu nome de usuário">
             </div>
-
-
         </div>
 
         <div id="inputs-cadastro" class="row justify-content-center mt-3">
