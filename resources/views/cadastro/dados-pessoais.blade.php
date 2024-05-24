@@ -21,19 +21,37 @@
                 </p>
             </div>
         </div>
+        <h3 id="subtitulo-heitor" class="text-left col-7">Insira suas informações nos campos abaixo:</h3>
 
         <div id="info-cadastro" class="row justify-content-center">
-            <div class="text-left col-9">
-                <h3 id="subtitulo-heitor" class=" col-xl-4" class="text-left">Insira suas informações nos campos abaixo:</h3>
-                <h4 id="info-cadastro-heitor" class="col-xl-4" class="row justify-content text-left f-texto">Nome de usuário</h4>
-                <div class="input-group flex-nowrap">
-                    <span class="input-group-text" id="addon-wrapping">@</span>
-                    <input type="text" class="form-control" placeholder="Nome de Usuário" aria-label="Username" aria-describedby="addon-wrapping">
+        <form action="#">
+        <div class="text-left col-5">
+                <div class="dados-pessoais" >
+                    <label for="nome-usuario"><p class="row justify-content f-texto ">Nome de usuário</p></label> 
+                    <input type="text" id="nome-usuario" name="nome-usuario" required>
+                    
+                    
+
+                    <label for="senha"><p class="row justify-content f-texto">Senha</p></label>
+                    <input type="password" id="senha" name="senha" require>
+
+                    <label for="email"><p class="row justify-content f-texto">E-mail</p></label>
+                    <input type="email" id="email" name="email" required>
+
+
+                    <label for="nome-completo"><p class="row justify-content f-texto">Nome Completo</p></label>
+                    <input type="text" id="nome-completo" name="nome-completo" required>
+
+                    <label for="cpf"><p class="row justify-content f-texto">CPF</p></label>
+                    <input type="number" id="cpf" name="cpf" required>
+
+                    <label for="tel"><p class="row justify-content f-texto">Telefone</p></label>
+                    <input type="number" id="tel" name="telefone" required>
                 </div>
-                <br>
-                <h4 id="info-cadastro-heitor" class="col-xl-4" class="row justify-content text-left f-texto">Senha</h4>
-                </div>
-            </div>
+        </div>
+
+        </form>
+
         </div>
 
     </section>
