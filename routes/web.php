@@ -14,11 +14,13 @@ Route::get('/homepage-advogado', function () {
     return view('home-pages.homepage-advogado');
 });
 
+Route::get('/login', function () {
+    return view('cadastro.login');
+});
+
 Route::get('/teste', function () {
     return view('home-pages.teste');
 });
-
-Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
