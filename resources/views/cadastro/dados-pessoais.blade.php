@@ -23,33 +23,32 @@
         </div>
         <h3 id="subtitulo-heitor" class="text-left col-7">Insira suas informações nos campos abaixo:</h3>
 
-        <div id="info-cadastro" class="row justify-content-center">
-        <form action="#">
         
-                <div class="dados-pessoais" class="text-left col 5" >
-                    <label for="nome-usuario"><p class="row justify-content f-texto ">Nome de usuário</p></label> 
-                    <input type="text" id="nome-usuario" name="nome-usuario" required>
-                    
-                    
-
-                    <label for="senha"><p class="row justify-content f-texto">Senha</p></label>
-                    <input type="password" id="senha" name="senha" require>
-
-                    <label for="email"><p class="row justify-content f-texto">E-mail</p></label>
-                    <input type="email" id="email" name="email" required>
-
-
-                    <label for="nome-completo"><p class="row justify-content f-texto">Nome Completo</p></label>
-                    <input type="text" id="nome-completo" name="nome-completo" required>
-
-                    <label for="cpf"><p class="row justify-content f-texto">CPF</p></label>
-                    <input type="number" id="cpf" name="cpf" required>
-
-                    <label for="tel"><p class="row justify-content f-texto">Telefone</p></label>
-                    <input type="number" id="tel" name="telefone" required>
-                </div>
 
         </form>
+
+        <div class="book">
+                <div class="page">
+                        <label for="nome-usuario"><p class="row justify-content f-texto ">Nome de usuário</p></label> 
+                        <input type="text" id="nome-usuario" name="nome-usuario" required>
+                        <label for="senha"><p class="row justify-content f-texto">Senha</p></label>
+                        <input type="password" id="senha" name="senha" require>
+
+                        <label for="email"><p class="row justify-content f-texto">E-mail</p></label>
+                        <input type="email" id="email" name="email" required>
+
+                </div>
+        <div class="page">
+                        <label for="nome-completo"><p class="row justify-content f-texto">Nome Completo</p></label>
+                        <input type="text" id="nome-completo" name="nome-completo" required>
+
+                        <label for="cpf"><p class="row justify-content f-texto">CPF</p></label>
+                        <input type="number" id="cpf" name="cpf" required>
+
+                        <label for="tel"><p class="row justify-content f-texto">Telefone</p></label>
+                        <input type="number" id="tel" name="telefone" required>
+        </div>
+    </div>
 
         </div>
 
