@@ -22,13 +22,13 @@
             </div>
         </div>
 
-        <div id="inputs-cadastro" class="row justify-content-center mt-5">
-            <div class="col-4 text-center d-flex flex-column">
+        <div id="inputs-cadastro" class="row justify-content-center mt-1">
+            <div class="col-4 text-left d-flex flex-column">
                 <label for="tipo-conta" class="f-texto">Tipo de conta:</label>
-                <select id="tipo-conta" class="" aria-label="">
-                    <option selected>Selecione uma opção</option>
-                    <option value="advogado">Advogado</option>
-                    <option value="cliente">Cliente</option>
+                <select id="tipo-conta" class="form-select" aria-label="">
+                    <option selected class="opcoes">Selecione uma opção</option>
+                    <option value="advogado" class="opcoes">Advogado</option>
+                    <option value="cliente" class="opcoes">Cliente</option>
                 </select>
             </div>
         </div>

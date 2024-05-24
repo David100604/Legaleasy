@@ -57,17 +57,22 @@
     font-weight: bold;
 }
 
-#tipo-conta option{
+#tipo-conta{
+    color: var(--color-blue-50);
+}
+
+#tipo-conta.opcoes{
     color: var(--color-dark-50);
 }
 
-#tipo-conta option:first-child {
-    color: var(--color-blue-50);
+.form-select{
+    border-radius: 0px;
+    border: 0.5px solid black;
 }
 
 #footer{
     background-color: #22333B;
-    height: 10vh;
+    height: 120px;
 }
 
 #footer p{
