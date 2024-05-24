@@ -19,11 +19,11 @@
 <body>
     <div id="login" class="row justify-content-center">
 
-        <div id="form-login" class="col-md-8 row justify-content-center">
+        <div id="form-login" class="col-md-8 row justify-content-center" >
             <header id="header-login" class="d-flex flex-column">
-                    
+
                 <img id="logo" class="align-self-center" src="../images/logo.png" alt="">
-                    
+
                 <img id="linha-sup" class="align-self-center" src="../images/linha-sup.png" alt="">
 
                 <div id="app">
@@ -31,27 +31,27 @@
                         @yield('content')
                     </main>
                 </div>
-                
+
             </header>
 
-            <div class="row justify-content-center align-self-end pt-5">
-                <img id="linha-baixo-esquerda" class="align-self-center col-xl-3 d-none d-xl-block" src="../images/linha-baixo-esquerda.png" alt="">
-                <button class="align-self-center col-xl-2 d-none d-xl-block me-1">
-                    Teste
+            <div class="row justify-content-center align-self-end mt-5">
+                <img class="linha-branca align-self-center d-none d-xl-block" src="../images/linha-branca.png" alt="">
+                <button class="align-self-center col-xl-2 col-md-6 col-7 m-1 py-1 py-sm-2 btn btn-dark">
+                    VOLTAR
                 </button>
-                <button class="align-self-center col-xl-2 d-none d-xl-block ms-1">
-                    teste
+                <button id="proximo" class="align-self-center col-xl-2 col-md-6 col-7 m-1 py-1 py-sm-2 btn">
+                    PRÓXIMO
                 </button>
-                <img id="linha-baixo-direita" class="align-self-center col-xl-3 d-none d-xl-block" src="../images/linha-baixo-esquerda.png" alt="">
+                <img class="linha-branca align-self-center d-none d-xl-block" src="../images/linha-branca-direita.png" alt="">
             </div>
-            
+
             <footer id="footer" class="align-self-end">
-                <div class="row justify-content-around">
-                    <div class="col-md-4 text-center mt-5">
+                <div class="row justify-content-around my-3">
+                    <div class="col-md-4 col-6 text-center">
                         <p class="m-0">FAQ</p>
                         <p class="m-0">Perguntas Frequentes</p>
                     </div>
-                    <div class="col-md-4 text-center mt-5">
+                    <div class="col-md-4 col-6 text-center">
                         <p class="m-0">Contato</p>
                         <p class="m-0">(27) 98158-3081</p>
                         <p class="m-0">mail@mail.com</p>
@@ -59,11 +59,11 @@
                 </div>
             </footer>
 
-            
-        </div> 
+
+        </div>
 
     </div>
 
-    
+
 </body>
 </html>

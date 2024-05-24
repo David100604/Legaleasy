@@ -15,17 +15,8 @@
     width: 80%;
 }
 
-#linha-branca-esquerda{
+.linha-branca{
     width: 23.5%;
-}
-
-#linha-baixo-esquerda{
-    width: 23.5%;
-}
-
-#linha-baixo-direita{
-    width: 23.5%;
-    transform: rotate(180deg);
 }
 
 #linha-branca-esquerda-heitor{
@@ -76,12 +67,27 @@
 
 .form-select{
     border-radius: 0px;
-    border: 0.5px solid black;
+    border: 1px solid black;
+}
+
+.btn{
+    border-radius: 0px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.btn-dark{
+    --bs-btn-hover-bg: #212529;
+    --bs-btn-hover-border-color: #212529;
+}
+
+#proximo{
+    background-color: var(--color-blue-100);
 }
 
 #footer{
     background-color: #22333B;
-    height: 120px;
 }
 
 #footer p{
