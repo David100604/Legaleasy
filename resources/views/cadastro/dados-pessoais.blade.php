@@ -25,8 +25,8 @@
 
         <div id="info-cadastro" class="row justify-content-center">
         <form action="#">
-        <div class="text-left col-5">
-                <div class="dados-pessoais" >
+        
+                <div class="dados-pessoais" class="text-left col 5" >
                     <label for="nome-usuario"><p class="row justify-content f-texto ">Nome de usuário</p></label> 
                     <input type="text" id="nome-usuario" name="nome-usuario" required>
                     
@@ -48,8 +48,6 @@
                     <label for="tel"><p class="row justify-content f-texto">Telefone</p></label>
                     <input type="number" id="tel" name="telefone" required>
                 </div>
-        </div>
-
         </form>
 
         </div>
