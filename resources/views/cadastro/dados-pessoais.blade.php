@@ -48,6 +48,7 @@
                     <label for="tel"><p class="row justify-content f-texto">Telefone</p></label>
                     <input type="number" id="tel" name="telefone" required>
                 </div>
+
         </form>
 
         </div>

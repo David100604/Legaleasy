@@ -30,12 +30,12 @@
                     <main>
                         @yield('content')
                     </main>
-                    @include('base.botoes')
+
                 </div>
-            
+
             </header>
 
-            
+            @include('base.botoes')
 
             <footer id="footer" class="align-self-end">
                 <div class="row justify-content-around my-3">
