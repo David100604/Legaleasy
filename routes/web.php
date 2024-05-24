@@ -2,12 +2,20 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
+Route::get('/cadastro', function () {
     return view('cadastro.nova-conta');
 });
 
-Route::get('/dadospessoais', function () {
+Route::get('/cadastro/dados-pessoais', function () {
     return view('cadastro.dados-pessoais');
+});
+
+Route::get('/cadastro/endereco', function () {
+    return view('cadastro.endereco');
+});
+
+Route::get('/cadastro/dados-curriculares', function () {
+    return view('cadastro.dados-curriculares');
 });
 
 Route::get('/homepage-advogado', function () {
