@@ -6,51 +6,71 @@
 
 
         <div class="row justify-content-center">
-            <img id="linha-branca-esquerda-heitor" class="align-self-center col-xl-4 d-none d-xl-block" src="../images/linha-branca.png" alt="">
-            <h1 id="titulo-heitor" class="text-center col-xl-4">CADASTRAR DADOS PESSOAIS</h1>
-            <img id="linha-branca-direita-heitor" class="align-self-center col-xl-4 d-none d-xl-block" src="../images/linha-branca.png" alt="">
+            <img class="linha-branca align-self-center col-xl-4 d-none d-xl-block" src="../images/linha-branca.png" alt="">
+            <h1 id="titulo-dados" class="titulo text-center col-xl-4">CADASTRAR DADOS PESSOAIS</h1>
+            <img class="linha-branca align-self-center col-xl-4 d-none d-xl-block" src="../images/linha-branca-direita.png" alt="">
         </div>
-        <div id="info-cadastro-heitor" class="row justify-content-center f-texto">
+        <div class="row justify-content-center f-texto">
 
             <div class="text-left col-9">
-                <p class="text-center">
+                <p class="text-left d-none d-lg-block">
                     Para fazer o uso da nossa plataforma é necessário o cadastro de seus dados como cliente
                     ou prestador de serviço.
                     Preencha o formulário abaixo com dados válidos para criar uma conta.
                     Os campos marcados com * são obrigatórios.
                 </p>
+                <p class="text-left d-block d-lg-none">
+                    Preencha o formulário abaixo com dados válidos para criar uma conta.
+                    Os campos marcados com * são obrigatórios.
+                </p>
             </div>
         </div>
-        <h3 id="subtitulo-heitor" class="text-left col-7">Insira suas informações nos campos abaixo:</h3>
+        <div class="row justify-content-center">
+            <h3 id="info-dados" class="titulo text-left col-9">Insira suas informações nos campos abaixo:</h3>
+        </div>
 
+        <form action="" class="mt-lg-5">
 
+            <div class="row justify-content-center">
+                <div class="input-dados-esquerda col-8 col-lg-4">
+                    <div class="text-left d-flex flex-column pe-lg-5 mt-lg-3">
+                        <label for="nome-usuario" class="f-texto">Usuário</label>
+                        <input type="text" class="p-2" id="nome-usuario" name="nome-usuario" required>
+                    </div>
+                </div>
+                <div class="col-8 col-lg-4 text-left d-flex flex-column ps-lg-5 mt-lg-3">
+                    <label for="nome-completo" class="f-texto">Nome completo</label>
+                    <input type="text" class="p-2" id="nome-completo" name="nome-completo" required>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="input-dados-esquerda col-8 col-lg-4">
+                    <div class="text-left d-flex flex-column pe-lg-5 mt-lg-3">
+                        <label for="senha" class="f-texto">Senha</label>
+                        <input type="text" class="p-2" id="senha" name="senha" required>
+                    </div>
+                </div>
+                <div class="col-8 col-lg-4 text-left d-flex flex-column ps-lg-5 mt-lg-3">
+                    <label for="cpf" class="f-texto">CPF</label>
+                    <input type="text" class="p-2" id="cpf" name="cpf" required>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="input-dados-esquerda col-8 col-lg-4">
+                    <div class="text-left d-flex flex-column pe-lg-5 mt-lg-3">
+                        <label for="email" class="f-texto">E-mail</label>
+                        <input type="email" class="p-2" id="email" name="email" required>
+                    </div>
+                </div>
+                <div class="col-8 col-lg-4 text-left d-flex flex-column ps-lg-5 mt-lg-3">
+                    <label for="telefone" class="f-texto">Telefone</label>
+                    <input type="text" class="p-2" id="tel" name="telefone" required>
+                </div>
+            </div>
 
         </form>
-
-        <div class="book">
-                <div class="page">
-                        <label for="nome-usuario"><p class="row justify-content f-texto ">Nome de usuário</p></label>
-                        <input type="text" id="nome-usuario" name="nome-usuario" required>
-                        <label for="senha"><p class="row justify-content f-texto">Senha</p></label>
-                        <input type="password" id="senha" name="senha" require>
-
-                        <label for="email"><p class="row justify-content f-texto">E-mail</p></label>
-                        <input type="email" id="email" name="email" required>
-
-                </div>
-        <div class="page">
-                        <label for="nome-completo"><p class="row justify-content f-texto">Nome Completo</p></label>
-                        <input type="text" id="nome-completo" name="nome-completo" required>
-
-                        <label for="cpf"><p class="row justify-content f-texto">CPF</p></label>
-                        <input type="number" id="cpf" name="cpf" required>
-
-                        <label for="tel"><p class="row justify-content f-texto">Telefone</p></label>
-                        <input type="number" id="tel" name="telefone" required>
-        </div>
-    </div>
-
-        </div>
 
     </section>
 

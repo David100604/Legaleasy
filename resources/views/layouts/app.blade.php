@@ -17,10 +17,10 @@
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 </head>
 <body>
-    <div id="login" class="row justify-content-center">
+    <div id="base-cadastros" class="row justify-content-center">
 
-        <div id="form-login" class="col-md-8 row justify-content-center" >
-            <header id="header-login" class="d-flex flex-column">
+        <div id="container-cadastros" class="col-md-8 row justify-content-center" >
+            <header id="header-cadastros" class="d-flex flex-column mt-4">
 
                 <img id="logo" class="align-self-center" src="../images/logo.png" alt="">
 
@@ -35,7 +35,16 @@
 
             </header>
 
-            @include('base.botoes')
+            <div class="row justify-content-center align-self-end my-3 mt-md-5">
+                <img class="linha-branca align-self-center d-none d-xl-block" src="../images/linha-branca.png" alt="">
+                <button class="align-self-center col-xl-2 col-7 m-1 py-1 py-sm-2 btn btn-dark">
+                    VOLTAR
+                </button>
+                <button id="proximo" class="align-self-center col-xl-2 col-7 m-1 py-1 py-sm-2 btn">
+                    PRÓXIMO
+                </button>
+                <img class="linha-branca align-self-center d-none d-xl-block" src="../images/linha-branca-direita.png" alt="">
+            </div>
 
             <footer id="footer" class="align-self-end">
                 <div class="row justify-content-around my-3">
