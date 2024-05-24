@@ -19,6 +19,15 @@
     width: 23.5%;
 }
 
+#linha-baixo-esquerda{
+    width: 23.5%;
+}
+
+#linha-baixo-direita{
+    width: 23.5%;
+    transform: rotate(180deg);
+}
+
 #linha-branca-esquerda-heitor{
     width: 20%;
 }
@@ -61,7 +70,7 @@
     color: var(--color-blue-50);
 }
 
-#tipo-conta.opcoes{
+#tipo-conta .opcoes{
     color: var(--color-dark-50);
 }
 

@@ -34,6 +34,17 @@
                 
             </header>
 
+            <div class="row justify-content-center align-self-end pt-5">
+                <img id="linha-baixo-esquerda" class="align-self-center col-xl-3 d-none d-xl-block" src="../images/linha-baixo-esquerda.png" alt="">
+                <button class="align-self-center col-xl-2 d-none d-xl-block me-1">
+                    Teste
+                </button>
+                <button class="align-self-center col-xl-2 d-none d-xl-block ms-1">
+                    teste
+                </button>
+                <img id="linha-baixo-direita" class="align-self-center col-xl-3 d-none d-xl-block" src="../images/linha-baixo-esquerda.png" alt="">
+            </div>
+            
             <footer id="footer" class="align-self-end">
                 <div class="row justify-content-around">
                     <div class="col-md-4 text-center mt-5">
