@@ -44,11 +44,18 @@
     height: 120px;
 }
 
-#titulo{
+.titulo{
     color: var(--color-blue-900);
-    font-size: 2em;
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
+}
+
+#titulo{
+    font-size: 2em;
+}
+
+#titulo-login{
+    font-size: 1.7em;
 }
 
 .f-texto{
@@ -63,6 +70,16 @@
 
 #tipo-conta .opcoes{
     color: var(--color-dark-50);
+}
+
+#info-login{
+    color: var(--color-blue-900);
+    text-decoration: underline;
+    letter-spacing: 1.5px;
+}
+
+input::placeholder {
+    color: var(--color-blue-50)
 }
 
 .form-select{
