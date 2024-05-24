@@ -27,10 +27,8 @@
         <form action="#">
         <div class="text-left col-5">
                 <div class="dados-pessoais" >
-                    <label for="nome-usuario"><p class="row justify-content f-texto ">Nome de usuário</p></label> 
+                    <label for="nome-usuario"><p class="row justify-content f-texto ">Nome de usuário</p></label>
                     <input type="text" id="nome-usuario" name="nome-usuario" required>
-                    
-                    
 
                     <label for="senha"><p class="row justify-content f-texto">Senha</p></label>
                     <input type="password" id="senha" name="senha" require>
