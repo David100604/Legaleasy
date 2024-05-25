@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.cadastros')
 
 @section('content')
 
@@ -7,7 +7,7 @@
 
         <div class="row justify-content-center">
             <img class="linha-branca align-self-center col-xl-4 d-none d-xl-block" src="../images/linha-branca.png" alt="">
-            <h1 id="titulo-dados" class="titulo text-center col-xl-4">CADASTRAR DADOS CURRICULARES</h1>
+            <h1 id="titulo-dados" class="titulo text-center col-md-9 col-xl-4">CADASTRAR DADOS CURRICULARES</h1>
             <img class="linha-branca align-self-center col-xl-4 d-none d-xl-block" src="../images/linha-branca-direita.png" alt="">
         </div>
         <div class="row justify-content-center f-texto">

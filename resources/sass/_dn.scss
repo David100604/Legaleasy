@@ -1,6 +1,11 @@
 /*
     LAYOUTS
 */
+#base{
+    width: 100%,;
+    min-height: 100vh;
+    margin: 0;
+}
 
 #base-cadastros{
     background: var(--color-blue-50);
@@ -9,14 +14,22 @@
     margin: 0;
 }
 
-#base-cadastros.row > * {
+#base-cadastros.row > *,
+#base.row > * {
     padding-right: 0;
     padding-left: 0;
 }
 
-#container-cadastros{
+#container-cadastros,
+.base-container{
     background-color: var(--color-green-50);
 }
+
+#nav{
+    background: var(--color-blue-50);
+    height: 100vh;
+}
+
 
 /*
     HEADERS CADASTRO/LOGIN
@@ -150,3 +163,15 @@ input::placeholder,
     color: var(--color-light-50)
 }
 
+#footer .row{
+    --bs-gutter-x: 0rem;
+}
+
+/*
+    TEXTOS SIDEBAR
+*/
+.side-item{
+    color: var(--color-light-50);
+    font-size: 1.3em;
+    font-family: 'Times New Roman', Times, serif;
+}

@@ -22,6 +22,10 @@ Route::get('/homepage-advogado', function () {
     return view('home-pages.homepage-advogado');
 });
 
+Route::get('/casos', function () {
+    return view('casos.casos-abertos');
+});
+
 Route::get('/login', function () {
     return view('cadastro.login');
 });
