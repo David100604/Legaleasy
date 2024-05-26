@@ -230,3 +230,13 @@ input::placeholder,
 .card{
     border-radius: 0px;
 }
+
+.card-lista-header{
+    background-color: var(--color-blue-100);
+    color: #000;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.card-lista-body{
+    border: 2px solid var(--color-blue-100);
+}

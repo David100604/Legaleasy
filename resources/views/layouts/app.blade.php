@@ -51,27 +51,29 @@
 
             </header>
 
-            <div id="app" style="min-height: 65%;">
+            <div id="app">
                 <main>
                     @yield('content')
                 </main>
             </div>
 
             
-
-            <footer id="footer" class="align-self-end mt-3">
-                <div class="row justify-content-around">
-                    <div class="col-md-4 col-6 text-center my-3">
-                        <p class="m-0">FAQ</p>
-                        <p class="m-0">Perguntas Frequentes</p>
+            <div class="align-items-end"></div>
+                <footer id="footer" class="align-self-end">
+                    <div class="row justify-content-around">
+                        <div class="col-md-4 col-6 text-center my-3">
+                            <p class="m-0">FAQ</p>
+                            <p class="m-0">Perguntas Frequentes</p>
+                        </div>
+                        <div class="col-md-4 col-6 text-center my-3">
+                            <p class="m-0">Contato</p>
+                            <p class="m-0">(27) 98158-3081</p>
+                            <p class="m-0">mail@mail.com</p>
+                        </div>
                     </div>
-                    <div class="col-md-4 col-6 text-center my-3">
-                        <p class="m-0">Contato</p>
-                        <p class="m-0">(27) 98158-3081</p>
-                        <p class="m-0">mail@mail.com</p>
-                    </div>
-                </div>
-            </footer>
+                </footer>
+            </div>
+            
         </div>
     </div>
 
