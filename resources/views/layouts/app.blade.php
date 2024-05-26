@@ -24,7 +24,9 @@
             <div class="row justify-content-center">
                 <img src="../images/sidebar-logo.png" alt="" class="d-none d-md-block col-10 col-lg-8 mt-4">
                 <img src="../images/linha-sidebar.png" alt="" class="d-none d-md-block col-11 col-lg-10 mt-2">
-                <nav class="col-11 col-lg-10 mt-2">
+            </div>
+            <div class="mt-2" style="height: 80%;">
+                <nav>
                     <ul class="list-unstyled text-center mt-4">
                         <li class="my-3 side-item">Dashboard</li>
                         <li class="my-3 side-item">Casos Abertos</li>
@@ -34,29 +36,30 @@
                         <li class="my-3 side-item">Suporte</li>
                     </ul>
                 </nav>
-                <div class="fixed-bottom row">
-                    <img src="../images/linha-sidebar.png" alt="" class="col-3 col-lg-2 d-none d-md-block mb-4">
-                </div>
+            </div>
+            <div class="row justify-content-center">
+                <img src="../images/linha-sidebar.png" alt="" class="self-align-center col-10 col-lg-10 d-none d-md-block mb-4">
             </div>
         </div> 
 
-        <div class="base-container col-12 col-md-9 col-lg-10 offset-lg-2 offset-md-3">
-            <header id="header-cadastros" class="d-flex flex-column mt-4">
+        <div class="base-container col-12 col-md-9 col-lg-10 offset-lg-2 offset-md-3" >
+            <header id="header-cadastros" class="d-flex flex-column mt-4" >
 
                 <img id="logo" class="align-self-center" src="../images/logo.png" alt="">
 
                 <img id="linha-sup" class="align-self-center" src="../images/linha-sup.png" alt="">
 
-                <div id="app">
-                    <main>
-                        @yield('content')
-                    </main>
-
-                </div>
-
             </header>
 
-            <footer id="footer" class="align-self-end">
+            <div id="app" style="min-height: 65%;">
+                <main>
+                    @yield('content')
+                </main>
+            </div>
+
+            
+
+            <footer id="footer" class="align-self-end mt-3">
                 <div class="row justify-content-around">
                     <div class="col-md-4 col-6 text-center my-3">
                         <p class="m-0">FAQ</p>
