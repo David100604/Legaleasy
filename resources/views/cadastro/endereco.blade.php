@@ -72,7 +72,7 @@
                 </div>
                 <div class="col-8 col-lg-4 text-left d-flex flex-column ps-lg-5 mt-lg-3">
                     <label for="apartamento" class="f-texto">Apartamento</label>
-                    <input type="text" class="p-2" id="apartamento" name="apartamento" placeholder="Ex.: Ap." required>
+                    <input type="text" class="p-2" id="apartamento" name="apartamento" placeholder="ex.: Ap." required>
                 </div>
             </div>
 
