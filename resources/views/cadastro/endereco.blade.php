@@ -28,7 +28,18 @@
                 <div class="input-dados-esquerda col-8 col-lg-4">
                     <div class="text-left d-flex flex-column pe-lg-5 mt-lg-3">
                         <label for="cep" class="f-texto">CEP</label>
-                        <input type="text" class="p-2" id="cep" name="cep" placeholder="ex.: 00000-000" required>
+                        <input type="text" class="p-2" id="cep"  maxlength="9" oninput="mascaraCEP(this)" name="cep" placeholder="ex.: 00000-000" required>
+
+                        <script>
+                            function mascaraCEP(input) {
+                                let value = input.value.replace(/\D/g, ''); // Remove caracteres não numéricos
+                                if (value.length > 5) {
+                                    value = value.replace(/^(\d{5})(\d{1,3})/, '$1-$2'); // Adiciona o hífen após o quinto dígito
+                                }
+                                input.value = value;
+                            }
+                        </script>
+
                     </div>
                 </div>
                 <div class="col-8 col-lg-4 text-left d-flex flex-column ps-lg-5 mt-lg-3">
@@ -41,12 +52,29 @@
                 <div class="input-dados-esquerda col-8 col-lg-4">
                     <div class="text-left d-flex flex-column pe-lg-5 mt-lg-3">
                         <label for="uf" class="f-texto">UF</label>
-                        <input type="text" class="p-2" id="uf" name="uf" placeholder="ex.: SPPC" required>
+                        <input type="text" class="p-2" id="uf" name="uf"  maxlength="2" oninput="mascaraUF(this)" placeholder="ex.: SPPC" required>
+
+                        <script>
+                            function mascaraUF(input) {
+                                // Remove caracteres não alfabéticos e converte para maiúsculas
+                                input.value = input.value.replace(/[^A-Za-z]/g, '').toUpperCase();
+                            }
+                        </script>
+
                     </div>
                 </div>
                 <div class="col-8 col-lg-4 text-left d-flex flex-column ps-lg-5 mt-lg-3">
                     <label for="numero" class="f-texto">Número</label>
-                    <input type="text" class="p-2" id="numero" name="numero" placeholder="ex.: 2010" required>
+                    <input type="text" class="p-2" id="numero" name="numero" maxlength="5" oninput="mascaraNUM(this)" placeholder="ex.: 2010" required>
+
+                    <script>
+                        function mascaraNUM(input) {
+                            let value = input.value.replace(/\D/g, ''); // Remove caracteres não numéricos
+                            
+                            input.value = value;
+                        }
+                    </script>
+
                 </div>
             </div>
 
