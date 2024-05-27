@@ -83,7 +83,7 @@
                 </div>
                 <div class="col-8 col-lg-4 text-left d-flex flex-column ps-lg-5 mt-lg-3">
                     <label for="telefone" class="f-texto">Telefone</label>
-                    <input type="text" name="telefone" class="p-2" id="telefone" maxlength="15" oninput="mascaraTelefone(this)"  placeholder="(99)9999-9999" required>
+                    <input type="text" name="telefone" class="p-2" id="telefone" maxlength="15" oninput="mascaraTelefone(this)"  placeholder="(99) 9999-9999" required>
 
                 <script>
                 function mascaraTelefone(input) {
