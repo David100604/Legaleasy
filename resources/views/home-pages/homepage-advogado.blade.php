@@ -27,19 +27,22 @@
             <div class="carousel-item active">
                 <img src="../images/Escolhida-Capa.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                    <button type="button" class="btn btn-primary">Saiba mais</button>
+                    <button type="button" class="btn btn-primary"><a href="https://www.linkedin.com/">Saiba mais</a></button>
+                    <h1>Abertura da X Conferência Estadual da Advocacia Sergipana é marcada por discursos sobre os novos tempos da advocacia e homenagens</h1>
                 </div>
             </div>
             <div class="carousel-item">
                 <img src="../images/Escolhida-Capa.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                    <button type="button" class="btn btn-primary">Saiba mais</button>
+                    <button type="button" class="btn btn-primary"><a href="https://www.linkedin.com/">Saiba mais</a></button>
+                    <h1>Abertura da X Conferência Estadual da Advocacia Sergipana é marcada por discursos sobre os novos tempos da advocacia e homenagens</h1>
                 </div>
             </div>
             <div class="carousel-item">
                 <img src="../images/Escolhida-Capa.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                    <button type="button" class="btn btn-primary">Saiba mais</button>
+                    <button type="button" class="btn btn-primary"><a href="https://www.linkedin.com/">Saiba mais</a></button>
+                    <h1>Abertura da X Conferência Estadual da Advocacia Sergipana é marcada por discursos sobre os novos tempos da advocacia e homenagens</h1>
                 </div>
             </div>
         </div>
