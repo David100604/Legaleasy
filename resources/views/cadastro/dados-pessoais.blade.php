@@ -48,7 +48,7 @@
                 <div class="input-dados-esquerda col-8 col-lg-4">
                     <div class="text-left d-flex flex-column pe-lg-5 mt-lg-3">
                         <label for="senha" class="f-texto">Senha</label>
-                        <input type="text" class="p-2" id="senha" name="senha" required>
+                        <input type="password" class="p-2" id="senha" name="senha" required>
                     </div>
                 </div>
                 <div class="col-8 col-lg-4 text-left d-flex flex-column ps-lg-5 mt-lg-3">
@@ -66,7 +66,7 @@
                 </div>
                 <div class="col-8 col-lg-4 text-left d-flex flex-column ps-lg-5 mt-lg-3">
                     <label for="telefone" class="f-texto">Telefone</label>
-                    <input type="text" class="p-2" id="tel" name="telefone" required>
+                    <input type="number" class="p-2" id="tel" name="telefone" required>
                 </div>
             </div>
 
