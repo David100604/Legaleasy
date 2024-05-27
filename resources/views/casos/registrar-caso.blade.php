@@ -72,11 +72,11 @@
                     <div class="col-8 col-lg-4">
                         <div class="text-left d-flex flex-column pe-lg-5 mt-lg-3">
                             <label for="titulo-caso" class="f-texto">Título</label>
-                            <input type="text" class="p-2" id="titulo-caso" name="titulo-caso" required>
+                            <input type="text" class="p-2" id="titulo-caso" name="titulo-caso" placeholder="ex.: Violência doméstica" required>
                         </div>
                         <div class="text-left d-flex flex-column pe-lg-5 mt-lg-3">
                             <label for="descricao" class="f-texto">Descrição</label>
-                            <textarea rows="1" class="p-2" name="descricao" id="descricao"></textarea>
+                            <textarea rows="3" class="p-2" name="descricao" id="descricao"></textarea>
                         </div>
                         <div class="text-left d-flex flex-column pe-lg-5 mt-lg-3">
                             <label for="tipo-caso" class="f-texto">Tipo de caso</label>

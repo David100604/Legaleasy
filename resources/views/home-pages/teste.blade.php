@@ -2,6 +2,7 @@
 
 @section('content')
     
+<h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem perferendis sequi delectus odit, velit exercitationem iste atque ad voluptates neque placeat, suscipit nesciunt ipsam optio nemo possimus inventore. Cumque, ipsa?</h1>
     <div id="carouselExampleIndicators" class="carousel slide">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
