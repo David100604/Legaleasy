@@ -32,8 +32,9 @@
                         <li class="my-3 side-item">Casos Abertos</li>
                         <li class="my-3 side-item">Filiados</li>
                         <li class="my-3 side-item">Requisições</li>
-                        <li class="my-3 side-item">Configurações</li>
-                        <li class="my-3 side-item">Suporte</li>
+                        <li class="my-3 side-item">Perfil</li>
+                        <li class="my-3 side-item">Mensagens</li>
+                        <li class="my-3 side-item">Notificações</li>
                     </ul>
                 </nav>
             </div>
