@@ -28,12 +28,12 @@
                 <div class="input-dados-esquerda col-8 col-lg-4">
                     <div class="text-left d-flex flex-column pe-lg-5 mt-lg-3">
                         <label for="cep" class="f-texto">CEP</label>
-                        <input type="text" class="p-2" id="cep" name="cep" required>
+                        <input type="text" class="p-2" id="cep" name="cep" placeholder="CEP" required>
                     </div>
                 </div>
                 <div class="col-8 col-lg-4 text-left d-flex flex-column ps-lg-5 mt-lg-3">
                     <label for="rua" class="f-texto">Rua</label>
-                    <input type="text" class="p-2" id="rua" name="rua" required>
+                    <input type="text" class="p-2" id="rua" name="rua" placeholder="Rua" required>
                 </div>
             </div>
 
@@ -41,12 +41,12 @@
                 <div class="input-dados-esquerda col-8 col-lg-4">
                     <div class="text-left d-flex flex-column pe-lg-5 mt-lg-3">
                         <label for="uf" class="f-texto">UF</label>
-                        <input type="text" class="p-2" id="uf" name="uf" required>
+                        <input type="text" class="p-2" id="uf" name="uf" placeholder="UF" required>
                     </div>
                 </div>
                 <div class="col-8 col-lg-4 text-left d-flex flex-column ps-lg-5 mt-lg-3">
                     <label for="numero" class="f-texto">Número</label>
-                    <input type="text" class="p-2" id="numero" name="numero" required>
+                    <input type="text" class="p-2" id="numero" name="numero" placeholder="N°" required>
                 </div>
             </div>
 
@@ -54,12 +54,12 @@
                 <div class="input-dados-esquerda col-8 col-lg-4">
                     <div class="text-left d-flex flex-column pe-lg-5 mt-lg-3">
                         <label for="cidade" class="f-texto">Cidade</label>
-                        <input type="text" class="p-2" id="cidade" name="cidade" required>
+                        <input type="text" class="p-2" id="cidade" name="cidade" placeholder="Cidade" required>
                     </div>
                 </div>
                 <div class="col-8 col-lg-4 text-left d-flex flex-column ps-lg-5 mt-lg-3">
                     <label for="edificio" class="f-texto">Edifício</label>
-                    <input type="text" class="p-2" id="edificio" name="edificio" required>
+                    <input type="text" class="p-2" id="edificio" name="edificio" placeholder="Edifício" required>
                 </div>
             </div>
 
@@ -67,12 +67,12 @@
                 <div class="input-dados-esquerda col-8 col-lg-4">
                     <div class="text-left d-flex flex-column pe-lg-5 mt-lg-3">
                         <label for="bairro" class="f-texto">Bairro</label>
-                        <input type="text" class="p-2" id="bairro" name="bairro" required>
+                        <input type="text" class="p-2" id="bairro" name="bairro" placeholder="Bairro" required>
                     </div>
                 </div>
                 <div class="col-8 col-lg-4 text-left d-flex flex-column ps-lg-5 mt-lg-3">
                     <label for="apartamento" class="f-texto">Apartamento</label>
-                    <input type="text" class="p-2" id="apartamento" name="apartamento" required>
+                    <input type="text" class="p-2" id="apartamento" name="apartamento" placeholder="Ap." required>
                 </div>
             </div>
 

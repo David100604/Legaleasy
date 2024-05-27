@@ -29,7 +29,7 @@
                 <div class="input-dados-esquerda col-8 col-lg-4">
                     <div class="text-left d-flex flex-column pe-lg-5 mt-lg-3">
                         <label for="nome-usuario" class="f-texto">Número da OAB</label>
-                        <input type="text" class="p-2" id="nome-usuario" name="nome-usuario" required>
+                        <input type="text" class="p-2" id="nome-usuario" name="nome-usuario" placeholder="UFoooooo" required>
                     </div>
                 </div>
                 <div class="col-8 col-lg-4 text-left d-flex flex-column ps-lg-5 mt-lg-3">
