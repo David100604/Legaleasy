@@ -52,3 +52,6 @@ Route::get('/advogados', function () {
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
+Route::get('/tela-inicial', function () {
+    return view('home-pages.tela-inicial');
+});

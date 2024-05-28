@@ -1,0 +1,31 @@
+.star-rating {
+    direction: rtl;
+    display: inline-block;
+    font-size: 2rem;
+}
+
+.star-rating input[type="radio"] {
+    display: none;
+}
+
+.star-rating label {
+    color: #f5c518;  /* Amarelo por padrão */
+    cursor: pointer;
+}
+
+
+
+.star-rating input[type="radio"]:checked ~ label {
+    color: #f5c518;  /* Amarelo quando checada */
+}
+
+#tela-inicio{
+    margin: 0;
+    padding: 0;
+    background-image: url('../images/bg-img.png');
+    background-size: cover; /* Cobre toda a área da página */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Não repete a imagem */
+    font-family: Arial, sans-serif;
+    color: white;
+}

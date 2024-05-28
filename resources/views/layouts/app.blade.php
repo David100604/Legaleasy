@@ -69,7 +69,7 @@
                         <div class="col-md-4 col-6 text-center my-3">
                             <p class="m-0">Contato</p>
                             <p class="m-0">(27) 98158-3081</p>
-                            <p class="m-0">mail@mail.com</p>
+                            <p class="m-0">LegalEasy@mail.com</p>
                         </div>
                     </div>
                 </footer>
