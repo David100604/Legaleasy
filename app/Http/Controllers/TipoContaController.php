@@ -27,12 +27,12 @@ class TipoContaController extends Controller
      */
     public function store(Request $request)
     {
+
         $tipoConta = new \App\Models\TipoConta;
         $tipoConta->tipoConta = $request->tipoConta;
- 
-        $item->save();
+        $tipoConta->save();
 
-        return Redirect()->route('produto.index');
+        return Redirect()->route('dados-pessoais');
     }
 
     /**
