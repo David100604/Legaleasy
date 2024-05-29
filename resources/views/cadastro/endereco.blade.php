@@ -7,7 +7,7 @@
 
         <div class="row justify-content-center">
             <img class="linha-branca align-self-center col-xl-4 d-none d-xl-block" src="../images/linha-branca.png" alt="">
-            <h1 id="titulo" class="titulo text-center col-xl-4">CADASTRAR ENDEREÇO</h1>
+            <h1 id="titulo" class="titulo text-center col-10 col-xl-4">CADASTRAR ENDEREÇO</h1>
             <img class="linha-branca align-self-center col-xl-4 d-none d-xl-block" src="../images/linha-branca-direita.png" alt="">
         </div>
         <div class="row justify-content-center f-texto">
@@ -70,7 +70,7 @@
                     <script>
                         function mascaraNUM(input) {
                             let value = input.value.replace(/\D/g, ''); // Remove caracteres não numéricos
-                            
+
                             input.value = value;
                         }
                     </script>
@@ -103,6 +103,8 @@
                     <input type="text" class="p-2" id="complemento" name="complemento" placeholder="ex.: Ap." required>
                 </div>
             </div>
+
+            @include('componentes.botoes')
 
         </form>
 

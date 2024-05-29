@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    
+
         <div class="row justify-content-center">
             <img class="linha-branca align-self-center col-xl-4 d-none d-xl-block" src="../images/linha-branca.png" alt="">
             <h1 id="titulo-login" class="titulo col-xl-4 text-center">BEM VINDO(A), USERNAME</h1>
@@ -34,7 +34,7 @@
             <p class="f-texto text-center">Clique em um item da lista para visualizar mais detalhes. Confira alguns dos profissionais cadastrados em nossa plataforma:</p>
         </div>
 
-        <div class="row justify-content-center">
+        <div class="row justify-content-center mb-5">
             <div class="card col-10">
                 <div class="card-header card-lista-header text-center">
                     Advogados Cadastrados
@@ -65,15 +65,15 @@
                                 </div>
                                 <div class="col-8">
                                     <p class="mt-1 m-0 nome-advogado">Sobre o Profissional</p>
-                                    <p class="m-0">Especializado em direito criminal, Dr. Carlos Eduardo Martins tem mais de 20 anos de experiência 
-                                    defendendo clientes em casos de crimes complexos. Ele é conhecido por sua habilidade em montar estratégias de 
-                                    defesa sólidas e por seu comprometimento com a justiça. Atua em casos de homicídio, tráfico de drogas, crimes 
+                                    <p class="m-0">Especializado em direito criminal, Dr. Carlos Eduardo Martins tem mais de 20 anos de experiência
+                                    defendendo clientes em casos de crimes complexos. Ele é conhecido por sua habilidade em montar estratégias de
+                                    defesa sólidas e por seu comprometimento com a justiça. Atua em casos de homicídio, tráfico de drogas, crimes
                                     contra o patrimônio e defesa em tribunais do júri.
                                 </p>
                                 </div>
                             </div>
                         </div>
-                    </div> 
+                    </div>
                     <div class="col-12 card p-2 mt-2">
                         <div class="row">
                             <div class="col-6" style="border-right: 1px solid gray;">
@@ -95,15 +95,15 @@
                                 </div>
                                 <div class="col-8">
                                     <p class="mt-1 m-0 nome-advogado">Sobre o Profissional</p>
-                                    <p class="m-0"> Dr. André Luiz Ribeiro é um renomado advogado trabalhista com vasta experiência em disputas 
-                                        entre empregadores e empregados. Sua prática abrange desde negociações coletivas até litígios individuais. 
-                                        Ele é um defensor ardente dos direitos dos trabalhadores e frequentemente representa sindicatos em importantes 
+                                    <p class="m-0"> Dr. André Luiz Ribeiro é um renomado advogado trabalhista com vasta experiência em disputas
+                                        entre empregadores e empregados. Sua prática abrange desde negociações coletivas até litígios individuais.
+                                        Ele é um defensor ardente dos direitos dos trabalhadores e frequentemente representa sindicatos em importantes
                                         causas trabalhistas.
                                     </p>
                                 </div>
                             </div>
                         </div>
-                    </div> 
+                    </div>
                     <div class="col-12 card p-2 mt-2">
                         <div class="row">
                             <div class="col-6" style="border-right: 1px solid gray;">
@@ -127,9 +127,9 @@
                                 </div>
                                 <div class="col-8">
                                     <p class="mt-1 m-0 nome-advogado">Sobre a Profissional</p>
-                                    <p class="m-0">Dra. Fernanda Monteiro é uma advogada civil especializada em direito contratual e direito de propriedade. 
-                                        Com uma carreira de mais de 15 anos, ela é expert em resolução de disputas contratuais e questões imobiliárias. 
-                                        Dra. Monteiro é reconhecida por sua atenção aos detalhes e sua capacidade de alcançar soluções eficientes para seus 
+                                    <p class="m-0">Dra. Fernanda Monteiro é uma advogada civil especializada em direito contratual e direito de propriedade.
+                                        Com uma carreira de mais de 15 anos, ela é expert em resolução de disputas contratuais e questões imobiliárias.
+                                        Dra. Monteiro é reconhecida por sua atenção aos detalhes e sua capacidade de alcançar soluções eficientes para seus
                                         clientes.
                                     </p>
                                 </div>
@@ -157,9 +157,9 @@
                                 </div>
                                 <div class="col-8">
                                     <p class="mt-1 m-0 nome-advogado">Sobre o Profissional</p>
-                                    <p class="m-0"> Dr. Marcelo Henrique Barros é um advogado de família com uma reputação de excelência em casos de divórcio, 
-                                        guarda de filhos e adoção. Ele possui uma abordagem empática e centrada no cliente, ajudando famílias a navegar por 
-                                        momentos difíceis com sensibilidade e profissionalismo. Sua prática é marcada pela busca de acordos amigáveis sempre 
+                                    <p class="m-0"> Dr. Marcelo Henrique Barros é um advogado de família com uma reputação de excelência em casos de divórcio,
+                                        guarda de filhos e adoção. Ele possui uma abordagem empática e centrada no cliente, ajudando famílias a navegar por
+                                        momentos difíceis com sensibilidade e profissionalismo. Sua prática é marcada pela busca de acordos amigáveis sempre
                                         que possível.
                                     </p>
                                 </div>
@@ -191,9 +191,9 @@
                                 </div>
                                 <div class="col-8">
                                     <p class="mt-1 m-0 nome-advogado">Sobre a Profissional</p>
-                                    <p class="m-0">Especialista em direito empresarial, Dra. Gabriela Nascimento atua assessorando empresas em questões legais, 
-                                        contratos comerciais e governança corporativa. Ela possui uma profunda compreensão das necessidades das empresas e oferece 
-                                        consultoria estratégica para ajudar seus clientes a crescerem e se protegerem legalmente. Dra. Nascimento é conhecida por 
+                                    <p class="m-0">Especialista em direito empresarial, Dra. Gabriela Nascimento atua assessorando empresas em questões legais,
+                                        contratos comerciais e governança corporativa. Ela possui uma profunda compreensão das necessidades das empresas e oferece
+                                        consultoria estratégica para ajudar seus clientes a crescerem e se protegerem legalmente. Dra. Nascimento é conhecida por
                                         sua capacidade de solucionar problemas complexos de maneira prática e eficiente.
                                     </p>
                                 </div>
@@ -223,16 +223,16 @@
                                 </div>
                                 <div class="col-8">
                                     <p class="mt-1 m-0 nome-advogado">Sobre a Profissional</p>
-                                    <p class="m-0">Dr. Vinicius Oliveira é um advogado ambiental com foco em regulamentações ambientais e litígios ecológicos. 
-                                        Com uma formação robusta em direito ambiental, ele ajuda empresas a cumprirem as normas ambientais e representa ONGs e 
-                                        comunidades em casos de danos ambientais. Dr. Oliveira é um defensor apaixonado da sustentabilidade e da proteção 
+                                    <p class="m-0">Dr. Vinicius Oliveira é um advogado ambiental com foco em regulamentações ambientais e litígios ecológicos.
+                                        Com uma formação robusta em direito ambiental, ele ajuda empresas a cumprirem as normas ambientais e representa ONGs e
+                                        comunidades em casos de danos ambientais. Dr. Oliveira é um defensor apaixonado da sustentabilidade e da proteção
                                         ambiental, sempre buscando o equilíbrio entre desenvolvimento e preservação.
                                     </p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                        
+
                     <div class="row justify-content-around mt-3">
                         <div class="col-5">
                             <button class="btn btn-light w-100 border-dark">Mostrar menos</button>
@@ -241,9 +241,9 @@
                             <button class="btn btn-dark w-100">Mostrar mais</button>
                         </div>
                     </div>
-                    
+
                 </div>
-                
+
             </div>
         </div>
 
