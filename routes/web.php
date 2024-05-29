@@ -16,7 +16,7 @@ Route::get('/cadastro/dados-pessoais', function () {
 
 Route::get('/cadastro/endereco', function () {
     return view('cadastro.endereco');
-});
+})->name('endereco');
 
 Route::get('/cadastro/dados-curriculares', function () {
     return view('cadastro.dados-curriculares');
@@ -53,6 +53,8 @@ Route::get('/advogados', function () {
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::post('/cadastro/incluir', [App\Http\Controllers\TipoContaController::class, 'store'])->name('tipo-conta.incluir');
+
+Route::post('/cadastro/dados-pessoais/incluir', [App\Http\Controllers\DadosPessoaisController::class, 'store'])->name('dados-pessoais.incluir');
 
 Route::get('/tela-inicial', function () {
     return view('home-pages.tela-inicial');

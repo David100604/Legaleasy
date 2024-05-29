@@ -9,9 +9,14 @@ class TipoConta extends Model
 {
     public $timestamps = false;
 
-    protected $primaryKey = 'usuario_id';
+    protected $primaryKey = 'tipoConta_id';
     protected $table = 'tipoUsuarios';
     protected $fillable = ['tipoConta'];
-    
+
     use HasFactory;
+
+    public function dadosPessoais()
+    {
+        return $this->hasOne(DadosPessoais::class, 'tipoConta_id');
+    }
 }

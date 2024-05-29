@@ -11,7 +11,12 @@ class DadosPessoais extends Model
 
     protected $primaryKey = 'usuario_id';
     protected $table = 'usuarios';
-    protected $fillable = ['tipoConta'];
+    protected $fillable = ['tipoConta_id', 'nomeUsuario', 'nome', 'senha', 'cpf', 'email', 'telefone'];
 
     use HasFactory;
+
+    public function tipoConta()
+    {
+        return $this->belongsTo(TipoConta::class, 'tipoConta_id');
+    }
 }

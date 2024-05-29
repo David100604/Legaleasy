@@ -13,9 +13,15 @@ class DadosPessoaisController extends Controller
     {
 
         $dados = new \App\Models\DadosPessoais;
-        $dados->tipoConta = $request->tipoConta;
-        $tipoConta->save();
+        $dados->nomeUsuario = $request->nome_usuario;
+        $dados->nome = $request->nome_completo;
+        $dados->senha = $request->senha;
+        $dados->cpf = $request->cpf;
+        $dados->email = $request->email;
+        $dados->telefone = $request->telefone;
+        
+        $dados->save();
 
-        return Redirect()->route('dados-pessoais');
+        return Redirect()->route('endereco');
     }
 }

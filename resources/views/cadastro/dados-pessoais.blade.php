@@ -31,18 +31,18 @@
             <h3 id="info-dados" class="titulo text-left col-9">Insira suas informações nos campos abaixo:</h3>
         </div>
 
-        <form action="" class="mt-lg-5">
-
+        <form action="{{ route('dados-pessoais.incluir') }}" class="mt-lg-5" method="POST">
+            @csrf
             <div class="row justify-content-center">
                 <div class="input-dados-esquerda col-8 col-lg-4">
                     <div class="text-left d-flex flex-column pe-lg-5 mt-lg-3">
-                        <label for="nome-usuario" class="f-texto">Usuário</label>
-                        <input type="text" class="p-2" id="nome-usuario" name="nome-usuario" placeholder="ex: joao_99" required>
+                        <label for="nome_usuario" class="f-texto">Usuário</label>
+                        <input type="text" class="p-2" id="nome_usuario" name="nome_usuario" placeholder="ex: joao_99" required>
                     </div>
                 </div>
                 <div class="col-8 col-lg-4 text-left d-flex flex-column ps-lg-5 mt-lg-3">
-                    <label for="nome-completo" class="f-texto" maxlength="100">Nome completo</label>
-                    <input type="text" class="p-2" id="nome-completo" name="nome-completo" placeholder="ex: João Victor Gomes"required>
+                    <label for="nome_completo" class="f-texto" maxlength="100">Nome completo</label>
+                    <input type="text" class="p-2" id="nome_completo" name="nome_completo" placeholder="ex: João Victor Gomes"required>
                 </div>
             </div>
 
@@ -55,7 +55,7 @@
                 </div>
                 <div class="col-8 col-lg-4 text-left d-flex flex-column ps-lg-5 mt-lg-3">
                     <label for="cpf" class="f-texto">CPF</label>
-                    <input type="text" id="cpf" class="p-2" maxlength="14" oninput="mascaraCPF(this)" placeholder="123.456.789-00" required>
+                    <input type="text" id="cpf" name="cpf" class="p-2" maxlength="14" oninput="mascaraCPF(this)" placeholder="123.456.789-00" required>
 
                     <script>
                     function mascaraCPF(input) {
@@ -105,7 +105,7 @@
             </div>
             
             @include('componentes.botoes')
-            
+
         </form>
 
     </section>
