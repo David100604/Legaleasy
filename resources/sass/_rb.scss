@@ -1,0 +1,68 @@
+.custom-text {
+    font-size: 20px; 
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.notícia-text {
+    font-size: 40px; 
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.custom-carousel-text {
+    font-size: 20px; 
+    font-family: Arial, sans-serif; 
+    color: white; 
+}
+
+// /* resources/css/app.css */
+// .col-custom {
+//     height: 500px; /* Altere conforme necessário */
+// }
+
+// .col-custom-wide {
+//     width: 250px; /* Altere conforme necessário */
+// }
+
+// .col-line::before {
+//     content: "";
+//     display: block;
+//     height: 100%;
+//     width: 2px; /* Largura da linha */
+//     background-color: black; /* Cor da linha */
+//     position: absolute;
+//     left: 50%;
+//     transform: translateX(-50%);
+// }
+
+// /* resources/css/app.css */
+// .card {
+//     border-radius: 0; /* Bordas quadradas */
+// }
+
+// .card-custom-width {
+//     width: 90%; /* Ajuste conforme necessário para aumentar a largura do card */
+// }
+
+// .card-title-centered {
+//     text-align: center; /* Centraliza o título */
+// }
+
+.card {
+    border-radius: 0; /* Bordas quadradas */
+}
+
+.card-custom-width {
+    width: 35%; /* Ajuste conforme necessário para aumentar a largura do card */
+}
+
+.card-title-centered {
+    text-align: center; /* Centraliza o título */
+}
+
+.card-margin {
+    margin: 20px; /* Ajuste conforme necessário para afastar o card das bordas da tela */
+}
+
+.linha-vertical {
+    border-left: thick solid #ff0000;
+}
