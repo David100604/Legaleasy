@@ -85,25 +85,27 @@
                     <label for="telefone" class="f-texto">Telefone</label>
                     <input type="text" name="telefone" class="p-2" id="telefone" maxlength="15" oninput="mascaraTelefone(this)"  placeholder="(99) 9999-9999" required>
 
-                <script>
-                function mascaraTelefone(input) {
-                    let value = input.value.replace(/\D/g, ''); // Remove caracteres não numéricos
-                    if (value.length > 10) {
-                        value = value.replace(/^(\d{2})(\d{5})(\d{4})/, '($1) $2-$3'); // Formato para 9 dígitos
-                    } else if (value.length > 5) {
-                        value = value.replace(/^(\d{2})(\d{4})(\d{4})/, '($1) $2-$3'); // Formato para 8 dígitos
-                    } else if (value.length > 2) {
-                        value = value.replace(/^(\d{2})(\d+)/, '($1) $2'); // Adiciona parênteses após o DDD
-                    } else if (value.length > 0) {
-                        value = value.replace(/^(\d+)/, '($1'); // Adiciona parênteses ao início do DDD
-                    }
-                    input.value = value;
-                }
-    </script>
+                    <script>
+                        function mascaraTelefone(input) {
+                            let value = input.value.replace(/\D/g, ''); // Remove caracteres não numéricos
+                            if (value.length > 10) {
+                                value = value.replace(/^(\d{2})(\d{5})(\d{4})/, '($1) $2-$3'); // Formato para 9 dígitos
+                            } else if (value.length > 5) {
+                                value = value.replace(/^(\d{2})(\d{4})(\d{4})/, '($1) $2-$3'); // Formato para 8 dígitos
+                            } else if (value.length > 2) {
+                                value = value.replace(/^(\d{2})(\d+)/, '($1) $2'); // Adiciona parênteses após o DDD
+                            } else if (value.length > 0) {
+                                value = value.replace(/^(\d+)/, '($1'); // Adiciona parênteses ao início do DDD
+                            }
+                            input.value = value;
+                        }
+                    </script>
 
                 </div>
             </div>
-
+            
+            @include('componentes.botoes')
+            
         </form>
 
     </section>

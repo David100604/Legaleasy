@@ -6,7 +6,7 @@
 
         <div class="row justify-content-center">
             <img class="linha-branca align-self-center col-xl-4 d-none d-xl-block" src="../images/linha-branca.png" alt="">
-            <h1 id="titulo" class="titulo col-xl-4 text-center">CADASTRAR NOVA CONTA</h1>
+            <h1 id="titulo" class="titulo col-10 col-xl-4 text-center">CADASTRAR NOVA CONTA</h1>
             <img class="linha-branca align-self-center col-xl-4 d-none d-xl-block" src="../images/linha-branca-direita.png" alt="">
         </div>
 
@@ -23,9 +23,9 @@
         </div>
 
         
-        <form action="{{ route('tipo-conta.incluir') }}" method="POST">
-            @csrf <!-- Adiciona o token CSRF para segurança -->
-            <input type="hidden" name="tipoConta" id="tipoContaInput"> <!-- Campo oculto para armazenar o tipo de conta -->
+        <form action="{{ route('tipo-conta.incluir') }}" method="POST" style="height: 50vh" class="d-flex flex-column justify-content-between">
+            @csrf
+            <input type="hidden" name="tipoConta" id="tipoContaInput">
             
             <div id="inputs-cadastro" class="row justify-content-center mt-1">
                 <div class="col-5 col-md-4 text-left d-flex flex-column">
@@ -38,16 +38,8 @@
                 </div>
             </div>
             
-
-            <div class="row justify-content-center align-self-end my-3 mt-md-5">
-                <img class="linha-branca align-self-center d-none d-xl-block" src="../images/linha-branca.png" alt="">
-                <button class="align-self-center col-xl-2 col-7 m-1 py-1 py-sm-2 btn btn-dark">
-                    VOLTAR
-                </button>
-                <button type="submit" class="btn-azul align-self-center col-xl-2 col-7 m-1 py-1 py-sm-2 btn">
-                    PRÓXIMO
-                </button>
-                <img class="linha-branca align-self-center d-none d-xl-block" src="../images/linha-branca-direita.png" alt="">
+            <div>
+                @include('componentes.botoes')
             </div>
             
         </form>
