@@ -22,20 +22,20 @@
 <body>
     
             <div>
-                <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
                     <div class="container-fluid">
-                      <a class="navbar-brand" href="#">LEGALEASY</a>
+                        
+                        <div>
+                            <a class="navbar-brand" href="#">LEGALEASY</a>
+                        </div>
 
-                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                      </button>
-                      <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav">
+                      <div class="collapse navbar-collapse" id="navbar-right " >
+                        <ul class="navbar-nav" id="navbar-right">
                           <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Criar Conta</a>
+                            <a class="nav-link active" href="../cadastro">Criar Conta</a>
                           </li>
                           <li class="nav-item">
-                            <a class="nav-link" href="#">Fazer Login</a>
+                            <a class="nav-link" href="../login">Fazer Login</a>
                           </li>
                         </ul>
                       </div>
@@ -44,8 +44,22 @@
             </div>
             <div id="tela-inicio">
                 <div class="row justify-content-center">
-                    <img src="../images/logo.png" alt="" class="col-2" >
+                    <img src="../images/Logo-branca.png" alt="" class="col-2" >
                 </div>
+                <center>
+                <div>
+                    <br>
+                    <br>
+                    <img src="../images/plataforma-gratuita.png" alt="">
+                </div>
+                </center>
+                <center>
+                    <div>
+                        <br>
+                        <br>
+                        <img src="../images/fale-com-adv.png" alt="">
+                    </div>
+                    </center>
             </div>
             
 
