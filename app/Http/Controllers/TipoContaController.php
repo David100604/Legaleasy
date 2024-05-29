@@ -32,7 +32,7 @@ class TipoContaController extends Controller
         $tipoConta->tipoConta = $request->tipoConta;
         $tipoConta->save();
 
-        return Redirect()->route('dados-pessoais');
+        return Redirect()->route('dados-pessoais', ['tipoConta_id' => $tipoConta -> tipoConta_id]);
     }
 
     /**
@@ -48,7 +48,7 @@ class TipoContaController extends Controller
      */
     public function edit(Request $request)
     {
-      
+
     }
 
     /**
@@ -56,7 +56,7 @@ class TipoContaController extends Controller
      */
     public function update(Request $request, Produto $produto)
     {
-    
+
     }
 
     /**
@@ -64,12 +64,12 @@ class TipoContaController extends Controller
      */
     public function destroy(int $item_id)
     {
-        
+
     }
-    
+
 
     public function search(Request $request)
     {
-    
+
     }
 }

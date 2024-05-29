@@ -6,7 +6,6 @@
 
     <section class="d-flex flex-column justify-content-center">
 
-
         <div class="row justify-content-center">
             <img class="linha-branca align-self-center col-xl-4 d-none d-xl-block" src="../images/linha-branca.png" alt="">
             <h1 id="titulo-dados" class="titulo text-center col-xl-4">CADASTRAR DADOS PESSOAIS</h1>
@@ -33,6 +32,9 @@
 
         <form action="{{ route('dados-pessoais.incluir') }}" class="mt-lg-5" method="POST">
             @csrf
+
+            <input type="hidden" name="tipoConta_id" value="{{ $tipoConta->tipoConta_id }}">
+
             <div class="row justify-content-center">
                 <div class="input-dados-esquerda col-8 col-lg-4">
                     <div class="text-left d-flex flex-column pe-lg-5 mt-lg-3">
@@ -103,7 +105,7 @@
 
                 </div>
             </div>
-            
+
             @include('componentes.botoes')
 
         </form>

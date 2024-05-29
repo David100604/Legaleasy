@@ -10,10 +10,6 @@ Route::get('/cadastro', function () {
     return view('cadastro.nova-conta');
 });
 
-Route::get('/cadastro/dados-pessoais', function () {
-    return view('cadastro.dados-pessoais');
-})->name('dados-pessoais');
-
 Route::get('/cadastro/endereco', function () {
     return view('cadastro.endereco');
 })->name('endereco');
@@ -55,6 +51,8 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::post('/cadastro/incluir', [App\Http\Controllers\TipoContaController::class, 'store'])->name('tipo-conta.incluir');
 
 Route::post('/cadastro/dados-pessoais/incluir', [App\Http\Controllers\DadosPessoaisController::class, 'store'])->name('dados-pessoais.incluir');
+
+Route::get('/cadastro/dados-pessoais/{tipoConta_id}', [App\Http\Controllers\DadosPessoaisController::class, 'index'])->name('dados-pessoais');
 
 Route::get('/tela-inicial', function () {
     return view('home-pages.tela-inicial');
