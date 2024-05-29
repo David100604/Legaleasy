@@ -33,7 +33,7 @@
                     </div>
                 </div>
                 <div class="col-8 col-lg-4 text-left d-flex flex-column ps-lg-5 mt-lg-3">
-                    <label for="nome-completo" class="f-texto">Nome completo</label>
+                    <label for="nome-completo" class="f-texto">Tipo de advogado</label>
                     <select id="tipo-conta" class="form-select" aria-label="">
                         <option disabled selected class="opcoes">Selecione</option>
                         <option value="advogado" class="opcoes">Advogado Administrativo</option>
