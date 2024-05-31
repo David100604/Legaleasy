@@ -22,9 +22,9 @@
         <div id="container-cadastros" class="col-md-8 row justify-content-center" >
             <header id="header-cadastros" class="d-flex flex-column mt-4">
 
-                <img id="logo" class="align-self-center" src="../images/logo.png" alt="">
+                <img id="logo" class="align-self-center" src="{{ asset('images/logo.png') }}" alt="">
 
-                <img id="linha-sup" class="align-self-center" src="../images/linha-sup.png" alt="">
+                <img id="linha-sup" class="align-self-center" src="{{ asset('images/linha-sup.png') }}" alt="">
 
                 <div id="app">
                     <main>
@@ -35,7 +35,7 @@
 
             </header>
 
-            
+
 
             <footer id="footer" class="align-self-end">
                 <div class="row justify-content-around my-3">

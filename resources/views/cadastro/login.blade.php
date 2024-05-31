@@ -5,9 +5,9 @@
     <section class="d-flex flex-column justify-content-center">
 
         <div class="row justify-content-center">
-            <img class="linha-branca align-self-center col-xl-4 d-none d-xl-block" src="../images/linha-branca.png" alt="">
+            <img class="linha-branca align-self-center col-xl-4 d-none d-xl-block" src="{{ asset('images/linha-branca.png') }}" alt="">
             <h1 id="titulo-login" class="titulo col-10 col-xl-4 text-center">FAÇA LOGIN NA PLATAFORMA</h1>
-            <img class="linha-branca align-self-center col-xl-4 d-none d-xl-block" src="../images/linha-branca-direita.png" alt="">
+            <img class="linha-branca align-self-center col-xl-4 d-none d-xl-block" src="{{ asset('images/linha-branca-direita.png') }}" alt="">
         </div>
 
         <div  class="row justify-content-center f-texto">

@@ -6,16 +6,16 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/home-cliente', function () {
     return view('home-pages.home-cliente');
-});
+})->name('home-cliente');
 
 Route::get('/home-advogado', function () {
     return view('home-pages.homepage-advogado');
-});
+})->name('home-advogado');
 
 // CADASTROS
 
 // nova conta
-Route::get('/cadastro', function () {return view('cadastro.nova-conta');});
+Route::get('/cadastro', [App\Http\Controllers\TipoContaController::class, 'index'])->name('tipo-conta');
 
 Route::post('/cadastro/incluir', [App\Http\Controllers\TipoContaController::class, 'store'])->name('tipo-conta.incluir');
 

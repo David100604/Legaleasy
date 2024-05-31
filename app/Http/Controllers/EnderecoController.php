@@ -45,7 +45,7 @@ class EnderecoController extends Controller
         $tipoConta = \App\Models\TipoConta::find($usuario->tipoConta_id);
 
         if ($tipoConta->tipoConta == "Cliente"){
-            return Redirect()->route('home');
+            return Redirect()->route('home-cliente');
         } else {
             return Redirect()->route('dados-curriculares', ['usuario_id' => $usuario -> usuario_id]);
         };

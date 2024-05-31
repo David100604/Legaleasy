@@ -34,9 +34,7 @@ class DadosCurricularesController extends Controller
         $dados->save();
 
         $usuario = \App\Models\Usuario::find($request->usuario_id);
-        $tipoConta = \App\Models\TipoConta::find($usuario->tipoConta_id);
 
-
-        return Redirect()->route('home');
+        return Redirect()->route('home-advogado');
     }
 }

@@ -5,9 +5,9 @@
     <section class="d-flex flex-column justify-content-center">
 
         <div class="row justify-content-center">
-            <img class="linha-branca align-self-center col-xl-4 d-none d-xl-block" src="../images/linha-branca.png" alt="">
+            <img class="linha-branca align-self-center col-xl-4 d-none d-xl-block" src="{{ asset('images/linha-branca.png') }}" alt="">
             <h1 id="titulo" class="titulo col-10 col-xl-4 text-center">CADASTRAR NOVA CONTA</h1>
-            <img class="linha-branca align-self-center col-xl-4 d-none d-xl-block" src="../images/linha-branca-direita.png" alt="">
+            <img class="linha-branca align-self-center col-xl-4 d-none d-xl-block" src="{{ asset('images/linha-branca-direita.png') }}" alt="">
         </div>
 
         <div id="info-cadastro" class="row justify-content-center f-texto">
@@ -25,12 +25,12 @@
 
         <form action="{{ route('tipo-conta.incluir') }}" method="POST" style="height: 50vh" class="d-flex flex-column justify-content-between">
             @csrf
-            <input type="hidden" name="tipoConta" id="tipoContaInput">
+            <!-- <input type="hidden" name="tipoConta" id="tipoContaInput"> -->
 
             <div id="inputs-cadastro" class="row justify-content-center mt-1">
                 <div class="col-5 col-md-4 text-left d-flex flex-column">
                     <label for="tipo-conta" class="f-texto">Tipo de conta:</label>
-                    <select id="tipo-conta" class="form-select" aria-label="">
+                    <select id="tipo-conta" name="tipoConta" class="form-select" aria-label="">
                         <option disabled selected class="opcoes">Selecione</option>
                         <option value="Advogado" class="opcoes">Advogado</option>
                         <option value="Cliente" class="opcoes">Cliente</option>
@@ -43,7 +43,7 @@
             </div>
 
         </form>
-        <script>
+        <!-- <script>
             // Captura o evento de envio do formulário
             document.querySelector('form').addEventListener('submit', function(event) {
                 // Captura o valor selecionado no select
@@ -51,7 +51,7 @@
                 // Atribui o valor selecionado ao campo oculto
                 document.getElementById('tipoContaInput').value = tipoContaSelecionado;
             });
-        </script>
+        </script> -->
 
     </section>
 

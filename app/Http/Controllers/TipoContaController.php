@@ -11,7 +11,7 @@ class TipoContaController extends Controller
      */
     public function index()
     {
-
+        return view('cadastro.nova-conta');
     }
 
     /**
