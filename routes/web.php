@@ -15,27 +15,29 @@ Route::get('/home-advogado', function () {
 // CADASTROS
 
 // nova conta
-Route::get('/cadastro', [App\Http\Controllers\TipoContaController::class, 'index'])->name('tipo-conta');
-
-Route::post('/cadastro/incluir', [App\Http\Controllers\TipoContaController::class, 'store'])->name('tipo-conta.incluir');
+Route::controller(App\Http\Controllers\TipoContaController::class)->group(function(){
+    Route::get('/cadastro', 'index')->name('tipo-conta');
+    Route::post('/cadastro', 'store')->name('tipo-conta.incluir');
+});
 
 // dados pessoais
-
-Route::post('/cadastro/dados-pessoais/incluir', [App\Http\Controllers\UsuarioController::class, 'store'])->name('usuario.incluir');
-
-Route::get('/cadastro/dados-pessoais/{tipoConta_id}', [App\Http\Controllers\UsuarioController::class, 'index'])->name('dados-pessoais');
+Route::controller(App\Http\Controllers\UsuarioController::class)->group(function(){
+    Route::post('/cadastro/dados-pessoais', 'store')->name('usuario.incluir');
+    Route::get('/cadastro/dados-pessoais/{tipoConta_id}', 'index')->name('dados-pessoais');
+});
 
 // endereço
-
-Route::post('/cadastro/endereco/incluir', [App\Http\Controllers\EnderecoController::class, 'store'])->name('endereco.incluir');
-
-Route::get('/cadastro/endereco/{usuario_id}', [App\Http\Controllers\EnderecoController::class, 'index'])->name('endereco');
+Route::controller(App\Http\Controllers\EnderecoController::class)->group(function(){
+    Route::post('/cadastro/endereco/incluir', 'store')->name('endereco.incluir');
+    Route::get('/cadastro/endereco/{usuario_id}', 'index')->name('endereco');
+});
 
 // dados curriculares
+Route::controller(App\Http\Controllers\DadosCurricularesController::class)->group(function(){
+    Route::post('/cadastro/dados-curriculares', 'store')->name('dados-curriculares.incluir');
+    Route::get('/cadastro/dados-curriculares/{usuario_id}', 'index')->name('dados-curriculares');
+});
 
-Route::post('/cadastro/dados-curriculares/incluir', [App\Http\Controllers\DadosCurricularesController::class, 'store'])->name('dados-curriculares.incluir');
-
-Route::get('/cadastro/dados-curriculares/{usuario_id}', [App\Http\Controllers\DadosCurricularesController::class, 'index'])->name('dados-curriculares');
 
 //CASOS
 
