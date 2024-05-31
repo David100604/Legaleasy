@@ -22,7 +22,10 @@
             <h3 id="info-dados" class="titulo text-left col-9">Insira suas informações nos campos abaixo:</h3>
         </div>
 
-        <form action="" class="mt-lg-3">
+        <form action="{{ route('endereco.incluir') }}" class="mt-lg-3" method="POST">
+            @csrf
+
+            <input type="hidden" name="usuario_id" value="{{ $usuario->usuario_id }}">
 
             <div class="row justify-content-center">
                 <div class="input-dados-esquerda col-8 col-lg-4">

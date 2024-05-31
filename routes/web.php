@@ -21,21 +21,21 @@ Route::post('/cadastro/incluir', [App\Http\Controllers\TipoContaController::clas
 
 // dados pessoais
 
-Route::post('/cadastro/dados-pessoais/incluir', [App\Http\Controllers\DadosPessoaisController::class, 'store'])->name('dados-pessoais.incluir');
+Route::post('/cadastro/dados-pessoais/incluir', [App\Http\Controllers\UsuarioController::class, 'store'])->name('usuario.incluir');
 
-Route::get('/cadastro/dados-pessoais/{tipoConta_id}', [App\Http\Controllers\DadosPessoaisController::class, 'index'])->name('dados-pessoais');
+Route::get('/cadastro/dados-pessoais/{tipoConta_id}', [App\Http\Controllers\UsuarioController::class, 'index'])->name('dados-pessoais');
 
 // endereço
 
-Route::get('/cadastro/endereco', function () {
-    return view('cadastro.endereco');
-})->name('endereco');
+Route::post('/cadastro/endereco/incluir', [App\Http\Controllers\EnderecoController::class, 'store'])->name('endereco.incluir');
+
+Route::get('/cadastro/endereco/{usuario_id}', [App\Http\Controllers\EnderecoController::class, 'index'])->name('endereco');
 
 // dados curriculares
 
-Route::get('/cadastro/dados-curriculares', function () {
-    return view('cadastro.dados-curriculares');
-});
+Route::post('/cadastro/dados-curriculares/incluir', [App\Http\Controllers\DadosCurricularesController::class, 'store'])->name('dados-curriculares.incluir');
+
+Route::get('/cadastro/dados-curriculares/{usuario_id}', [App\Http\Controllers\DadosCurricularesController::class, 'index'])->name('dados-curriculares');
 
 //CASOS
 
@@ -79,4 +79,4 @@ Route::get('/advogados', function () {
 
 Route::get('/', function () {
     return view('home-pages.tela-inicial');
-});
+})->name('home');

@@ -30,7 +30,7 @@
             <h3 id="info-dados" class="titulo text-left col-9">Insira suas informações nos campos abaixo:</h3>
         </div>
 
-        <form action="{{ route('dados-pessoais.incluir') }}" class="mt-lg-5" method="POST">
+        <form action="{{ route('usuario.incluir') }}" class="mt-lg-5" method="POST">
             @csrf
 
             <input type="hidden" name="tipoConta_id" value="{{ $tipoConta->tipoConta_id }}">

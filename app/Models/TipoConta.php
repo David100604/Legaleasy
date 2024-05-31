@@ -15,8 +15,8 @@ class TipoConta extends Model
 
     use HasFactory;
 
-    public function dadosPessoais()
+    public function usuario()
     {
-        return $this->hasOne(DadosPessoais::class, 'tipoConta_id');
+        return $this->hasOne(Usuario::class, 'tipoConta_id');
     }
 }

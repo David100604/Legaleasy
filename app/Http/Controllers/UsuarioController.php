@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class DadosPessoaisController extends Controller
+class UsuarioController extends Controller
 {
 
     public function index($tipoConta_id)
@@ -24,7 +24,7 @@ class DadosPessoaisController extends Controller
     public function store(Request $request)
     {
 
-        $dados = new \App\Models\DadosPessoais;
+        $dados = new \App\Models\Usuario;
         $dados->nomeUsuario = $request->nome_usuario;
         $dados->nome = $request->nome_completo;
         $dados->senha = $request->senha;
@@ -36,6 +36,6 @@ class DadosPessoaisController extends Controller
 
         $dados->save();
 
-        return Redirect()->route('endereco');
+        return Redirect()->route('endereco', ['usuario_id' => $dados -> usuario_id]);
     }
 }

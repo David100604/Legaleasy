@@ -5,13 +5,13 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Endereco extends Model
+class DadosCurriculares extends Model
 {
     public $timestamps = false;
 
-    protected $primaryKey = 'endereco_id';
-    protected $table = 'enderecos';
-    protected $fillable = ['CEP', 'UF', 'cidade', 'bairro', 'rua', 'numero', 'edificio', 'complemento', 'usuario_id'];
+    protected $primaryKey = 'advogado_id';
+    protected $table = 'advogados';
+    protected $fillable = ['usuario_id', 'OAB', 'tipoAdvogado'];
 
     use HasFactory;
 

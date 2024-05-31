@@ -22,11 +22,11 @@
             </div>
         </div>
 
-        
+
         <form action="{{ route('tipo-conta.incluir') }}" method="POST" style="height: 50vh" class="d-flex flex-column justify-content-between">
             @csrf
             <input type="hidden" name="tipoConta" id="tipoContaInput">
-            
+
             <div id="inputs-cadastro" class="row justify-content-center mt-1">
                 <div class="col-5 col-md-4 text-left d-flex flex-column">
                     <label for="tipo-conta" class="f-texto">Tipo de conta:</label>
@@ -37,11 +37,11 @@
                     </select>
                 </div>
             </div>
-            
+
             <div>
                 @include('componentes.botoes')
             </div>
-            
+
         </form>
         <script>
             // Captura o evento de envio do formulário
