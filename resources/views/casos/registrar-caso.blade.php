@@ -100,10 +100,31 @@
                         </div>
                     </div>
                     <div class="col-8 col-lg-4 text-left d-flex flex-column ps-lg-5 mt-lg-3">
-                        <label for="documentos" class="f-texto">Anexar documentos</label>
-                        <input type="text" class="p-2" id="documentos" name="documentos" required>
+                        <label for="documentos" class="f-texto">Anexar documentos (Tamanho máx: 8MB)
+
+
+                        <div class="page">
+                            <form action="post">
+                        <div class="file-upload-container">
+                            <input type="file" id="file-upload" class="file-input" />
+                            <label for="file-upload" class="file-label">
+                            Escolher Arquivo
+                            </label>
+                            <span class="file-name" id="file-name">Nenhum arquivo escolhido</span>
+                            </label>
+                            </form>
+                        </div>
+
+                        <script> 
+                            document.getElementById('file-upload').addEventListener('change', function() {
+                                var fileName = this.files[0] ? this.files[0].name : 'Nenhum arquivo escolhido';
+                                document.getElementById('file-name').textContent = fileName;
+                            });              
+                        </script>     
+                        </div>
                     </div>
-                </div>
+                    
+                    
 
             </form>
 
