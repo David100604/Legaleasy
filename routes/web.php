@@ -82,3 +82,13 @@ Route::get('/advogados', function () {
 Route::get('/', function () {
     return view('home-pages.tela-inicial');
 })->name('home');
+
+// PERFIL 
+
+Route::get('/perfil-advogado', function () {
+    return view('perfil.perfil-advogado');
+})->name('perfil-advogado');
+
+Route::get('/perfil-cliente', function () {
+    return view('perfil.perfil-cliente');
+})->name('perfil-cliente');
