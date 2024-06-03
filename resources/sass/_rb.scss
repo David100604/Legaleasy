@@ -66,3 +66,26 @@
 .linha-vertical {
     border-left: thick solid #ff0000;
 }
+
+.image-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.small-image {
+    position: absolute;
+    top: 100%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    border-radius: 50%;
+}
+
+.change-image-button {
+    position: absolute;
+    top: 10%; 
+    left: 95%; 
+    transform: translate(-50%, -50%);
+    z-index: 2; 
+}
