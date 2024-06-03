@@ -75,56 +75,62 @@
                         </div>
                     </div>
 
-
-
-                    <div class="col-12 card p-2 mt-2 d-block d-xl-none">
-                        <div class="row">
-                            <div class="row col-12">
-                                <div class="col-3">
-                                    <img src="../images/advogado.png" alt="" width="100px;">
-                                </div>
-                                <div class="col-md-9">
-                                    <p class="m-0 nome-advogado">Dra. Gabriela Nascimento</p>
-                                    <div class="star-rating">
-                                        <input type="radio" id="star5" name="rating" value="5" />
-                                        <label for="star5" title="5 estrelas">☆</label>
-                                        <input type="radio" id="star4" name="rating" value="4" />
-                                        <label for="star4" title="4 estrelas">☆</label>
-                                        <input type="radio" id="star3" name="rating" value="3" />
-                                        <label for="star3" title="3 estrelas">☆</label>
-                                        <input type="radio" id="star2" name="rating" value="2" />
-                                        <label for="star2" title="2 estrelas">☆</label>
-                                        <input type="radio" id="star1" name="rating" value="1" />
-                                        <label for="star1" title="1 estrela">☆</label>
+                    <div class="contentt row justify-content-around mt-3">
+                        <button id="showMoreBtn"class="btn btn-dark w-100">Mostrar Mais</button>
+                        <div class="more-text card-body card-lista-body p-2">
+                            <div class="col-12 card p-2 mt-2 d-xl-block d-none">
+                                <div class="row">
+                                    <div class="col-6" style="border-right: 1px solid gray;">
+                                        <p class="m-0 nome-advogado">Dra. Gabriela Nascimento</p>
+                                        <div class="star-rating">
+                                            <input type="radio" id="star5" name="rating" value="5" />
+                                            <label for="star5" title="5 estrelas">☆</label>
+                                            <input type="radio" id="star4" name="rating" value="4" />
+                                            <label for="star4" title="4 estrelas">☆</label>
+                                            <input type="radio" id="star3" name="rating" value="3" />
+                                            <label for="star3" title="3 estrelas">☆</label>
+                                            <input type="radio" id="star2" name="rating" value="2" />
+                                            <label for="star2" title="2 estrelas">☆</label>
+                                            <input type="radio" id="star1" name="rating" value="1" />
+                                            <label for="star1" title="1 estrela">☆</label>
+                                        </div>
+                                        <p class="m-0">Número de avaliações: 18</p>
+                                        <p class="m-0">Serviços: Advogada Empresarial</p>
                                     </div>
-                                    <p class="m-0">Número de avaliações: 18</p>
-                                    <p class="m-0">Serviços: Advogada Empresarial</p>
+                                    <div class="row col-5 ms-2">
+                                        <div class="col-4">
+                                            <img src="../images/advogado.png" alt="" width="100px;">
+                                        </div>
+                                        <div class="col-8">
+                                            <p class="mt-1 m-0 nome-advogado">Sobre a Profissional</p>
+                                            <p class="m-0">Especialista em direito empresarial, Dra. Gabriela Nascimento atua assessorando empresas em questões legais,
+                                                contratos comerciais e governança corporativa. Ela possui uma profunda compreensão das necessidades das empresas e oferece
+                                                consultoria estratégica para ajudar seus clientes a crescerem e se protegerem legalmente. Dra. Nascimento é conhecida por
+                                                sua capacidade de solucionar problemas complexos de maneira prática e eficiente.
+                                            </p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-12 mt-3">
-                                <p class="mt-1 m-0 nome-advogado">Sobre a Profissional</p>
-                                <p class="m-0">Especialista em direito empresarial, Dra. Gabriela Nascimento atua assessorando empresas em questões legais,
-                                    contratos comerciais e governança corporativa. Ela possui uma profunda compreensão das necessidades das empresas e oferece
-                                    consultoria estratégica para ajudar seus clientes a crescerem e se protegerem legalmente. Dra. Nascimento é conhecida por
-                                    sua capacidade de solucionar problemas complexos de maneira prática e eficiente.
-                                </p>
-
-                            </div>
-
-                        </div>
                     </div>
+                
+                    <script>
+                        document.addEventListener("DOMContentLoaded", function() {
+                        const showMoreBtn = document.getElementById("showMoreBtn");
+                        const content = document.querySelector(".contentt");
 
+                        showMoreBtn.addEventListener("click", function() {
+                        content.classList.toggle("show");
+                        if (content.classList.contains("show")) {
+                            showMoreBtn.textContent = "Mostrar Menos";
+                        } else {
+                            showMoreBtn.textContent = "Mostrar Mais";
+                        }
+                        });
+                        });
 
-                    <div class="row justify-content-around mt-3">
-                        <div class="col-10 col-md-5 my-2">
-                            <button class="btn btn-light w-100 border-dark">Mostrar menos</button>
-                        </div>
-                        <div class="col-10 col-md-5 my-2">
-                            <button class="btn btn-dark w-100">Mostrar mais</button>
-                        </div>
-                    </div>
-
-                </div>
+                    </script>
+                
 
             </div>
         </div>

@@ -28,13 +28,13 @@
             <div class="mt-2" style="height: 80%;">
                 <nav>
                     <ul class="list-unstyled text-center mt-4">
-                        <li class="my-3 side-item">Dashboard</li>
-                        <li class="my-3 side-item">Casos Abertos</li>
-                        <li class="my-3 side-item">Filiados</li>
-                        <li class="my-3 side-item">Requisições</li>
-                        <li class="my-3 side-item">Perfil</li>
-                        <li class="my-3 side-item">Mensagens</li>
-                        <li class="my-3 side-item">Notificações</li>
+                        <li class="my-3 side-item"><a href="">Dashboard</a></li>
+                        <li class="my-3 side-item"><a href="">Abertos</a></li>
+                        <li class="my-3 side-item"><a href="">Filiados</a></li>
+                        <li class="my-3 side-item"><a href="">Requisições</a></li>
+                        <li class="my-3 side-item"><a href="">Perfil</a></li>
+                        <li class="my-3 side-item"><a href="">Mensagens</a></li>
+                        <li class="my-3 side-item"><a href="">Notificações</a></li>
                     </ul>
                 </nav>
             </div>
