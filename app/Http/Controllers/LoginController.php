@@ -39,5 +39,9 @@ class LoginController extends Controller
         }
     }
 
+    public function destroy(){
+        return Redirect()->route('home'); 
+    }
+
 
 }
