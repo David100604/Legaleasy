@@ -61,8 +61,10 @@ Route::get('/caso', function () {
 
 // LOGIN
 
-Route::get('/login', function () {
-    return view('cadastro.login');
+Route::controller(App\Http\Controllers\LoginController::class)->group(function() {
+    Route::get('/login', 'index')->name('login.index');
+    Route::post('/login', 'store')->name('login.store');
+    Route::get('/logout', 'destroy')->name('login.destroy');
 });
 
 Route::get('/teste', function () {
