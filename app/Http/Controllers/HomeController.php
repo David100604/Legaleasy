@@ -2,27 +2,22 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
-    /**
-     * Create a new controller instance.
-     *
-     * @return void
-     */
-    public function __construct()
-    {
-        $this->middleware('auth');
+    public function cliente($usuario_id){
+
+        $usuario = \App\Models\Usuario::find($usuario_id);
+
+        return view('home-pages.home-cliente', compact('usuario'));
     }
 
-    /**
-     * Show the application dashboard.
-     *
-     * @return \Illuminate\Contracts\Support\Renderable
-     */
-    public function index()
-    {
-        return view('home');
+    public function advogado($usuario_id){
+
+        $usuario = \App\Models\Usuario::find($usuario_id);
+
+        return view('home-pages.homepage-advogado', compact('usuario'));
     }
 }

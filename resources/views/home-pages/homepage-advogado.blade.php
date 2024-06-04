@@ -6,7 +6,7 @@
 
     <div class="row justify-content-center">
         <img class="linha-branca align-self-center col-xl-4 d-none d-xl-block" src="../images/linha-branca.png" alt="">
-        <h1 id="titulo-dados" class="titulo text-center col-md-9 col-xl-4">BEM VINDO(A), RHUAN BRYAN</h1>
+        <h1 id="titulo-dados" class="titulo text-center col-md-9 col-xl-4" style="text-transform: uppercase;">BEM VINDO(A), {{ $usuario->nomeUsuario }}</h1>
         <img class="linha-branca align-self-center col-xl-4 d-none d-xl-block" src="../images/linha-branca-direita.png" alt="">
     </div>
 
@@ -74,7 +74,7 @@
 
     {{-- ÁREA DE TRABALHO --}}
 
-    <div class="row justify-content-center">
+    <div class="row justify-content-center mt-4">
         <img class="linha-branca align-self-center col-xl-4 d-none d-xl-block" src="../images/linha-branca.png" alt="">
         <h1 id="titulo-dados" class="titulo text-center col-md-9 col-xl-4">ÁREA DE TRABALHO</h1>
         <img class="linha-branca align-self-center col-xl-4 d-none d-xl-block" src="../images/linha-branca-direita.png" alt="">

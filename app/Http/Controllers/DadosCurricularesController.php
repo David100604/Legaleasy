@@ -35,6 +35,6 @@ class DadosCurricularesController extends Controller
 
         $usuario = \App\Models\Usuario::find($request->usuario_id);
 
-        return Redirect()->route('home-advogado');
+        return Redirect()->route('home-advogado', ['usuario_id' => $usuario->usuario_id]);
     }
 }

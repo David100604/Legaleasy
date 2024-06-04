@@ -4,13 +4,11 @@ use Illuminate\Support\Facades\Route;
 
 // HOMEPAGES
 
-Route::get('/home-cliente', function () {
-    return view('home-pages.home-cliente');
-})->name('home-cliente');
+Route::controller(App\Http\Controllers\HomeController::class)->group(function() {
+    Route::get('/home-advogado/{usuario_id}', 'advogado')->name('home-advogado');
+    Route::get('/home/{usuario_id}', 'cliente')->name('home-cliente');
+});
 
-Route::get('/home-advogado', function () {
-    return view('home-pages.homepage-advogado');
-})->name('home-advogado');
 
 // CADASTROS
 
