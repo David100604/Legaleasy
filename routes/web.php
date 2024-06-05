@@ -1,5 +1,5 @@
 <?php
-
+use App\Http\Controllers\MessageController;
 use Illuminate\Support\Facades\Route;
 
 // HOMEPAGES
@@ -83,7 +83,7 @@ Route::get('/', function () {
     return view('home-pages.tela-inicial');
 })->name('home');
 
-// PERFIL 
+// PERFIL
 
 Route::get('/perfil-advogado', function () {
     return view('perfil.perfil-advogado');
@@ -92,3 +92,6 @@ Route::get('/perfil-advogado', function () {
 Route::get('/perfil-cliente', function () {
     return view('perfil.perfil-cliente');
 })->name('perfil-cliente');
+
+use App\Http\Controllers\ChatController;
+Route::get('/chat', [ChatController::class, 'index'])->name('chat');

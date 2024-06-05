@@ -1,0 +1,31 @@
+.chat-window {
+    height: 500px;
+    overflow-y: scroll;
+}
+.message {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.my-message {
+    justify-content: flex-start;
+}
+.other-message {
+    justify-content: flex-end;
+    text-align: right;
+}
+.message img {
+    width: 40px;
+    height: 40px;
+}
+.message span {
+    background: #f1f1f1;
+    padding: 10px;
+    border-radius: 10px;
+}
+.my-message span {
+    background: #d1e7dd;
+}
+.other-message span {
+    background: #b8daff;
+}
