@@ -44,9 +44,16 @@
             </div>
             <div id="tela-inicio">
                 <div class="row justify-content-center">
-                    <img src="../images/Logo-branca.png" alt="" class="col-2" >
+                    <img src="../images/logo_legaleasy.png" alt="" class="col-2" >
+                    
                 </div>
+                
                 <center>
+                    <div class="row justify-content-center">
+                        <img class="linha-branca align-self-center col-xl-4 d-none d-xl-block" src="../images/linha-branca.png" alt="">
+                        <img src="../images/legaleasy_nome.png" alt="" class="col-2 mx-4" >
+                        <img class="linha-branca align-self-center col-xl-4 d-none d-xl-block" src="../images/linha-branca-direita.png" alt="">
+                    </div>
                 <div>
                     <br>
                     <br>
@@ -54,16 +61,73 @@
                 </div>
                 </center>
                 <center>
-                    <div>
-                        <br>
-                        <br>
-                        <img src="../images/fale-com-adv.png" alt="">
+                    <div class="my-5" >
+                        
+                        <img src="../images/speak_with.png" alt="">
                     </div>
+                    <div>
+                        <img src="../images/linha_central_inicio.png" alt="">
+                    </div>
+                    <div class="my-5">
+                        <a class="criar-conta" id="criacao" href="../cadastro">Criar Conta</a>
+                    </div>
+                    <br>
+                    <br>
                     </center>
             </div>
             
+            <div class="body_inicial">
+                <div class="py-4">
+                    <center>
+                    <img id="fontezinha" src="../images/stay_inside.png" alt="">
+                    </center>
+                    <div class="py-3">
+                        <center>
+                        <img src="../images/linha-sup.png" alt="">
+                        </center>
+                    </div>
+                    <div>
+                        <center>
+                        <img src="../images/linha-branca.png" alt="">
+                        <img src="../images/know_plataform.png" alt="">
+                        <img src="../images/linha-branca-direita.png" alt="">
+                        </center>   
+                    </div>
+                    <div class=" py-4 card-group">
+                        <div class="card">
+                            <h3 class="titulo" >Converse da maneira que preferir</h3>
+                            <p class="paragrafozin">Fale com um advogado diretamente pelo chat
+                                da LegalEasy, ou passe suas informações de contato.
+                            </p>
+                            <h5><a id="saiba-mais" href="https://www.exemplo.com" style="color: #13315C;">Saiba Mais</a></h5>   
+                        </div>
+                        <div class="card">
+                            <h3 class="titulo">Registre seu caso em aberto na plataforma</h3>
+                            <p class="paragrafozin">Seu caso será listado para advogados de prontidão 
+                                na plataforma, que incluirão o contato.
+                            </p>
+                            <h5><a id="saiba-mais" href="https://www.exemplo.com" style="color: #13315C;">Saiba Mais</a></h5>
+                        </div>
+                        <div class="card">
+                            <h3 class="titulo">Contate um advogado diretamente</h3>
+                            <p class="paragrafozin">A Legaleasy possui seção de afiliados onde estão 
+                                listados profissionais capacitados para suas necessidades.
+                            </p>
+                            <h5><a id="saiba-mais" href="https://www.exemplo.com" style="color: #13315C;">Saiba Mais</a></h5>   
+                        </div>
+                        <div class="card">
+                            <h3 class="titulo">Suporte a defensoria pública</h3>
+                            <p class="paragrafozin">Temos como objetivo facilitar o acesso à serviços de advocacia
+                                 públicos, por isso o uso é gratuito.
+                            </p>
+                            <h5><a id="saiba-mais" href="https://www.exemplo.com" style="color: #13315C;">Saiba Mais</a></h5>   
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
 
-            <div class="align-items-end"></div>
+            <div class="align-items-end">
                 <footer id="footer" class="align-self-end">
                     <div class="row justify-content-around">
                         <div class="col-md-4 col-6 text-center my-3">
@@ -73,7 +137,7 @@
                         <div class="col-md-4 col-6 text-center my-3">
                             <p class="m-0">Contato</p>
                             <p class="m-0">(27) 98158-3081</p>
-                            <p class="m-0">LegalEasy@mail.com</p>
+                            <p class="m-0">legaleasy@gmail.com</p>
                         </div>
                     </div>
                 </footer>
