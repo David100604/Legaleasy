@@ -2,6 +2,8 @@
 
 @section('content')
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 <section class="d-flex flex-column justify-content-center">
     <div class="row justify-content-center">
         <img class="linha-branca align-self-center col-xl-4 d-none d-xl-block" src="{{ asset('images/linha-branca.png') }}" alt="">
@@ -26,9 +28,10 @@
 
         <div class="row justify-content-center">
             <div class="input-dados-esquerda col-8 col-lg-4">
-                <div class="text-left d-flex flex-column pe-lg-5 mt-lg-3">
+                <div class="text-left d-flex flex-column pe-lg-5 mt-lg-3 position-relative">
                     <label for="cep" class="f-texto">CEP</label>
-                    <input type="text" class="p-2" id="cep" maxlength="9" oninput="mascaraCEP(this)" name="cep" placeholder="ex.: 00000-000 *" required>
+                    <i class="fa-solid fa-location-dot position-absolute" style="top: 40px; left: 8px;"></i>
+                    <input type="text" class="p-2 ps-4" id="cep" maxlength="9" oninput="mascaraCEP(this)" name="cep" placeholder="ex.: 00000-000 *" required>
 
                     <script>
                         function mascaraCEP(input) {
@@ -63,17 +66,19 @@
                     </script>
                 </div>
             </div>
-            <div class="col-8 col-lg-4 text-left d-flex flex-column ps-lg-5 mt-lg-3">
+            <div class="col-8 col-lg-4 text-left d-flex flex-column ps-lg-5 mt-lg-3 position-relative">
                 <label for="rua" class="f-texto">Rua</label>
-                <input type="text" class="p-2" id="rua" name="rua" placeholder="ex.: Da Água" required>
+                <i class="fa-solid fa-road position-absolute" style="top: 40px; left: 55px;"></i>
+                <input type="text" class="p-2 ps-4" id="rua" name="rua" placeholder="ex.: Da Água" required>
             </div>
         </div>
 
         <div class="row justify-content-center">
             <div class="input-dados-esquerda col-8 col-lg-4">
-                <div class="text-left d-flex flex-column pe-lg-5 mt-lg-3">
+                <div class="text-left d-flex flex-column pe-lg-5 mt-lg-3 position-relative">
                     <label for="uf" class="f-texto">UF</label>
-                    <input type="text" class="p-2" id="uf" name="uf" maxlength="2" oninput="mascaraUF(this)" placeholder="ex.: ES" required>
+                    <i class="fa-solid fa-map position-absolute" style="top: 40px; left: 8px;"></i>
+                    <input type="text" class="p-2 ps-4" id="uf" name="uf" maxlength="2" oninput="mascaraUF(this)" placeholder="ex.: ES" required>
 
                     <script>
                         function mascaraUF(input) {
@@ -83,9 +88,10 @@
                     </script>
                 </div>
             </div>
-            <div class="col-8 col-lg-4 text-left d-flex flex-column ps-lg-5 mt-lg-3">
+            <div class="col-8 col-lg-4 text-left d-flex flex-column ps-lg-5 mt-lg-3 position-relative">
                 <label for="numero" class="f-texto">Número</label>
-                <input type="text" class="p-2" id="numero" name="numero" maxlength="5" oninput="mascaraNUM(this)" placeholder="ex.: 2010 *" required>
+                <i class="fa-solid fa-box-archive position-absolute" style="top: 40px; left: 55px;"></i>
+                <input type="text" class="p-2 ps-4" id="numero" name="numero" maxlength="5" oninput="mascaraNUM(this)" placeholder="ex.: 2010 *" required>
 
                 <script>
                     function mascaraNUM(input) {
@@ -98,27 +104,31 @@
 
         <div class="row justify-content-center">
             <div class="input-dados-esquerda col-8 col-lg-4">
-                <div class="text-left d-flex flex-column pe-lg-5 mt-lg-3">
+                <div class="text-left d-flex flex-column pe-lg-5 mt-lg-3 position-relative">
                     <label for="cidade" class="f-texto">Cidade</label>
-                    <input type="text" class="p-2" id="cidade" name="cidade" placeholder="ex.: Serra" required>
+                    <i class="fa-solid fa-city position-absolute" style="top: 40px; left: 5px;"></i>
+                    <input type="text" class="p-2 ps-4" id="cidade" name="cidade" placeholder="ex.: Serra" required>
                 </div>
             </div>
-            <div class="col-8 col-lg-4 text-left d-flex flex-column ps-lg-5 mt-lg-3">
-                <label for="edificio" class="f-texto">Edifício</label>
-                <input type="text" class="p-2" id="edificio" name="edificio" placeholder="ex.: Edifício">
+            <div class="col-8 col-lg-4 text-left d-flex flex-column ps-lg-5 mt-lg-3 position-relative">
+                <label for="edificio" class="f-texto position-relative">Edifício</label>
+                <i class="fa-solid fa-building position-absolute" style="top: 40px; left: 57px;"></i>
+                <input type="text" class="p-2 ps-4" id="edificio" name="edificio" placeholder="ex.: Edifício">
             </div>
         </div>
 
         <div class="row justify-content-center">
             <div class="input-dados-esquerda col-8 col-lg-4">
-                <div class="text-left d-flex flex-column pe-lg-5 mt-lg-3">
+                <div class="text-left d-flex flex-column pe-lg-5 mt-lg-3 position-relative">
                     <label for="bairro" class="f-texto">Bairro</label>
-                    <input type="text" class="p-2" id="bairro" name="bairro" placeholder="ex.: Nova Almeida" required>
+                    <i class="fa-solid fa-location-crosshairs position-absolute" style="top: 40px; left: 8px;"></i>
+                    <input type="text" class="p-2 ps-4" id="bairro" name="bairro" placeholder="ex.: Nova Almeida" required>
                 </div>
             </div>
-            <div class="col-8 col-lg-4 text-left d-flex flex-column ps-lg-5 mt-lg-3">
-                <label for="complemento" class="f-texto">Complemento</label>
-                <input type="text" class="p-2" id="complemento" name="complemento" placeholder="ex.: Ap.">
+            <div class="col-8 col-lg-4 text-left d-flex flex-column ps-lg-5 mt-lg-3 position-relative">
+                <label for="complemento" class="f-texto position-relative">Complemento</label>
+                <i class="fa-solid fa-location-arrow position-absolute" style="top: 40px; left: 57px;"></i>
+                <input type="text" class="p-2 ps-4" id="complemento" name="complemento" placeholder="ex.: Ap.">
             </div>
         </div>
 

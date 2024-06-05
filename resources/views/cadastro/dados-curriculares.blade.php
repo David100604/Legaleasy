@@ -2,6 +2,8 @@
 
 @section('content')
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
     <section class="d-flex flex-column justify-content-center">
 
 
@@ -30,9 +32,10 @@
 
             <div class="row justify-content-center">
                 <div class="input-dados-esquerda col-8 col-lg-4">
-                    <div class="text-left d-flex flex-column pe-lg-5 mt-lg-3">
+                    <div class="text-left d-flex flex-column pe-lg-5 mt-lg-3 position-relative">
                         <label for="oab" class="f-texto">Número da OAB</label>
-                        <input type="text" class="p-2" id="oab" name="oab" placeholder="UFoooooo" required>
+                        <i class="fa-solid fa-envelope position-absolute" style="top: 40px; left: 8px;"></i>
+                        <input type="text" class="p-2 ps-4" id="oab" name="oab" placeholder="UFoooooo" required>
                     </div>
                 </div>
                 <div class="col-8 col-lg-4 text-left d-flex flex-column ps-lg-5 mt-lg-3">

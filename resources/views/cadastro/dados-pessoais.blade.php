@@ -2,7 +2,7 @@
 
 @section('content')
 
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
     <section class="d-flex flex-column justify-content-center">
 
@@ -37,27 +37,33 @@
 
             <div class="row justify-content-center">
                 <div class="input-dados-esquerda col-8 col-lg-4">
-                    <div class="text-left d-flex flex-column pe-lg-5 mt-lg-3">
+                    <div class="text-left d-flex flex-column pe-lg-5 mt-lg-3 position-relative">
                         <label for="nome_usuario" class="f-texto">Usuário</label>
-                        <input type="text" class="p-2" id="nome_usuario" name="nome_usuario" placeholder="ex: joao_99" required>
+                        <i class="fa-solid fa-user position-absolute" style="top: 40px; left: 8px;"></i>
+                        <input type="text" class="p-2 ps-4" id="nome_usuario" name="nome_usuario" placeholder="ex: joao_99" required>
                     </div>
                 </div>
-                <div class="col-8 col-lg-4 text-left d-flex flex-column ps-lg-5 mt-lg-3">
-                    <label for="nome_completo" class="f-texto" maxlength="100">Nome completo</label>
-                    <input type="text" class="p-2" id="nome_completo" name="nome_completo" placeholder="ex: João Victor Gomes"required>
+                <div class="col-8 col-lg-4 text-left d-flex flex-column ps-lg-5">
+                    <div class="text-left d-flex flex-column pe-lg-6 mt-lg-3 position-relative">
+                        <label for="nome_usuario" class="f-texto">Nome Completo</label>
+                        <i class="fas fa-id-card position-absolute" style="top: 40px; left: 7px;"></i>
+                        <input type="text" class="p-2 ps-4" id="nome_completo" name="nome_completo" placeholder="ex: João Victor Gomes" required>
+                    </div>
                 </div>
             </div>
 
             <div class="row justify-content-center">
                 <div class="input-dados-esquerda col-8 col-lg-4">
-                    <div class="text-left d-flex flex-column pe-lg-5 mt-lg-3">
+                    <div class="text-left d-flex flex-column pe-lg-5 mt-lg-3 position-relative">
                         <label for="senha" class="f-texto">Senha</label>
-                        <input type="password" class="p-2" id="senha" name="senha" placeholder="Insira pelo menos 6 caracteres" required>
+                        <i class="fa-solid fa-key position-absolute" style="top: 40px; left: 8px;"></i>
+                        <input type="password" class="p-2 ps-4" id="senha" name="senha" placeholder="Insira pelo menos 6 caracteres" required>
                     </div>
                 </div>
-                <div class="col-8 col-lg-4 text-left d-flex flex-column ps-lg-5 mt-lg-3">
+                <div class="col-8 col-lg-4 text-left d-flex flex-column ps-lg-5 mt-lg-3 position-relative">
                     <label for="cpf" class="f-texto">CPF</label>
-                    <input type="text" id="cpf" name="cpf" class="p-2" maxlength="14" oninput="mascaraCPF(this)" placeholder="123.456.789-00" required>
+                    <i class="fa-solid fa-file position-absolute" style="top: 40px; left: 57px;"></i>
+                    <input type="text" id="cpf" name="cpf" class="p-2 ps-4" maxlength="14" oninput="mascaraCPF(this)" placeholder="123.456.789-00" required>
 
                     <script>
                     function mascaraCPF(input) {
@@ -78,14 +84,16 @@
 
             <div class="row justify-content-center">
                 <div class="input-dados-esquerda col-8 col-lg-4">
-                    <div class="text-left d-flex flex-column pe-lg-5 mt-lg-3">
+                    <div class="text-left d-flex flex-column pe-lg-5 mt-lg-3 position-relative">
                         <label for="email" class="f-texto" maxlength="100">E-mail</label>
-                        <input type="email" class="p-2" id="email" name="email" placeholder="Usuario@gmail.com"required>
+                        <i class="fa-solid fa-envelope position-absolute" style="top: 40px; left: 8px;"></i>
+                        <input type="email" class="p-2 ps-4" id="email" name="email" placeholder="Usuario@gmail.com"required>
                     </div>
                 </div>
-                <div class="col-8 col-lg-4 text-left d-flex flex-column ps-lg-5 mt-lg-3">
+                <div class="col-8 col-lg-4 text-left d-flex flex-column ps-lg-5 mt-lg-3 position-relative">
                     <label for="telefone" class="f-texto">Telefone</label>
-                    <input type="text" name="telefone" class="p-2" id="telefone" maxlength="15" oninput="mascaraTelefone(this)"  placeholder="(99) 9999-9999" required>
+                    <i class="fa-solid fa-phone position-absolute" style="top: 40px; left: 55px;"></i>
+                    <input type="text" name="telefone" class="p-2 ps-4" id="telefone" maxlength="15" oninput="mascaraTelefone(this)"  placeholder="(99) 9999-9999" required>
 
                     <script>
                         function mascaraTelefone(input) {
