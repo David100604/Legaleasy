@@ -66,31 +66,34 @@
                 </div>
             </div>
 
-            <form action="" class="mb-5">
+            <form action="{{ route('caso.incluir') }}" class="mb-5" method="POST" enctype="multipart/form-data">
+                @csrf
+                
+                <input type="hidden" name="usuario_id" value="{{ $usuario->usuario_id }}">
 
                 <div class="row justify-content-center">
                     <div class="col-8 col-lg-4">
                         <div class="text-left d-flex flex-column pe-lg-5 mt-lg-3">
                             <label for="titulo-caso" class="f-texto">Título</label>
-                            <input type="text" class="p-2" id="titulo-caso" name="titulo-caso" placeholder="ex.: Violência doméstica" required>
+                            <input type="text" class="p-2" id="titulo-caso" name="titulo" placeholder="ex.: Violência doméstica" required>
                         </div>
                         <div class="text-left d-flex flex-column pe-lg-5 mt-lg-3">
                             <label for="descricao" class="f-texto">Descrição</label>
                             <textarea rows="3" class="p-2" name="descricao" id="descricao"></textarea>
                         </div>
                         <div class="text-left d-flex flex-column pe-lg-5 mt-lg-3">
-                            <label for="tipo-caso" class="f-texto">Tipo de caso</label>
-                            <select id="tipo-caso" class="form-select" aria-label="">
+                            <label for="tipoCaso" class="f-texto">Tipo de caso</label>
+                            <select id="tipo-caso" name="tipoCaso" class="form-select" aria-label="">
                                 <option disabled selected class="opcoes">Selecione uma categoria</option>
-                                <option value="advogado" class="opcoes">Administrativo</option>
-                                <option value="cliente" class="opcoes">Ambiental</option>
-                                <option value="advogado" class="opcoes">Civil</option>
-                                <option value="cliente" class="opcoes">Comercial</option>
-                                <option value="advogado" class="opcoes">Constitucional</option>
-                                <option value="cliente" class="opcoes">Contratual</option>
-                                <option value="cliente" class="opcoes">Relações Internacionais</option>
-                                <option value="advogado" class="opcoes">Direitos do Consumidor</option>
-                                <option value="advogado" class="opcoes">Digital</option>
+                                <option value="administrativo" class="opcoes">Administrativo</option>
+                                <option value="ambiental" class="opcoes">Ambiental</option>
+                                <option value="civil" class="opcoes">Civil</option>
+                                <option value="comercial" class="opcoes">Comercial</option>
+                                <option value="constitucional" class="opcoes">Constitucional</option>
+                                <option value="contratual" class="opcoes">Contratual</option>
+                                <option value="relações internacionais" class="opcoes">Relações Internacionais</option>
+                                <option value="direitos do consumidor" class="opcoes">Direitos do Consumidor</option>
+                                <option value="Digital" class="opcoes">Digital</option>
                                 <option value="cliente" class="opcoes"></option>
                                 <option value="advogado" class="opcoes"></option>
                                 <option value="cliente" class="opcoes"></option>
@@ -106,7 +109,7 @@
                         <div class="page">
                             <form action="post">
                         <div class="file-upload-container">
-                            <input type="file" id="file-upload" class="file-input" />
+                            <input type="file" name="arquivo" id="file-upload" class="file-input" />
                             <label for="file-upload" class="file-label">
                             Escolher Arquivo
                             </label>

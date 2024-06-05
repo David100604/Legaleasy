@@ -26,7 +26,7 @@ Route::controller(App\Http\Controllers\UsuarioController::class)->group(function
 
 // endereço
 Route::controller(App\Http\Controllers\EnderecoController::class)->group(function(){
-    Route::post('/cadastro/endereco/incluir', 'store')->name('endereco.incluir');
+    Route::post('/cadastro/endereco', 'store')->name('endereco.incluir');
     Route::get('/cadastro/endereco/{usuario_id}', 'index')->name('endereco');
 });
 
@@ -39,16 +39,13 @@ Route::controller(App\Http\Controllers\DadosCurricularesController::class)->grou
 
 //CASOS
 
-// casos abertos
+Route::controller(App\Http\Controllers\CasoController::class)->group(function(){
+    Route::get('/registrar-caso/{usuario_id}', 'index')->name('registrar-caso');
+    Route::post('/registrar-caso', 'store')->name('caso.incluir');
+});
 
 Route::get('/casos-abertos', function () {
     return view('casos.casos-abertos');
-});
-
-// registrar caso
-
-Route::get('/registrar-caso', function () {
-    return view('casos.registrar-caso');
 });
 
 // exibir caso

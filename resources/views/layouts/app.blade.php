@@ -29,9 +29,8 @@
                 <nav>
                     <ul class="list-unstyled text-center mt-4">
                         <li class="my-3 side-item"><a href="">Dashboard</a></li>
-                        <li class="my-3 side-item"><a href="">Abertos</a></li>
-                        <li class="my-3 side-item"><a href="">Filiados</a></li>
-                        <li class="my-3 side-item"><a href="">Requisições</a></li>
+                        <li class="my-3 side-item"><a href="">Advogados</a></li>
+                        <li class="my-3 side-item"><a href="">Registrar Caso</a></li>
                         <li class="my-3 side-item"><a href="">Perfil</a></li>
                         <li class="my-3 side-item"><a href="">Mensagens</a></li>
                         <li class="my-3 side-item"><a href="">Notificações</a></li>

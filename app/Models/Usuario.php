@@ -25,6 +25,11 @@ class Usuario extends Model
         return $this->hasOne(Endereco::class, 'endereco_id');
     }
 
+    public function caso()
+    {
+        return $this->hasOne(Caso::class, 'caso_id');
+    }
+
     public function dadosCurriculares()
     {
         return $this->hasOne(dadosCurriculares::class, 'advogado_id');
