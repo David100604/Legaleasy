@@ -649,7 +649,7 @@
         </div> --}}
 
         <!-- resources/views/seu-arquivo.blade.php -->
-<div class="col card-margin">
+{{-- <div class="col card-margin">
     <div class="row justify-content-center">
         <div class="card col-10 card-custom-width">
             <div class="card-header card-lista-header text-center">
@@ -715,9 +715,9 @@
             </div>
         </div>
     </div>
-</div>
+</div> --}}
 
-<div class="container mt-4">
+{{-- <div class="container mt-4">
     <div class="row justify-content-center">
         <div class="col-md-5 card-margin">
             <div class="card card-custom-width">
@@ -828,12 +828,12 @@
             </div>
         </div>
     </div>
-</div>
+</div> --}}
 
 
 
         <!-- resources/views/seu-arquivo.blade.php -->
-<div class="col card-margin">
+{{-- <div class="col card-margin">
     <div class="row justify-content-center">
 
     <div class="card col-10 card-custom-width">
@@ -964,9 +964,9 @@
             </div>
         </div>
     </div>
-</div>
+</div> --}}
 
-<div class="container">
+{{-- <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-5 card-margin">
             <div class="card card-custom-width">
@@ -1093,7 +1093,20 @@
             </div>
         </div>
     </div>
-</div>
+</div> --}}
 
+{{-- <div class="col-8 col-lg-4 text-left d-flex flex-column ps-lg-5">
+        <div class="text-left d-flex flex-column pe-lg-6 mt-lg-3 position-relative">
+            <label for="nome_completo" class="f-texto" maxlength="100">Nome completo</label>
+            <i class="fas fa-id-card position-absolute" style="top: 40px; left: 10px;"></i>
+        <input type="text" class="p-2 ps-4" id="nome_completo" name="nome_completo" placeholder="ex: João Victor Gomes" required>
+    </div>
+</div> --}}
+
+{{-- <div class="col-8 col-lg-4 text-left d-flex flex-column ps-lg-5 mt-lg-3 position-relative">
+    <label for="nome_completo" class="f-texto" maxlength="100">Nome completo</label>
+    <i class="fas fa-id-card position-absolute" style="top: 40px; left: 10px;"></i>
+    <input type="text" class="p-2 ps-4" id="nome_completo" name="nome_completo" placeholder="ex: João Victor Gomes" required>
+</div> --}}
 
 @endsection
