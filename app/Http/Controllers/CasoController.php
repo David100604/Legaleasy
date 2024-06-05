@@ -16,17 +16,18 @@ class CasoController extends Controller
 
     public function store(Request $request)
     {
-       
+        $usuario = \App\Models\Usuario::find($request->usuario_id);
+
         $caso = new \App\Models\Caso;
         $caso->titulo = $request->titulo;
         $caso->descricao = $request->descricao;
         $caso->tipoCaso = $request->tipoCaso;
         $caso->arquivo = $this->salvarArquivo($request);
-        $caso->usuario_id = $request->usuario_id;
+        $caso->cliente = $usuario->nome;
 
         $caso->save();
 
-        $usuario = \App\Models\Usuario::find($request->usuario_id);
+        
 
         return Redirect()->route('home-cliente', ['usuario_id' => $usuario -> usuario_id]);
     }
@@ -46,5 +47,11 @@ class CasoController extends Controller
         } else {
             return null;
         }
+    }
+
+    public function casosAbertos(){
+        $casos = \App\Models\Caso::all();
+
+        return view('casos.casos-abertos', ['casos' => $casos]);
     }
 }

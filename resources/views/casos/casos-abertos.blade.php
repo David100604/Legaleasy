@@ -45,84 +45,21 @@
 
         <section class="row justify-content-center">
             <div class="row col-9 justify-content-left">
-                <div class="px-2 col-12 col-xl-4 my-3">
-                    <div class="card f-campos">
-                        <h5 class="card-header text-center">Cód - Título do caso</h5>
-                        <div class="card-body">
-                            <p><span class="nome-campo">Cliente:</span> Gordon Ramsay</p>
-                            <p><span class="nome-campo">Tipo:</span> Direitos do Consumidor</p>
-                            <p><span class="nome-campo">Descrição:</span> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id minus blanditiis sed cupiditate ex quisquam dolores cumque impedit aut error.</p>
-                            <p><span class="nome-campo">Gratificação:</span> R$ XXX,XX</p>
-
+                @foreach($casos as $caso)
+                    @if($caso)
+                    <div class="px-2 col-12 col-xl-4 my-3">
+                        <div class="card f-campos">
+                            <h5 class="card-header text-center">{{ $caso->titulo}}</h5>
+                            <div class="card-body">
+                                <p><span class="nome-campo">Cliente: </span> Gordon Ramsay</p>
+                                <p><span class="nome-campo">Tipo:</span> {{ $caso->tipoCaso }}</p>
+                                <p><span class="nome-campo">Descrição:</span> {{ $caso->descricao }}</p>
+                            </div>
+                            <a href="#" class="btn btn-dark">Visualizar detalhes</a>
                         </div>
-                        <a href="#" class="btn btn-dark">Visualizar detalhes</a>
                     </div>
-                </div>
-                <div class="px-2 col-12 col-xl-4 my-3">
-                    <div class="card f-campos">
-                        <h5 class="card-header text-center">Cód - Título do caso</h5>
-                        <div class="card-body">
-                            <p><span class="nome-campo">Cliente:</span> Gordon Ramsay</p>
-                            <p><span class="nome-campo">Tipo:</span> Direitos do Consumidor</p>
-                            <p><span class="nome-campo">Descrição:</span> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id minus blanditiis sed cupiditate ex quisquam dolores cumque impedit aut error.</p>
-                            <p><span class="nome-campo">Gratificação:</span> R$ XXX,XX</p>
-
-                        </div>
-                        <a href="#" class="btn btn-dark">Visualizar detalhes</a>
-                    </div>
-                </div>
-                <div class="px-2 col-12 col-xl-4 my-3">
-                    <div class="card f-campos">
-                        <h5 class="card-header text-center">Cód - Título do caso</h5>
-                        <div class="card-body">
-                            <p><span class="nome-campo">Cliente:</span> Gordon Ramsay</p>
-                            <p><span class="nome-campo">Tipo:</span> Direitos do Consumidor</p>
-                            <p><span class="nome-campo">Descrição:</span> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id minus blanditiis sed cupiditate ex quisquam dolores cumque impedit aut error.</p>
-                            <p><span class="nome-campo">Gratificação:</span> R$ XXX,XX</p>
-
-                        </div>
-                        <a href="#" class="btn btn-dark">Visualizar detalhes</a>
-                    </div>
-                </div>
-                <div class="px-2 col-12 col-xl-4 my-3">
-                    <div class="card f-campos">
-                        <h5 class="card-header text-center">Cód - Título do caso</h5>
-                        <div class="card-body">
-                            <p><span class="nome-campo">Cliente:</span> Gordon Ramsay</p>
-                            <p><span class="nome-campo">Tipo:</span> Direitos do Consumidor</p>
-                            <p><span class="nome-campo">Descrição:</span> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id minus blanditiis sed cupiditate ex quisquam dolores cumque impedit aut error.</p>
-                            <p><span class="nome-campo">Gratificação:</span> R$ XXX,XX</p>
-
-                        </div>
-                        <a href="#" class="btn btn-dark">Visualizar detalhes</a>
-                    </div>
-                </div>
-                <div class="px-2 col-12 col-xl-4 my-3">
-                    <div class="card f-campos">
-                        <h5 class="card-header text-center">Cód - Título do caso</h5>
-                        <div class="card-body">
-                            <p><span class="nome-campo">Cliente:</span> Gordon Ramsay</p>
-                            <p><span class="nome-campo">Tipo:</span> Direitos do Consumidor</p>
-                            <p><span class="nome-campo">Descrição:</span> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id minus blanditiis sed cupiditate ex quisquam dolores cumque impedit aut error.</p>
-                            <p><span class="nome-campo">Gratificação:</span> R$ XXX,XX</p>
-
-                        </div>
-                        <a href="#" class="btn btn-dark">Visualizar detalhes</a>
-                    </div>
-                </div>
-                <div class="px-2 col-12 col-xl-4 my-3">
-                    <div class="card f-campos">
-                        <h5 class="card-header text-center">Cód - Título do caso</h5>
-                        <div class="card-body">
-                            <p><span class="nome-campo">Cliente:</span> Gordon Ramsay</p>
-                            <p><span class="nome-campo">Tipo:</span> Direitos do Consumidor</p>
-                            <p><span class="nome-campo">Descrição:</span> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id minus blanditiis sed cupiditate ex quisquam dolores cumque impedit aut error.</p>
-                            <p><span class="nome-campo">Gratificação:</span> R$ XXX,XX</p>
-
-                        </div>
-                        <a href="#" class="btn btn-dark">Visualizar detalhes</a>
-                    </div>
-                </div>
+                    @endif
+                @endforeach
 
             </div>
         </section>

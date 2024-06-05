@@ -68,7 +68,7 @@
 
             <form action="{{ route('caso.incluir') }}" class="mb-5" method="POST" enctype="multipart/form-data">
                 @csrf
-                
+
                 <input type="hidden" name="usuario_id" value="{{ $usuario->usuario_id }}">
 
                 <div class="row justify-content-center">
@@ -85,14 +85,14 @@
                             <label for="tipoCaso" class="f-texto">Tipo de caso</label>
                             <select id="tipo-caso" name="tipoCaso" class="form-select" aria-label="">
                                 <option disabled selected class="opcoes">Selecione uma categoria</option>
-                                <option value="administrativo" class="opcoes">Administrativo</option>
-                                <option value="ambiental" class="opcoes">Ambiental</option>
-                                <option value="civil" class="opcoes">Civil</option>
-                                <option value="comercial" class="opcoes">Comercial</option>
-                                <option value="constitucional" class="opcoes">Constitucional</option>
-                                <option value="contratual" class="opcoes">Contratual</option>
-                                <option value="relações internacionais" class="opcoes">Relações Internacionais</option>
-                                <option value="direitos do consumidor" class="opcoes">Direitos do Consumidor</option>
+                                <option value="Administrativo" class="opcoes">Administrativo</option>
+                                <option value="Ambiental" class="opcoes">Ambiental</option>
+                                <option value="Civil" class="opcoes">Civil</option>
+                                <option value="Comercial" class="opcoes">Comercial</option>
+                                <option value="Constitucional" class="opcoes">Constitucional</option>
+                                <option value="Contratual" class="opcoes">Contratual</option>
+                                <option value="Relações Internacionais" class="opcoes">Relações Internacionais</option>
+                                <option value="Direitos do Consumidor" class="opcoes">Direitos do Consumidor</option>
                                 <option value="Digital" class="opcoes">Digital</option>
                                 <option value="cliente" class="opcoes"></option>
                                 <option value="advogado" class="opcoes"></option>

@@ -42,10 +42,7 @@ Route::controller(App\Http\Controllers\DadosCurricularesController::class)->grou
 Route::controller(App\Http\Controllers\CasoController::class)->group(function(){
     Route::get('/registrar-caso/{usuario_id}', 'index')->name('registrar-caso');
     Route::post('/registrar-caso', 'store')->name('caso.incluir');
-});
-
-Route::get('/casos-abertos', function () {
-    return view('casos.casos-abertos');
+    Route::get('/casos-abertos', 'casosAbertos')->name('casos-abertos');
 });
 
 // exibir caso
