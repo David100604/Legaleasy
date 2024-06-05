@@ -1,16 +1,14 @@
 <?php
-
+use App\Http\Controllers\MessageController;
 use Illuminate\Support\Facades\Route;
 
 // HOMEPAGES
 
-Route::get('/home-cliente', function () {
-    return view('home-pages.home-cliente');
-})->name('home-cliente');
+Route::controller(App\Http\Controllers\HomeController::class)->group(function() {
+    Route::get('/home-advogado/{usuario_id}', 'advogado')->name('home-advogado');
+    Route::get('/home/{usuario_id}', 'cliente')->name('home-cliente');
+});
 
-Route::get('/home-advogado', function () {
-    return view('home-pages.homepage-advogado');
-})->name('home-advogado');
 
 // CADASTROS
 
@@ -61,8 +59,10 @@ Route::get('/caso', function () {
 
 // LOGIN
 
-Route::get('/login', function () {
-    return view('cadastro.login');
+Route::controller(App\Http\Controllers\LoginController::class)->group(function() {
+    Route::get('/login', 'index')->name('login.index');
+    Route::post('/login', 'store')->name('login.store');
+    Route::get('/logout', 'destroy')->name('login.destroy');
 });
 
 Route::get('/teste', function () {
@@ -83,7 +83,7 @@ Route::get('/', function () {
     return view('home-pages.tela-inicial');
 })->name('home');
 
-// PERFIL 
+// PERFIL
 
 Route::get('/perfil-advogado', function () {
     return view('perfil.perfil-advogado');
@@ -92,3 +92,6 @@ Route::get('/perfil-advogado', function () {
 Route::get('/perfil-cliente', function () {
     return view('perfil.perfil-cliente');
 })->name('perfil-cliente');
+
+use App\Http\Controllers\ChatController;
+Route::get('/chat', [ChatController::class, 'index'])->name('chat');

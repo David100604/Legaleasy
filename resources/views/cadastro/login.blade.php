@@ -18,19 +18,24 @@
             </div>
         </div>
 
-        <div id="inputs-cadastro" class="row justify-content-center mt-1">
-            <div class="col-5 col-md-4 text-left d-flex flex-column">
-                <label for="tipo-conta" class="f-texto">Nome de usuário</label>
-                <input type="text" class="p-2" placeholder="Insira seu nome de usuário">
+        <form action="{{ route('login.store') }}" method="post">
+            @csrf
+            <div id="inputs-cadastro" class="row justify-content-center mt-1">
+                <div class="col-5 col-md-4 text-left d-flex flex-column">
+                    <label for="email" class="f-texto">Email</label>
+                    <input type="text" name="email" class="p-2" placeholder="Insira seu email">
+                </div>
             </div>
-        </div>
 
-        <div id="inputs-cadastro" class="row justify-content-center mt-3">
-            <div class="col-5 col-md-4 text-left d-flex flex-column">
-                <label for="tipo-conta" class="f-texto">Senha</label>
-                <input type="password" class="p-2" placeholder="Insira sua senha">
+            <div id="inputs-cadastro" class="row justify-content-center mt-3">
+                <div class="col-5 col-md-4 text-left d-flex flex-column">
+                    <label for="senha" class="f-texto">Senha</label>
+                    <input type="password" name="senha" class="p-2" placeholder="Insira sua senha">
+                </div>
             </div>
-        </div>
+
+            @include('componentes.botoes')
+        </form>
 
     </section>
 

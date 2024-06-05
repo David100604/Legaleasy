@@ -39,6 +39,7 @@
                 </nav>
             </div>
             <div class="row justify-content-center">
+                <a href="{{ route('login.destroy') }}" class="btn btn-azul">Sair</a>
                 <img src="../images/linha-sidebar.png" alt="" class="self-align-center col-10 col-lg-10 d-none d-md-block mb-4">
             </div>
         </div> 

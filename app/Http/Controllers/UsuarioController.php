@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Crypt;
 
 class UsuarioController extends Controller
 {
@@ -27,7 +28,7 @@ class UsuarioController extends Controller
         $dados = new \App\Models\Usuario;
         $dados->nomeUsuario = $request->nome_usuario;
         $dados->nome = $request->nome_completo;
-        $dados->senha = $request->senha;
+        $dados->senha = Crypt::encryptString($request->senha);
         $dados->cpf = $request->cpf;
         $dados->email = $request->email;
         $dados->telefone = $request->telefone;

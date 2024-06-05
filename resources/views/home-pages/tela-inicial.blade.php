@@ -35,7 +35,7 @@
                             <a class="nav-link active" href="../cadastro">Criar Conta</a>
                           </li>
                           <li class="nav-item">
-                            <a class="nav-link" href="../login">Fazer Login</a>
+                            <a class="nav-link" href="{{ route('login.index') }}">Fazer Login</a>
                           </li>
                         </ul>
                       </div>
