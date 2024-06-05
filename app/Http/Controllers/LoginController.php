@@ -22,13 +22,11 @@ class LoginController extends Controller
 
         // Imprima os detalhes do usuário (você pode modificar essa parte conforme necessário)
         if ($usuario) {
-            $t = \App\Models\TipoConta::find($usuario->tipoConta_id);
-            $tipoConta = $t->tipoConta;
             $senha = Crypt::decryptString($usuario->senha);
             if ($senha == $request->senha){
-                if ($tipoConta == 'Cliente'){
+                if ($usuario->tipoConta == 'Cliente'){
                     return Redirect()->route('home-cliente', ['usuario_id' => $usuario->usuario_id]);
-                } else if ($tipoConta == 'Advogado'){
+                } else if ($usuario->tipoConta == 'Advogado'){
                     return Redirect()->route('home-advogado', [$usuario]); 
                 }
             } else {

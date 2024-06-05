@@ -25,6 +25,8 @@ class UsuarioController extends Controller
     public function store(Request $request)
     {
 
+        $tipoConta = \App\Models\TipoConta::find($request->tipoConta_id);
+
         $dados = new \App\Models\Usuario;
         $dados->nomeUsuario = $request->nome_usuario;
         $dados->nome = $request->nome_completo;
@@ -33,7 +35,7 @@ class UsuarioController extends Controller
         $dados->email = $request->email;
         $dados->telefone = $request->telefone;
 
-        $dados->tipoConta_id = $request->tipoConta_id;
+        $dados->tipoConta = $tipoConta->tipoConta;
 
         $dados->save();
 

@@ -51,7 +51,7 @@
                         <div class="card f-campos">
                             <h5 class="card-header text-center">{{ $caso->titulo}}</h5>
                             <div class="card-body">
-                                <p><span class="nome-campo">Cliente: </span> Gordon Ramsay</p>
+                                <p><span class="nome-campo">Cliente:</span> {{ $caso->cliente}}</p>
                                 <p><span class="nome-campo">Tipo:</span> {{ $caso->tipoCaso }}</p>
                                 <p><span class="nome-campo">Descrição:</span> {{ $caso->descricao }}</p>
                             </div>

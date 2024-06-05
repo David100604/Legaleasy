@@ -26,16 +26,28 @@
                 <img src="../images/linha-sidebar.png" alt="" class="d-none d-md-block col-11 col-lg-10 mt-2">
             </div>
             <div class="mt-2" style="height: 80%;">
-                <nav>
-                    <ul class="list-unstyled text-center mt-4">
-                        <li class="my-3 side-item"><a href="">Dashboard</a></li>
-                        <li class="my-3 side-item"><a href="">Advogados</a></li>
-                        <li class="my-3 side-item"><a href="">Registrar Caso</a></li>
-                        <li class="my-3 side-item"><a href="">Perfil</a></li>
-                        <li class="my-3 side-item"><a href="">Mensagens</a></li>
-                        <li class="my-3 side-item"><a href="">Notificações</a></li>
-                    </ul>
-                </nav>
+                @if($usuario->tipoConta == 'Cliente')
+                    <nav>
+                        <ul class="list-unstyled text-center mt-4">
+                            <li class="my-3 side-item"><a href="">Dashboard</a></li>
+                            <li class="my-3 side-item"><a href="">Advogados</a></li>
+                            <li class="my-3 side-item"><a href="{{ route('registrar-caso', ['usuario_id' => $usuario->usuario_id]) }}">Registrar Caso</a></li>
+                            <li class="my-3 side-item"><a href="">Perfil</a></li>
+                            <li class="my-3 side-item"><a href="">Mensagens</a></li>
+                            <li class="my-3 side-item"><a href="">Notificações</a></li>
+                        </ul>
+                    </nav>
+                @elseif ($usuario->tipoConta == 'Advogado')
+                    <nav>
+                        <ul class="list-unstyled text-center mt-4">
+                            <li class="my-3 side-item"><a href="">Dashboard</a></li>
+                            <li class="my-3 side-item"><a href="{{ route('casos-abertos', ['usuario_id' => $usuario->usuario_id]) }}">Casos Abertos</a></li>
+                            <li class="my-3 side-item"><a href="">Perfil</a></li>
+                            <li class="my-3 side-item"><a href="">Mensagens</a></li>
+                            <li class="my-3 side-item"><a href="">Notificações</a></li>
+                        </ul>
+                    </nav>
+                @endif
             </div>
             <div class="row justify-content-center">
                 <a href="{{ route('login.destroy') }}" class="btn btn-azul">Sair</a>
