@@ -25,9 +25,9 @@
                 <img src="../images/Escolhida-Capa.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                     <button type="button" class="btn btn-primary">
-                        <a href="https://www.linkedin.com/" style="color: white; text-decoration: none;">Saiba mais</a>
+                        <a href="https://agenciapara.com.br/noticia/56691/pge-inicia-inscricao-de-trabalhos-academicos-para-o-3-simposio-de-direito-ambiental" style="color: white; text-decoration: none;">Saiba mais</a>
                     </button>
-                    <p class="custom-carousel-text">Abertura da X Conferência Estadual da Advocacia Sergipana é marcada por discursos sobre os novos tempos da advocacia e homenagens</p>
+                    <p class="custom-carousel-text">PGE inicia inscrição de trabalhos acadêmicos para o 3º Simpósio de Direito Ambiental</p>
                 </div>
             </div>
 
@@ -35,9 +35,9 @@
                 <img src="../images/Escolhida-Capa.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                     <button type="button" class="btn btn-primary">
-                        <a href="https://www.linkedin.com/" style="color: white; text-decoration: none;">Saiba mais</a>
+                        <a href="https://www.tjsc.jus.br/web/imprensa/-/inscricao-para-habilitacao-em-mestrado-profissional-de-direito-segue-aberta-ate-sexta-?redirect=%2Fweb%2Fimprensa%2Fnoticias" style="color: white; text-decoration: none;">Saiba mais</a>
                     </button>
-                    <p class="custom-carousel-text">Abertura da X Conferência Estadual da Advocacia Sergipana é marcada por discursos sobre os novos tempos da advocacia e homenagens</p>
+                    <p class="custom-carousel-text">Inscrição para habilitação em mestrado profissional de Direito segue aberta até sexta</p>
                 </div>
             </div>
 
@@ -45,9 +45,9 @@
                 <img src="../images/Escolhida-Capa.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                     <button type="button" class="btn btn-primary">
-                        <a href="https://www.linkedin.com/" style="color: white; text-decoration: none;">Saiba mais</a>
+                        <a href="https://www.correiodopovo.com.br/not%C3%ADcias/mundo/mcdonald-s-perde-direito-ao-nome-big-mac-para-hamb%C3%BArgueres-de-frango-na-ue-1.1500818" style="color: white; text-decoration: none;">Saiba mais</a>
                     </button>
-                    <p class="custom-carousel-text">Abertura da X Conferência Estadual da Advocacia Sergipana é marcada por discursos sobre os novos tempos da advocacia e homenagens</p>
+                    <p class="custom-carousel-text">McDonald's perde direito ao nome “Big Mac” para hambúrgueres de frango na UE</p>
                 </div>
             </div>
 
@@ -55,9 +55,9 @@
                 <img src="../images/Escolhida-Capa.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                     <button type="button" class="btn btn-primary">
-                        <a href="https://www.linkedin.com/" style="color: white; text-decoration: none;">Saiba mais</a>
+                        <a href="https://direito.usp.br/noticia/5096795e14e2-abertas-as-inscricoes-para-titulos-de-livre-docente-na-faculdade-de-direito-da-usp-" style="color: white; text-decoration: none;">Saiba mais</a>
                     </button>
-                    <p class="custom-carousel-text">Abertura da X Conferência Estadual da Advocacia Sergipana é marcada por discursos sobre os novos tempos da advocacia e homenagens</p>
+                    <p class="custom-carousel-text">Abertas as inscrições para títulos de Livre Docente na Faculdade de Direito da USP</p>
                 </div>
             </div>
         </div>
