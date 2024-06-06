@@ -5,9 +5,9 @@
     <div class="text-center my-4">
     </div>
             <div class="row justify-content-center">
-                <img class="linha-branca align-self-center col-xl-4 d-none d-xl-block" src="../images/linha-branca.png" alt="">
+                <img class="linha-branca align-self-center col-xl-4 d-none d-xl-block" src="{{ asset('images/linha-branca.png')}}" alt="">
                 <h1 id="titulo" class="titulo col-xl-4 text-center">TITULO DO CASO</h1>
-                <img class="linha-branca align-self-center col-xl-4 d-none d-xl-block" src="../images/linha-branca-direita.png" alt="">
+                <img class="linha-branca align-self-center col-xl-4 d-none d-xl-block" src="{{ asset('images/linha-branca-direita.png')}}" alt="">
             </div>
         <div class="case-details ">
             <p><strong>Código do caso:</strong> #000005</p>

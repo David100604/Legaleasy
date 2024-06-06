@@ -22,9 +22,9 @@
         
         <div id="nav" class="nav position-fixed col-9 col-md-3 col-lg-2 collapse d-md-block">
             <div class="row justify-content-center">
-                <img src="../images/sidebar-logo.png" alt="" class="d-none d-md-block col-10 col-lg-8 mt-4">
-                <img src="../images/linha-sidebar.png" alt="" class="d-none d-md-block col-11 col-lg-10 mt-2">
-            </div>
+                <img src="{{ asset('images/sidebar-logo.png') }}" alt="" class="d-none d-md-block col-10 col-lg-8 mt-4">
+                <img src="{{ asset('images/linha-sidebar.png') }}" alt="" class="d-none d-md-block col-11 col-lg-10 mt-2">
+            </div> 
             <div class="mt-2" style="height: 80%;">
                 @if($usuario->tipoConta == 'Cliente')
                     <nav>
@@ -51,16 +51,16 @@
             </div>
             <div class="row justify-content-center">
                 <a href="{{ route('login.destroy') }}" class="btn btn-azul">Sair</a>
-                <img src="../images/linha-sidebar.png" alt="" class="self-align-center col-10 col-lg-10 d-none d-md-block mb-4">
+                <img src="{{ asset('images/linha-sidebar.png') }}" alt="" class="self-align-center col-10 col-lg-10 d-none d-md-block mb-4">
             </div>
         </div> 
 
         <div class="base-container col-12 col-md-9 col-lg-10 offset-lg-2 offset-md-3" >
             <header id="header-cadastros" class="d-flex flex-column mt-4" >
 
-                <img id="logo" class="align-self-center" src="../images/logo.png" alt="">
+                <img id="logo" class="align-self-center" src="{{ asset('images/logo.png')}}" alt="">
 
-                <img id="linha-sup" class="align-self-center" src="../images/linha-sup.png" alt="">
+                <img id="linha-sup" class="align-self-center" src="{{ asset('images/linha-sup.png')}}" alt="">
 
             </header>
 
