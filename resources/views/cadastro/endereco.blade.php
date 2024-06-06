@@ -3,6 +3,7 @@
 @section('content')
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
 
 <section class="d-flex flex-column justify-content-center">
     <div class="row justify-content-center">
@@ -54,7 +55,23 @@
                                             document.getElementById('cidade').value = data.localidade;
                                             document.getElementById('uf').value = data.uf;
                                         } else {
-                                            alert('CEP não encontrado.');
+                                            Swal.fire({
+                                            title: "CEP inválido",
+                                            showClass: {
+                                                popup: `
+                                                animate__animated
+                                                animate__fadeInUp
+                                                animate__faster
+                                                `
+                                            },
+                                            hideClass: {
+                                                popup: `
+                                                animate__animated
+                                                animate__fadeOutDown
+                                                animate__faster
+                                                `
+                                            }
+                                            });
                                         }
                                     })
                                     .catch(error => {
@@ -82,7 +99,6 @@
 
                     <script>
                         function mascaraUF(input) {
-                            // Remove caracteres não alfabéticos e converte para maiúsculas
                             input.value = input.value.replace(/[^A-Za-z]/g, '').toUpperCase();
                         }
                     </script>
@@ -95,7 +111,7 @@
 
                 <script>
                     function mascaraNUM(input) {
-                        let value = input.value.replace(/\D/g, ''); // Remove caracteres não numéricos
+                        let value = input.value.replace(/\D/g, ''); 
                         input.value = value;
                     }
                 </script>
@@ -136,5 +152,7 @@
 
     </form>
 </section>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 @endsection
