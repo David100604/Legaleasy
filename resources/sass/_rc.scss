@@ -46,10 +46,56 @@
     margin: 5px 0;
 }
 
-.documents .card {
+.documents{
+
+    justify-content: center;
     margin-bottom: 20px;
 }
 
+.card-btn {
+    display:flex;
+}
+
+
+.actions {
+    display: flex;
+    justify-content: center;
+}
 .actions .btn {
-    margin-right: 10px;
+    margin: 0 5px;
+}
+
+.btn-branca{
+    background: #ffff;   
+}
+
+.btn-branca:hover{
+    background: #f1f1f1;   
+}
+
+
+.case-details {
+    margin-top: 20px;
+    padding: 50px;
+}
+.case-details p {
+    margin: 10px 0;
+}
+.case-details p strong {
+    color: #134074;
+    font-family: 'Times New Roman', Times, serif;   
+    font-size: 17px;
+}
+.case-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #003366;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.case-details .description {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f9f9f9;
 }
