@@ -55,7 +55,7 @@
                                 <p><span class="nome-campo">Tipo:</span> {{ $caso->tipoCaso }}</p>
                                 <p><span class="nome-campo">Descrição:</span> {{ $caso->descricao }}</p>
                             </div>
-                            <a href="#" class="btn btn-dark">Visualizar detalhes</a>
+                            <a href="{{ route('caso', ['caso_id' => $caso->caso_id, 'usuario_id' => $usuario->usuario_id]) }}" class="btn btn-dark">Visualizar detalhes</a>
                         </div>
                     </div>
                     @endif
