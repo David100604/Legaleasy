@@ -36,9 +36,9 @@
 
                     <script>
                         function mascaraCEP(input) {
-                            let value = input.value.replace(/\D/g, ''); // Remove caracteres não numéricos
+                            let value = input.value.replace(/\D/g, ''); 
                             if (value.length > 5) {
-                                value = value.replace(/^(\d{5})(\d{1,3})/, '$1-$2'); // Adiciona o hífen após o quinto dígito
+                                value = value.replace(/^(\d{5})(\d{1,3})/, '$1-$2'); 
                             }
                             input.value = value;
                         }
@@ -55,23 +55,7 @@
                                             document.getElementById('cidade').value = data.localidade;
                                             document.getElementById('uf').value = data.uf;
                                         } else {
-                                            Swal.fire({
-                                            title: "CEP inválido",
-                                            showClass: {
-                                                popup: `
-                                                animate__animated
-                                                animate__fadeInUp
-                                                animate__faster
-                                                `
-                                            },
-                                            hideClass: {
-                                                popup: `
-                                                animate__animated
-                                                animate__fadeOutDown
-                                                animate__faster
-                                                `
-                                            }
-                                            });
+                                            Swal.fire("O CEP inserido não foi encontrado! Verifique e tente novamente.");
                                         }
                                     })
                                     .catch(error => {
