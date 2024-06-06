@@ -57,10 +57,11 @@ class CasoController extends Controller
         return view('casos.casos-abertos', ['casos' => $casos], compact('usuario'));
     }
 
-    public function caso($usuario_id){
+    public function caso($caso_id, $usuario_id){
 
         $usuario = \App\Models\Usuario::find($usuario_id);
+        $caso = \App\Models\Caso::find($caso_id);
 
-        return view('casos.caso', compact('usuario'));
+        return view('casos.caso', compact('caso'), compact('usuario'));
     }
 }
