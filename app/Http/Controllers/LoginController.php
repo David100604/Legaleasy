@@ -22,15 +22,24 @@ class LoginController extends Controller
 
         // Imprima os detalhes do usuário (você pode modificar essa parte conforme necessário)
         if ($usuario) {
-            $senha = Crypt::decryptString($usuario->senha);
-            if ($senha == $request->senha){
-                if ($usuario->tipoConta == 'Cliente'){
-                    return Redirect()->route('home-cliente', ['usuario_id' => $usuario->usuario_id]);
-                } else if ($usuario->tipoConta == 'Advogado'){
-                    return Redirect()->route('home-advogado', [$usuario]); 
+            if ($usuario->tipoConta == 'Administrador'){
+                if ($usuario->senha == $request->senha){
+                return Redirect()->route('home-cliente', ['usuario_id' => $usuario->usuario_id]);
+                } else {
+                    echo "senha incorreta";
                 }
-            } else {
-                echo "senha incorreta";
+            }
+            else{
+                $senha = Crypt::decryptString($usuario->senha);
+                if ($senha == $request->senha){
+                    if ($usuario->tipoConta == 'Cliente'){
+                        return Redirect()->route('home-cliente', ['usuario_id' => $usuario->usuario_id]);
+                    } else if ($usuario->tipoConta == 'Advogado'){
+                        return Redirect()->route('home-advogado', [$usuario]); 
+                    } 
+                } else {
+                    echo "senha incorreta";
+                }
             }
         } else {
             echo "Nenhum usuário encontrado com o email $email\n";
