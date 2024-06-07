@@ -28,12 +28,12 @@
             <div class="mt-2" style="height: 80%;">
                 <nav>
                     <ul class="list-unstyled text-center mt-4">
-                        <li class="my-3 side-item">Dashboard</li>
-                        <li class="my-3 side-item">Casos Abertos</li>
-                        <li class="my-3 side-item">Filiados</li>
-                        <li class="my-3 side-item">Requisições</li>
-                        <li class="my-3 side-item">Configurações</li>
-                        <li class="my-3 side-item">Suporte</li>
+                        <li class="my-3 side-item"><a href="{{ route('home-cliente', ['usuario_id' => $usuario->usuario_id]) }}">Home</a></li>
+                        <li class="my-3 side-item"><a href="{{ route('advogados.index', ['usuario_id' => $usuario->usuario_id]) }}">Advogados</a></li>
+                        <li class="my-3 side-item"><a href="{{ route('registrar-caso', ['usuario_id' => $usuario->usuario_id]) }}">Registrar Caso</a></li>
+                        <li class="my-3 side-item"><a href="">Perfil</a></li>
+                        <li class="my-3 side-item"><a href="">Mensagens</a></li>
+                        <li class="my-3 side-item"><a href="">Notificações</a></li>
                     </ul>
                 </nav>
             </div>

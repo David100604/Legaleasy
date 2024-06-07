@@ -29,8 +29,8 @@
                 @if($usuario->tipoConta == 'Cliente')
                     <nav>
                         <ul class="list-unstyled text-center mt-4">
-                            <li class="my-3 side-item"><a href="">Dashboard</a></li>
-                            <li class="my-3 side-item"><a href="">Advogados</a></li>
+                            <li class="my-3 side-item"><a href="{{ route('home-cliente', ['usuario_id' => $usuario->usuario_id]) }}">Home</a></li>
+                            <li class="my-3 side-item"><a href="{{ route('advogados.index', ['usuario_id' => $usuario->usuario_id]) }}">Advogados</a></li>
                             <li class="my-3 side-item"><a href="{{ route('registrar-caso', ['usuario_id' => $usuario->usuario_id]) }}">Registrar Caso</a></li>
                             <li class="my-3 side-item"><a href="">Perfil</a></li>
                             <li class="my-3 side-item"><a href="">Mensagens</a></li>
@@ -40,7 +40,7 @@
                 @elseif ($usuario->tipoConta == 'Advogado')
                     <nav>
                         <ul class="list-unstyled text-center mt-4">
-                            <li class="my-3 side-item"><a href="">Dashboard</a></li>
+                            <li class="my-3 side-item"><a href="{{ route('home-advogado', ['usuario_id' => $usuario->usuario_id]) }}">Home</a></li>
                             <li class="my-3 side-item"><a href="{{ route('casos-abertos', ['usuario_id' => $usuario->usuario_id]) }}">Casos Abertos</a></li>
                             <li class="my-3 side-item"><a href="">Perfil</a></li>
                             <li class="my-3 side-item"><a href="">Mensagens</a></li>

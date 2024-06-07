@@ -62,10 +62,10 @@ Route::get('/teste', function () {
 
 // lista advogados
 
-Route::get('/advogados', function () {
-    return view('advogados.advogados');
+Route::controller(App\Http\Controllers\AdvogadoController::class)->group(function() {
+    Route::get('/advogados/{usuario_id}', 'index')->name('advogados.index');
 });
-
+ 
 // TELA INICIAL
 
 Route::get('/', function () {
