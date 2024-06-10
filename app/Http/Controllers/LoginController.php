@@ -13,7 +13,7 @@ class LoginController extends Controller
     }
 
     public function store(Request $request){
-        
+
 
         $email = $request->email;
 
@@ -35,8 +35,8 @@ class LoginController extends Controller
                     if ($usuario->tipoConta == 'Cliente'){
                         return Redirect()->route('home-cliente', ['usuario_id' => $usuario->usuario_id]);
                     } else if ($usuario->tipoConta == 'Advogado'){
-                        return Redirect()->route('home-advogado', [$usuario]); 
-                    } 
+                        return Redirect()->route('home-advogado', [$usuario]);
+                    }
                 } else {
                     echo "senha incorreta";
                 }
@@ -47,7 +47,7 @@ class LoginController extends Controller
     }
 
     public function destroy(){
-        return Redirect()->route('home'); 
+        return Redirect()->route('home');
     }
 
 
