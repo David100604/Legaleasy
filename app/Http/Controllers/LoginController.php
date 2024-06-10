@@ -50,5 +50,4 @@ class LoginController extends Controller
         return Redirect()->route('home');
     }
 
-
 }

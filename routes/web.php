@@ -9,6 +9,7 @@ Route::controller(App\Http\Controllers\HomeController::class)->group(function() 
     Route::get('/home/{usuario_id}', 'cliente')->name('home-cliente');
 });
 
+Route::get('/download/{filename}', [App\Http\Controllers\FileController::class, 'download'])->name('file.download');
 
 // CADASTROS
 
