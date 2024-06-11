@@ -9,6 +9,7 @@ Route::controller(App\Http\Controllers\HomeController::class)->group(function() 
     Route::get('/home/{usuario_id}', 'cliente')->name('home-cliente');
 });
 
+Route::get('/download/{filename}', [App\Http\Controllers\FileController::class, 'download'])->name('file.download');
 
 // CADASTROS
 
@@ -44,6 +45,7 @@ Route::controller(App\Http\Controllers\CasoController::class)->group(function(){
     Route::post('/registrar-caso', 'store')->name('caso.incluir');
     Route::get('/casos-abertos/{usuario_id}', 'casosAbertos')->name('casos-abertos');
     Route::get('/caso/{caso_id}/{usuario_id}', 'caso')->name('caso');
+    Route::post('/caso/pesquisar/{usuario_id}', 'search')->name('caso.pesquisar');
 });
 
 // LOGIN
@@ -62,10 +64,10 @@ Route::get('/teste', function () {
 
 // lista advogados
 
-Route::get('/advogados', function () {
-    return view('advogados.advogados');
+Route::controller(App\Http\Controllers\AdvogadoController::class)->group(function() {
+    Route::get('/advogados/{usuario_id}', 'index')->name('advogados.index');
 });
-
+ 
 // TELA INICIAL
 
 Route::get('/', function () {

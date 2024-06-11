@@ -39,7 +39,7 @@
                         </center>
                         <div class="row justify-content-center">
                             
-                            <a href="#" class="btn btn-secondary col-9" download>Fazer download</a>
+                            <a href="{{ route('file.download', ['filename' => $caso->arquivo]) }}" class="btn btn-secondary col-9">Fazer download</a>
                         </div>
                     </div>
                 </div>

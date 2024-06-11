@@ -27,7 +27,7 @@ class UsuarioController extends Controller
         $validatedData = $request->validate([
             'cpf' => ['required', 'string', 'size:14', 'unique:usuarios,cpf'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:usuarios,email'],
-            'telefone' => ['required', 'string', 'regex:/^\(?\d{2}\)?[\s-]?[\s9]?\d{4}-?\d{4}$/']
+            'telefone' => ['required', 'string']
         ], [
             'cpf.required' => 'O CPF é obrigatório.',
             'cpf.size' => 'O CPF deve ter exatamente 11 dígitos.',
@@ -38,7 +38,7 @@ class UsuarioController extends Controller
             'email.unique' => 'Este email já está cadastrado.',
             'telefone.required' => 'O telefone é obrigatório.',
         ]);
-        
+
         $tipoConta = \App\Models\TipoConta::find($request->tipoConta_id);
 
         $dados = new \App\Models\Usuario;
