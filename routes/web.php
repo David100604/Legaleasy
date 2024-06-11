@@ -82,5 +82,13 @@ Route::get('/perfil-cliente', function () {
     return view('perfil.perfil-cliente');
 })->name('perfil-cliente');
 
+Route::get('/perfil-advogado-cliente', function () {
+    return view('perfil.visto-pelo.advogado');
+})->name('advogado');
+
+Route::get('/perfil-cliente-advogado', function () {
+    return view('perfil.visto-pelo.cliente');
+})->name('cliente');
+
 use App\Http\Controllers\ChatController;
 Route::get('/chat', [ChatController::class, 'index'])->name('chat');
