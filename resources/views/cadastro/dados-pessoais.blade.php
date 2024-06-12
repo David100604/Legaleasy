@@ -31,7 +31,7 @@
         </div>
 
         <form action="{{ route('usuario.incluir') }}" class="mt-lg-5" method="POST">
-            @csrf   
+            @csrf
             <input type="hidden" name="tipoConta_id" value="{{ $tipoConta->tipoConta_id }}">
 
             <div class="row justify-content-center">
@@ -40,6 +40,9 @@
                         <label for="nome_usuario" class="f-texto">Usuário</label>
                         <i class="fa-solid fa-user position-absolute" style="top: 40px; left: 8px;"></i>
                         <input type="text" class="p-2 ps-4" id="nome_usuario" name="nome_usuario" placeholder="ex: joao_99" required>
+                        @error('nome_usuario')
+                            <div>{{ $message }}</div>
+                        @enderror
                     </div>
                 </div>
                 <div class="col-8 col-lg-4 text-left d-flex flex-column ps-lg-5">
@@ -47,6 +50,9 @@
                         <label for="nome_usuario" class="f-texto">Nome Completo</label>
                         <i class="fas fa-id-card position-absolute" style="top: 40px; left: 7px;"></i>
                         <input type="text" class="p-2 ps-4" id="nome_completo" name="nome_completo" placeholder="ex: João Victor Gomes" required>
+                        @error('nome_completo')
+                            <div>{{ $message }}</div>
+                        @enderror
                     </div>
                 </div>
             </div>
