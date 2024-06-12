@@ -22,6 +22,9 @@
                         </p>
                     </div>
                 </div>
+                <div class="col-md-6 d-flex justify-content-center align-items-center">
+                    <button type="button" class="btn btn-outline-primary">Enviar mensagem</button>
+                </div>
             </div>
         </div>
         <div class="row">
