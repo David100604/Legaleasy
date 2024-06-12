@@ -62,6 +62,14 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="col-md-6 d-flex justify-content-center align-items-center">
+                <button type="button" class="btn btn-outline-primary">Enviar mensagem</button>
+            </div>
+        </div>
+    </div>
+        <div class="row">
+            <div class="col-md-6">
                 <div class="card mb-4">
                     <div class="card-header">Certificados</div>
                     <div class="card-body">
@@ -85,8 +93,10 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="col-md-6">
                 <div class="card mb-4">
-                    <div class="card-header">Histórico de casos (finalizados)</div>
+                    <div class="card-header">Casos (finalizados)</div>
                     <div class="card-body">
                         <div class="row">
                             <div class="col-md-6">
