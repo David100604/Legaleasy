@@ -2,6 +2,8 @@
 
 @section('content')
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
     <section class="d-flex flex-column justify-content-center">
 
         <div class="row justify-content-center">
@@ -21,16 +23,18 @@
         <form action="{{ route('login.store') }}" method="post">
             @csrf
             <div id="inputs-cadastro" class="row justify-content-center mt-1">
-                <div class="col-5 col-md-4 text-left d-flex flex-column">
+                <div class="col-5 col-md-4 text-left d-flex flex-column position-relative">
                     <label for="email" class="f-texto">Email</label>
-                    <input type="text" name="email" class="p-2" placeholder="Insira seu email">
+                    <i class="fa-solid fa-envelope position-absolute" style="top: 40px; left: 8px;"></i>
+                    <input type="text" name="email" class="p-2 ps-4" placeholder="Insira seu email">
                 </div>
             </div>
 
             <div id="inputs-cadastro" class="row justify-content-center mt-3">
-                <div class="col-5 col-md-4 text-left d-flex flex-column">
+                <div class="col-5 col-md-4 text-left d-flex flex-column position-relative">
                     <label for="senha" class="f-texto">Senha</label>
-                    <input type="password" name="senha" class="p-2" placeholder="Insira sua senha">
+                    <i class="fa-solid fa-key position-absolute" style="top: 40px; left: 8px;"></i>
+                    <input type="password" name="senha" class="p-2 ps-4" placeholder="Insira sua senha">
                 </div>
             </div>
 
