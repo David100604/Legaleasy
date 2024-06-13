@@ -30,7 +30,7 @@
         <div class="row justify-content-center">
             <div class="input-dados-esquerda col-8 col-lg-4">
                 <div class="text-left d-flex flex-column pe-lg-5 mt-lg-3 position-relative">
-                    <label for="cep" class="f-texto">CEP</label>
+                    <label for="cep" class="f-texto">CEP *</label>
                     <i class="fa-solid fa-location-dot position-absolute" style="top: 40px; left: 8px;"></i>
                     <input type="text" class="p-2 ps-4" id="cep" maxlength="9" oninput="mascaraCEP(this)" name="cep" placeholder="ex.: 00000-000 *" required>
 
@@ -68,7 +68,7 @@
                 </div>
             </div>
             <div class="col-8 col-lg-4 text-left d-flex flex-column ps-lg-5 mt-lg-3 position-relative">
-                <label for="rua" class="f-texto">Rua</label>
+                <label for="rua" class="f-texto">Rua *</label>
                 <i class="fa-solid fa-road position-absolute" style="top: 40px; left: 55px;"></i>
                 <input type="text" class="p-2 ps-4" id="rua" name="rua" placeholder="ex.: Da Água" required>
             </div>
@@ -77,7 +77,7 @@
         <div class="row justify-content-center">
             <div class="input-dados-esquerda col-8 col-lg-4">
                 <div class="text-left d-flex flex-column pe-lg-5 mt-lg-3 position-relative">
-                    <label for="uf" class="f-texto">UF</label>
+                    <label for="uf" class="f-texto">UF *</label>
                     <i class="fa-solid fa-map position-absolute" style="top: 40px; left: 8px;"></i>
                     <input type="text" class="p-2 ps-4" id="uf" name="uf" maxlength="2" oninput="mascaraUF(this)" placeholder="ex.: ES" required>
 
@@ -89,9 +89,9 @@
                 </div>
             </div>
             <div class="col-8 col-lg-4 text-left d-flex flex-column ps-lg-5 mt-lg-3 position-relative">
-                <label for="numero" class="f-texto">Número</label>
+                <label for="numero" class="f-texto">Número *</label>
                 <i class="fa-solid fa-box-archive position-absolute" style="top: 40px; left: 55px;"></i>
-                <input type="text" class="p-2 ps-4" id="numero" name="numero" maxlength="5" oninput="mascaraNUM(this)" placeholder="ex.: 2010 *" required>
+                <input type="text" class="p-2 ps-4" id="numero" name="numero" maxlength="5" oninput="mascaraNUM(this)" placeholder="ex.: 2010" required>
 
                 <script>
                     function mascaraNUM(input) {
@@ -105,7 +105,7 @@
         <div class="row justify-content-center">
             <div class="input-dados-esquerda col-8 col-lg-4">
                 <div class="text-left d-flex flex-column pe-lg-5 mt-lg-3 position-relative">
-                    <label for="cidade" class="f-texto">Cidade</label>
+                    <label for="cidade" class="f-texto">Cidade *</label>
                     <i class="fa-solid fa-city position-absolute" style="top: 40px; left: 5px;"></i>
                     <input type="text" class="p-2 ps-4" id="cidade" name="cidade" placeholder="ex.: Serra" required>
                 </div>
@@ -120,7 +120,7 @@
         <div class="row justify-content-center">
             <div class="input-dados-esquerda col-8 col-lg-4">
                 <div class="text-left d-flex flex-column pe-lg-5 mt-lg-3 position-relative">
-                    <label for="bairro" class="f-texto">Bairro</label>
+                    <label for="bairro" class="f-texto">Bairro *</label>
                     <i class="fa-solid fa-location-crosshairs position-absolute" style="top: 40px; left: 8px;"></i>
                     <input type="text" class="p-2 ps-4" id="bairro" name="bairro" placeholder="ex.: Nova Almeida" required>
                 </div>
