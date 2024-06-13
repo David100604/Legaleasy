@@ -37,7 +37,7 @@
             <div class="row justify-content-center">
                 <div class="input-dados-esquerda col-8 col-lg-4">
                     <div class="text-left d-flex flex-column pe-lg-5 mt-lg-3 position-relative">
-                        <label for="nome_usuario" class="f-texto">Usuário</label>
+                        <label for="nome_usuario" class="f-texto">Usuário *</label>
                         <i class="fa-solid fa-user position-absolute" style="top: 40px; left: 8px;"></i>
                         <input type="text" class="p-2 ps-4" id="nome_usuario" name="nome_usuario" placeholder="ex: joao_99" required>
                         @error('nome_usuario')
@@ -47,7 +47,7 @@
                 </div>
                 <div class="col-8 col-lg-4 text-left d-flex flex-column ps-lg-5">
                     <div class="text-left d-flex flex-column pe-lg-6 mt-lg-3 position-relative">
-                        <label for="nome_usuario" class="f-texto">Nome Completo</label>
+                        <label for="nome_usuario" class="f-texto">Nome Completo *</label>
                         <i class="fas fa-id-card position-absolute" style="top: 40px; left: 7px;"></i>
                         <input type="text" class="p-2 ps-4" id="nome_completo" name="nome_completo" placeholder="ex: João Victor Gomes" required>
                         @error('nome_completo')
@@ -60,13 +60,13 @@
             <div class="row justify-content-center">
                 <div class="input-dados-esquerda col-8 col-lg-4">
                     <div class="text-left d-flex flex-column pe-lg-5 mt-lg-3 position-relative">
-                        <label for="senha" class="f-texto">Senha</label>
+                        <label for="senha" class="f-texto">Senha *</label>
                         <i class="fa-solid fa-key position-absolute" style="top: 40px; left: 8px;"></i>
                         <input type="password" class="p-2 ps-4" id="senha" name="senha" placeholder="Insira pelo menos 6 caracteres" required>
                     </div>
                 </div>
                 <div class="col-8 col-lg-4 text-left d-flex flex-column ps-lg-5 mt-lg-3 position-relative">
-                    <label for="cpf" class="f-texto">CPF</label>
+                    <label for="cpf" class="f-texto">CPF *</label>
                     <i class="fa-solid fa-file position-absolute" style="top: 40px; left: 57px;"></i>
                     <input type="text" id="cpf" name="cpf" class="p-2 ps-4" value="{{ old('cpf') }}" maxlength="14" oninput="mascaraCPF(this)" placeholder="123.456.789-00" required>
                     @error('cpf')
@@ -92,7 +92,7 @@
             <div class="row justify-content-center">
                 <div class="input-dados-esquerda col-8 col-lg-4">
                     <div class="text-left d-flex flex-column pe-lg-5 mt-lg-3 position-relative">
-                        <label for="email" class="f-texto" maxlength="100">E-mail</label>
+                        <label for="email" class="f-texto" maxlength="100">E-mail *</label>
                         <i class="fa-solid fa-envelope position-absolute" style="top: 40px; left: 8px;"></i>
                         <input type="email" class="p-2 ps-4" id="email" value="{{ old('email') }}" name="email" placeholder="Usuario@gmail.com"required>
                         @error('email')
@@ -101,7 +101,7 @@
                     </div>
                 </div>
                 <div class="col-8 col-lg-4 text-left d-flex flex-column ps-lg-5 mt-lg-3 position-relative">
-                    <label for="telefone" class="f-texto">Telefone</label>
+                    <label for="telefone" class="f-texto">Telefone *</label>
                     <i class="fa-solid fa-phone position-absolute" style="top: 40px; left: 55px;"></i>
                     <input type="text" name="telefone" class="p-2 ps-4" id="telefone" maxlength="15" oninput="mascaraTelefone(this)"  placeholder="(99) 9999-9999" required>
                     @error('telefone')
