@@ -22,6 +22,9 @@
                 <p class="text-left d-block d-lg-none">
                     Favor preencher os campos a seguir com informações VÁLIDAS.
                 </p>
+                <p class="text-left">
+                    Os campos marcados com * são obrigatórios.
+                </p>
             </div>
         </div>
 
@@ -33,7 +36,7 @@
             <div class="row justify-content-center">
                 <div class="input-dados-esquerda col-8 col-lg-4">
                     <div class="text-left d-flex flex-column pe-lg-5 mt-lg-3 position-relative">
-                        <label for="oab" class="f-texto">Número da OAB</label>
+                        <label for="oab" class="f-texto">Número da OAB *</label>
                         <i class="fa-solid fa-envelope position-absolute" style="top: 40px; left: 8px;"></i>
                         <input type="text" class="p-2 ps-4" id="oab" name="oab" placeholder="UFoooooo" required>
                     </div>
