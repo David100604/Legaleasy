@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Validator;
 
 class CasoController extends Controller
 {
@@ -17,6 +18,32 @@ class CasoController extends Controller
     public function store(Request $request)
     {
         $usuario = \App\Models\Usuario::find($request->usuario_id);
+        $rules = [
+            'titulo' => 'required|string|max:255',
+            'descricao' => 'required|string',
+            'tipoCaso' => 'required|string',
+            'arquivo' => 'required|file|mimes:jpeg,png,pdf,docx', // ajuste as extensões conforme necessário
+        ];
+    
+        // Defina as mensagens de erro personalizadas (opcional)
+        $messages = [
+            'titulo.required' => 'O título é obrigatório.',
+            'descricao.required' => 'A descrição é obrigatória.',
+            'tipoCaso.required' => 'O tipo de caso é obrigatório.',
+            'arquivo.required' => 'O arquivo é obrigatório.',
+            'arquivo.mimes' => 'O arquivo deve ser uma imagem ou documento válido (jpeg, png, pdf, docx).',
+        ];
+
+        $validator = Validator::make($request->all(), $rules, $messages);
+
+            // Execute a validação
+        $validator = Validator::make($request->all(), $rules, $messages);
+
+        // Verifique se a validação falhou
+        if ($validator->fails()) {
+            return redirect()->back()->withErrors($validator)->withInput();
+        }
+
 
         $caso = new \App\Models\Caso;
         $caso->titulo = $request->titulo;
@@ -78,6 +105,7 @@ class CasoController extends Controller
         $usuario = \App\Models\Usuario::find($usuario_id);
         $caso = \App\Models\Caso::find($caso_id);
 
-        return view('casos.caso', compact('caso'), compact('usuario'));
+        // return view('casos.caso', compact('caso'), compact('usuario'));
+        return redirect()->route('casos.index')->with('success', 'Caso criado com sucesso!');
     }
 }

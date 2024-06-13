@@ -92,10 +92,16 @@
                         <div class="text-left d-flex flex-column pe-lg-5 mt-lg-3">
                             <label for="titulo-caso" class="f-texto">Título</label>
                             <input type="text" class="p-2" id="titulo-caso" name="titulo" placeholder="ex.: Violência doméstica" required>
+                        @error('titulo')
+                            <div>{{ $message }}</div>
+                        @enderror
                         </div>
                         <div class="text-left d-flex flex-column pe-lg-5 mt-lg-3">
                             <label for="descricao" class="f-texto">Descrição</label>
                             <textarea rows="3" class="p-2" name="descricao" id="descricao"></textarea>
+                        @error('descricao')
+                            <div>{{ $message }}</div>
+                        @enderror
                         </div>
                         <div class="text-left d-flex flex-column pe-lg-5 mt-lg-3">
                             <label for="tipoCaso" class="f-texto">Tipo de caso</label>
@@ -117,6 +123,9 @@
                                 <option value="cliente" class="opcoes"></option>
                             </select>
                         </div>
+                        @error('tipoCaso')
+                                <div>{{ $message }}</div>
+                        @enderror
                     </div>
                     <div class="col-8 col-lg-4 text-left d-flex flex-column ps-lg-5 mt-lg-3">
                         <label for="documentos" class="f-texto">Anexar documentos (Tamanho máx: 8MB)
@@ -132,6 +141,9 @@
                             <span class="file-name" id="file-name">Nenhum arquivo escolhido</span>
                             </label>
                             </form>
+                            @error('arquivo')
+                                <div>{{ $message }}</div>
+                            @enderror                           
                         </div>
 
                         <script> 
