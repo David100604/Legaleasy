@@ -8,46 +8,52 @@ use Illuminate\Support\Facades\Crypt;
 
 class LoginController extends Controller
 {
-    public function index(){
+    public function index()
+    {
         return view('cadastro.login');
     }
 
-    public function store(Request $request){
-
+    public function store(Request $request)
+    {
+        // Validação dos campos
+        $request->validate([
+            'email' => 'required|email',
+            'senha' => 'required',
+        ]);
 
         $email = $request->email;
 
         // Encontre o usuário com o email especificado
         $usuario = \App\Models\Usuario::where('email', $email)->first();
 
-        // Imprima os detalhes do usuário (você pode modificar essa parte conforme necessário)
+        // Verifique as credenciais do usuário
         if ($usuario) {
-            if ($usuario->tipoConta == 'Administrador'){
-                if ($usuario->senha == $request->senha){
-                return Redirect()->route('home-cliente', ['usuario_id' => $usuario->usuario_id]);
+            if ($usuario->tipoConta == 'Administrador') {
+                if ($usuario->senha == $request->senha) {
+                    return redirect()->route('home-cliente', ['usuario_id' => $usuario->usuario_id]);
                 } else {
-                    echo "senha incorreta";
+                    return back()->withErrors(['senha' => 'Senha incorreta']);
                 }
-            }
-            else{
+            } else {
                 $senha = Crypt::decryptString($usuario->senha);
-                if ($senha == $request->senha){
-                    if ($usuario->tipoConta == 'Cliente'){
-                        return Redirect()->route('home-cliente', ['usuario_id' => $usuario->usuario_id]);
-                    } else if ($usuario->tipoConta == 'Advogado'){
-                        return Redirect()->route('home-advogado', [$usuario]);
+                if ($senha == $request->senha) {
+                    if ($usuario->tipoConta == 'Cliente') {
+                        return redirect()->route('home-cliente', ['usuario_id' => $usuario->usuario_id]);
+                    } elseif ($usuario->tipoConta == 'Advogado') {
+                        return redirect()->route('home-advogado', [$usuario]);
                     }
                 } else {
-                    echo "senha incorreta";
+                    return back()->withErrors(['senha' => 'Senha incorreta']);
                 }
             }
         } else {
-            echo "Nenhum usuário encontrado com o email $email\n";
+            return back()->withErrors(['email' => 'Nenhum usuário encontrado com o email fornecido']);
         }
     }
 
-    public function destroy(){
-        return Redirect()->route('home');
+    public function destroy()
+    {
+        return redirect()->route('home');
     }
 
 }
