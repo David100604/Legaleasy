@@ -105,7 +105,7 @@ class CasoController extends Controller
         $usuario = \App\Models\Usuario::find($usuario_id);
         $caso = \App\Models\Caso::find($caso_id);
 
-        // return view('casos.caso', compact('caso'), compact('usuario'));
-        return redirect()->route('casos.index')->with('success', 'Caso criado com sucesso!');
-    }
+     return view('casos.caso', compact('caso'), compact('usuario'));
+    //    return redirect()->route('casos-abertos')->with('success', 'Caso criado com sucesso!');
+     }
 }
