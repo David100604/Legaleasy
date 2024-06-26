@@ -107,7 +107,7 @@
                             </center>
                             <div>
                                 <center>
-                                    <h5><a id="saiba-mais" href="" style="color: #13315C;">Saiba Mais</a></h5>
+                                    <h5><a class="btn btn-secondary btn-sm" id="saiba-mais" href="" style="color: #ffffff;">Saiba Mais</a></h5>
                                 </center>
                             </div>   
                         </div>
@@ -121,7 +121,7 @@
                             </center>
                             <div>
                                 <center>
-                                    <h5><a id="saiba-mais" href="" style="color: #13315C;">Saiba Mais</a></h5>
+                                    <h5><a class="btn btn-secondary btn-sm" id="saiba-mais" href="" style="color: #ffffff;">Saiba Mais</a></h5>
                                 </center>
                             </div>
                         </div>
@@ -135,7 +135,7 @@
                             </center>
                             <div>
                                 <center>
-                                    <h5><a id="saiba-mais" href="" style="color: #13315C;">Saiba Mais</a></h5>
+                                    <h5><a class="btn btn-secondary btn-sm" id="saiba-mais" href="" style="color: #ffffff;">Saiba Mais</a></h5>
                                 </center>
                             </div>                        </div>
                         <div class="card">
@@ -147,7 +147,7 @@
                             </center>
                             <div>
                                 <center>
-                                    <h5><a id="saiba-mais" href="" style="color: #13315C;">Saiba Mais</a></h5>
+                                    <h5><a class="btn btn-secondary btn-sm" id="saiba-mais" href="" style="color: #ffffff;">Saiba Mais</a></h5>
                                 </center>
                             </div>                        
                         </div>
