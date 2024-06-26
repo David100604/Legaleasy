@@ -57,13 +57,16 @@
                 <div>
                     <br>
                     <br>
-                    <img src="../images/plataforma-gratuita.png" alt="">
+                    <div>
+                        <h1 class="titulo-inicio" >PLATAFORMA  GRATUITA  DE  CONSULTORIA  JURÍDICA</h1>
+                    </div>
                 </div>
                 </center>
                 <center>
                     <div class="my-5" >
                         
-                        <img src="../images/speak_with.png" alt="">
+                        <h1 class="titulo-inicio" >Fale com um Advogado Online</h1>
+
                     </div>
                     <div>
                         <img src="../images/linha_central_inicio.png" alt="">
@@ -95,32 +98,58 @@
                     </div>
                     <div class=" py-4 card-group">
                         <div class="card">
-                            <h3 class="titulo" >Converse da maneira que preferir</h3>
+                            <center>
+                                <h3 class="titulo" >Converse da maneira que preferir</h3>
+                            
                             <p class="paragrafozin">Fale com um advogado diretamente pelo chat
                                 da LegalEasy, ou passe suas informações de contato.
                             </p>
-                            <h5><a id="saiba-mais" href="https://www.exemplo.com" style="color: #13315C;">Saiba Mais</a></h5>   
+                            </center>
+                            <div>
+                                <center>
+                                    <h5><a id="saiba-mais" href="" style="color: #13315C;">Saiba Mais</a></h5>
+                                </center>
+                            </div>   
                         </div>
                         <div class="card">
-                            <h3 class="titulo">Registre seu caso em aberto na plataforma</h3>
+                            <center>
+                                <h3 class="titulo">Registre seu caso em aberto na plataforma</h3>
+                            
                             <p class="paragrafozin">Seu caso será listado para advogados de prontidão 
                                 na plataforma, que incluirão o contato.
                             </p>
-                            <h5><a id="saiba-mais" href="https://www.exemplo.com" style="color: #13315C;">Saiba Mais</a></h5>
+                            </center>
+                            <div>
+                                <center>
+                                    <h5><a id="saiba-mais" href="" style="color: #13315C;">Saiba Mais</a></h5>
+                                </center>
+                            </div>
                         </div>
                         <div class="card">
-                            <h3 class="titulo">Contate um advogado diretamente</h3>
+                            <center>
+                                <h3 class="titulo">Contate um advogado diretamente</h3>
+                            
                             <p class="paragrafozin">A Legaleasy possui seção de afiliados onde estão 
                                 listados profissionais capacitados para suas necessidades.
                             </p>
-                            <h5><a id="saiba-mais" href="https://www.exemplo.com" style="color: #13315C;">Saiba Mais</a></h5>   
-                        </div>
+                            </center>
+                            <div>
+                                <center>
+                                    <h5><a id="saiba-mais" href="" style="color: #13315C;">Saiba Mais</a></h5>
+                                </center>
+                            </div>                        </div>
                         <div class="card">
-                            <h3 class="titulo">Suporte a defensoria pública</h3>
+                            <center>
+                                <h3 class="titulo">Suporte a defensoria pública</h3>
                             <p class="paragrafozin">Temos como objetivo facilitar o acesso à serviços de advocacia
                                  públicos, por isso o uso é gratuito.
                             </p>
-                            <h5><a id="saiba-mais" href="https://www.exemplo.com" style="color: #13315C;">Saiba Mais</a></h5>   
+                            </center>
+                            <div>
+                                <center>
+                                    <h5><a id="saiba-mais" href="" style="color: #13315C;">Saiba Mais</a></h5>
+                                </center>
+                            </div>                        
                         </div>
                     </div>
                 </div>
