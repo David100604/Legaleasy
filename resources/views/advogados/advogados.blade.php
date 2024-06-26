@@ -3,43 +3,47 @@
 @section('content')
     
         <div class="row justify-content-center">
-            <img class="linha-branca align-self-center col-xl-4 d-none d-xl-block" src="../images/linha-branca.png" alt="">
+            <img class="linha-branca align-self-center col-xl-4 d-none d-xl-block" src="{{ asset('images/linha-branca.png') }}" alt="">
             <h1 id="titulo" class="titulo col-xl-4 text-center">LISTA DE ADVOGADOS</h1>
-            <img class="linha-branca align-self-center col-xl-4 d-none d-xl-block" src="../images/linha-branca-direita.png" alt="">
+            <img class="linha-branca align-self-center col-xl-4 d-none d-xl-block" src="{{ asset('images/linha-branca-direita.png') }}" alt="">
         </div>
 
-        <div id="inputs-pesquisa" class="my-2 row justify-content-center mt-1">
-            <div class="col-9 text-left d-flex flex-column">
-                <select id="tipo-caso" class="form-select" aria-label="">
-                    <option disabled selected class="opcoes">Selecione uma categoria</option>
-                    <option value="advogado" class="opcoes">Administrativo</option>
-                    <option value="cliente" class="opcoes">Ambiental</option>
-                    <option value="advogado" class="opcoes">Civil</option>
-                    <option value="cliente" class="opcoes">Comercial</option>
-                    <option value="advogado" class="opcoes">Constitucional</option>
-                    <option value="cliente" class="opcoes">Contratual</option>
-                    <option value="cliente" class="opcoes">Relações Internacionais</option>
-                    <option value="advogado" class="opcoes">Direitos do Consumidor</option>
-                    <option value="advogado" class="opcoes">Digital</option>
-                    <option value="cliente" class="opcoes"></option>
-                    <option value="advogado" class="opcoes"></option>
-                    <option value="cliente" class="opcoes"></option>
-                    <option value="advogado" class="opcoes"></option>
-                    <option value="cliente" class="opcoes"></option>
-                </select>
-            </div>
-
-            <div class="my-2 col-9 d-flex justify-content-between">
-                <div class="col-8  d-flex flex-column">
-                    <input type="text" class="p-2" id="profissioal" name="profissioal" 
-                    placeholder="Insira o nome do profissioal">
+        <form action="{{ route('advogados.pesquisar', ['usuario_id' => $usuario->usuario_id])  }}" method="POST">
+            @csrf
+            <div id="inputs-pesquisa" class="my-2 row justify-content-center mt-1">
+                <div class="col-9 text-left d-flex flex-column">
+                    <select id="tipo-advogado" name="tipoAdvogado" class="form-select" aria-label="">
+                            <option disabled selected class="opcoes">Selecione uma categoria</option>
+                            <option value="Administrativo" class="opcoes">Administrativo</option>
+                            <option value="Ambiental" class="opcoes">Ambiental</option>
+                            <option value="Civil" class="opcoes">Civil</option>
+                            <option value="Comercial" class="opcoes">Comercial</option>
+                            <option value="Constitucional" class="opcoes">Constitucional</option>
+                            <option value="Contratual" class="opcoes">Contratual</option>
+                            <option value="Relações Internacionais" class="opcoes">Relações Internacionais</option>
+                            <option value="Direitos do Consumidor" class="opcoes">Direitos do Consumidor</option>
+                            <option value="Digital" class="opcoes">Digital</option>
+                            <option value="Eleitoral" class="opcoes">Eleitoral</option>
+                            <option value="Penal" class="opcoes">Penal</option>
+                            <option value="Previdenciário" class="opcoes">Previdenciário</option>
+                            <option value="Trabalhista" class="opcoes">Trabalhistas</option>
+                            <option value="Tributário" class="opcoes">Tributário</option>
+                            <option value="Criminal" class="opcoes">Criminal</option>
+                        </select>
                 </div>
+
+                <div class="my-2 col-9 d-flex justify-content-between">
+                    <div class="col-8  d-flex flex-column">
+                        <input type="text" class="p-2" id="nome" name="nome" 
+                        placeholder="Insira o nome do profissioal">
+                    </div>
                 
-                <div class="col-3 d-flex flex-column">
-                    <button class="btn btn-azul">PESQUISAR</button>
+                    <div class="col-3 d-flex flex-column">
+                        <button class="btn btn-azul">PESQUISAR</button>
+                    </div>
                 </div>
             </div>
-        </div>
+        </form>
 
         <div class="row justify-content-center f-texto">
             <p class="col-9 text-left d-none d-lg-block">
@@ -71,7 +75,7 @@
                             </div>
                             <div class="row col-5 ms-2">
                                 <div class="col-4">
-                                    <img src="../images/advogado.png" alt="" width="100px;">
+                                    <img src="{{ asset('images/advogado.png') }}" alt="" width="100px;">
                                 </div>
                                 <div class="col-8">
                                     <p class="mt-1 m-0 nome-advogado">Sobre o Profissional</p>

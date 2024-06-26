@@ -66,6 +66,7 @@ Route::get('/teste', function () {
 
 Route::controller(App\Http\Controllers\AdvogadoController::class)->group(function() {
     Route::get('/advogados/{usuario_id}', 'index')->name('advogados.index');
+    Route::post('/advogados/pesquisar/{usuario_id}', 'search')->name('advogados.pesquisar');
 });
  
 // TELA INICIAL
