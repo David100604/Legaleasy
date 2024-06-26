@@ -116,11 +116,12 @@
                                 <option value="Relações Internacionais" class="opcoes">Relações Internacionais</option>
                                 <option value="Direitos do Consumidor" class="opcoes">Direitos do Consumidor</option>
                                 <option value="Digital" class="opcoes">Digital</option>
-                                <option value="cliente" class="opcoes"></option>
-                                <option value="advogado" class="opcoes"></option>
-                                <option value="cliente" class="opcoes"></option>
-                                <option value="advogado" class="opcoes"></option>
-                                <option value="cliente" class="opcoes"></option>
+                                <option value="Eleitoral" class="opcoes">Eleitoral</option>
+                                <option value="Penal" class="opcoes">Penal</option>
+                                <option value="Previdenciário" class="opcoes">Previdenciário</option>
+                                <option value="Trabalhista" class="opcoes">Trabalhistas</option>
+                                <option value="Tributário" class="opcoes">Tributário</option>
+                                <option value="Criminal" class="opcoes">Criminal</option>
                             </select>
                         </div>
                         @error('tipoCaso')

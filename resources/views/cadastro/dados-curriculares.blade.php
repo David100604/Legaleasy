@@ -59,6 +59,7 @@
                         <option value="advogado previdenciário" class="opcoes">Advogado Previdenciário</option>
                         <option value="advogado trabalhista" class="opcoes">Advogado Trabalhista</option>
                         <option value="advogado tributário" class="opcoes">Advogado Tributário</option>
+                        <option value="advogado criminal" class="opcoes">Advogado Criminal</option>
                     </select>
                 </div>
             </div>

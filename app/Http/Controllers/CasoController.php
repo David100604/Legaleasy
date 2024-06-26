@@ -86,15 +86,24 @@ class CasoController extends Controller
 
     public function search(Request $request, $usuario_id)
     {
-        if(empty($request->titulo)) {
-            return redirect()->route('casos-abertos', ['usuario_id' => $usuario_id])->with('error', 'Favor preencher todos os campos');
+        if(empty($request->titulo) && empty($request->tipoCaso)) {
+            return redirect()->route('casos-abertos', ['usuario_id' => $usuario_id])->with('error', 'Favor preencher ao menos um campos');
         }
         else 
         {
             $usuario = \App\Models\Usuario::find($usuario_id); // Busca o usuário
 
-            $pesquisa = $request->input('titulo');
-            $casos = \App\Models\Caso::where('titulo', 'like', "%$pesquisa%")->get();
+            $titulo = $request->input('titulo');
+            $tipo = $request->input('tipoCaso');
+
+            if($titulo && $tipo){
+                $casos = \App\Models\Caso::where('titulo', 'like', "%$titulo%")->where('tipoCaso', 'like', "%$tipo%")->get();
+            } else if ($titulo){
+                $casos = \App\Models\Caso::where('titulo', 'like', "%$titulo%")->get();
+            } else if ($tipo){
+                $casos = \App\Models\Caso::where('tipoCaso', 'like', "%$tipo%")->get();
+            }
+            
 
             return view('casos.casos-abertos', ['casos' => $casos, 'usuario' => $usuario]); // Passa o usuário para a view
         }
