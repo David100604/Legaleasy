@@ -33,25 +33,18 @@
                         <i class="fa fa-edit edit-icon"></i>
                     </button>
                 </div>
-                <h3>Rhuan Bryan</h3>
+                <h3>{{ $usuario->nome }}</h3>
                 <p>Serra, Espírito Santo, Brasil</p>
             </div>
             <div class="col-md-9">
+            
                 <div class="card mb-4">
                     <div class="card-body">
                         <h5 class="card-title">Sobre</h5>
-                        <p class="card-text">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae lorem hendrerit, cursus ligula et, porta lacus. Phasellus ut tellus.
+                        <p class="card-text" id="sobre-texto">
+                            {{ $usuario->descricao }}
                         </p>
-                        <p class="card-text">
-                            <strong>Serviços que atende:</strong>
-                            <ul>
-                                <li>Cível</li>
-                                <li>Trabalhista</li>
-                                <li>Imobiliário</li>
-                                <li>Ambientalista</li>
-                            </ul>
-                        </p>
+                        <button class="btn btn-dark mt-3 float-right" data-toggle="modal" data-target="#editSobreModal">Editar</button>
                     </div>
                 </div>
             </div>
@@ -186,6 +179,32 @@
                         <button class="btn btn-secondary">Mensagens</button>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="editSobreModal" tabindex="-1" aria-labelledby="editSobreModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="editSobreModalLabel">Editar Sobre</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <form id="editSobreForm" method="POST" action="{{ route('advogados.editar-sobre', ['usuario_id' => $usuario->usuario_id]) }}">
+                    @csrf
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label for="sobre">Sobre</label>
+                            <textarea class="form-control" id="sobre" name="sobre" rows="4" placeholder="Digite aqui o novo texto"></textarea>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                        <button type="submit" class="btn btn-primary">Salvar</button>
+                    </div>
+                </form>
             </div>
         </div>
     </div>

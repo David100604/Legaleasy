@@ -54,6 +54,7 @@ class UsuarioController extends Controller
         $dados->email = $request->email;
         $dados->telefone = $request->telefone;
         $dados->foto = "advogados/foto-perfil-padrao.png";
+        $dados->descricao = "Adicione uma descrição sobre você, incluindo os tipos de serviços que atende.";
 
         $dados->tipoConta = $tipoConta->tipoConta;
 

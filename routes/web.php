@@ -68,6 +68,7 @@ Route::controller(App\Http\Controllers\AdvogadoController::class)->group(functio
     Route::get('/advogados/{usuario_id}', 'index')->name('advogados.index');
     Route::post('/advogados/pesquisar/{usuario_id}', 'search')->name('advogados.pesquisar');
     Route::post('/advogados/editar-foto/{usuario_id}', 'editar_foto')->name('advogados.editar-foto');
+    Route::post('/advogados/editar-sobre/{usuario_id}', 'editar_sobre')->name('advogados.editar-sobre');
 });
  
 // TELA INICIAL

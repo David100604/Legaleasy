@@ -79,7 +79,7 @@
                                 </div>
                                 <div class="col-8">
                                     <p class="mt-1 m-0 nome-advogado">Sobre o Profissional</p>
-                                    <p class="m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. In quibusdam sed deleniti cupiditate.</p>
+                                    <p class="m-0">{{ $advogado->descricao }}</p>
                                 </div>
                             </div>
                         </div>

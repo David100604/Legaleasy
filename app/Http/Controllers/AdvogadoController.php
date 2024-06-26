@@ -51,6 +51,26 @@ class AdvogadoController extends Controller
         return view('perfil.perfil-advogado', compact('usuario'));
     }
 
+    public function editar_sobre(Request $request, $usuario_id)
+    {
+        $usuario = \App\Models\Usuario::find($usuario_id);
+
+        if (!$usuario) {
+            return redirect()->back()->withErrors(['error' => 'Usuário não encontrado']);
+        }
+
+        $sobre = $request->input('sobre');
+
+        if($sobre){
+            $usuario->descricao = $sobre;
+            $usuario->save();
+        } else{
+            $usuario->descricao = $usuario->descricao;
+        }
+
+        return view('perfil.perfil-advogado', compact('usuario'));
+    }
+
     public function search(Request $request, $usuario_id)
     {
         if (empty($request->nome) && empty($request->tipoAdvogado)) {
