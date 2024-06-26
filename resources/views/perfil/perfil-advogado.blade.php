@@ -1,15 +1,38 @@
 @extends('layouts.perfils')
 
 @section('content')
-
-
-
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+
+<style>
+    .edit-button {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        background-color: rgba(0, 0, 0, 0.5);
+        border: none;
+        border-radius: 50%;
+        padding: 10px;
+    }
+    .edit-icon {
+        color: white;
+    }
+    .profile-picture {
+        position: relative;
+        display: inline-block;
+    }
+</style>
+
 <body>
     <div class="container mt-5">
         <div class="row">
             <div class="col-md-3 text-center">
-                <img src="../images/foto-de-perfil.jpeg" class="rounded-circle mb-3" alt="Profile Picture" width="150">
+                <div class="profile-picture">
+                    <img src="../images/foto-de-perfil.jpeg" class="rounded-circle mb-3" alt="Profile Picture" width="150">
+                    <button class="edit-button" data-toggle="modal" data-target="#editProfilePictureModal">
+                        <i class="fa fa-edit edit-icon"></i>
+                    </button>
+                </div>
                 <h3>Rhuan Bryan</h3>
                 <p>Serra, Espírito Santo, Brasil</p>
             </div>
@@ -27,16 +50,13 @@
                                 <li>Trabalhista</li>
                                 <li>Imobiliário</li>
                                 <li>Ambientalista</li>
-                                <li>Consumidor</li>
-                                <li>Criminalista</li>
-                                <li>Previdenciário</li>
-                                <li>Digital</li>
                             </ul>
                         </p>
                     </div>
                 </div>
             </div>
         </div>
+
         <div class="row">
             <div class="col-md-6">
                 <div class="card mb-4">
@@ -169,9 +189,37 @@
             </div>
         </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <div class="modal fade" id="editProfilePictureModal" tabindex="-1" aria-labelledby="editProfilePictureModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="editProfilePictureModalLabel">Editar Imagem de Perfil</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="editProfilePictureForm" method="POST" enctype="multipart/form-data" action="#">
+                            @csrf
+                            <div class="form-group">
+                                <label for="profilePicture">Escolha uma nova imagem de perfil</label>
+                                <input type="file" class="form-control-file" id="profilePicture" name="profile_picture" required>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                                <button type="submit" class="btn btn-primary">Salvar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </body>
 </html>
 

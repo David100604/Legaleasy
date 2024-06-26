@@ -45,21 +45,21 @@
                     <label for="nome-completo" class="f-texto">Tipo de advogado</label>
                     <select id="tipo-advogado" name="tipoAdvogado" class="form-select" aria-label="">
                         <option disabled selected class="opcoes">Selecione</option>
-                        <option value="advogado administrativo" class="opcoes">Advogado Administrativo</option>
-                        <option value="advogado ambiental" class="opcoes">Advogado Ambiental</option>
-                        <option value="advogado civil" class="opcoes">Advogado Civil</option>
-                        <option value="advogado comercial" class="opcoes">Advogado Comercial</option>
-                        <option value="advogado constitucional" class="opcoes">Advogado Constitucional</option>
-                        <option value="advogado contratual" class="opcoes">Advogado Contratual</option>
-                        <option value="advogado de relações internacionais" class="opcoes">Advogado de Relações Internacionais</option>
-                        <option value="advogado do consumidor" class="opcoes">Advogado do Consumidor</option>
-                        <option value="advogado digital" class="opcoes">Advogado Digital</option>
-                        <option value="advogado eleitoral" class="opcoes">Advogado Eleitoral</option>
-                        <option value="advogado penal" class="opcoes">Advogado Penal</option>
-                        <option value="advogado previdenciário" class="opcoes">Advogado Previdenciário</option>
-                        <option value="advogado trabalhista" class="opcoes">Advogado Trabalhista</option>
-                        <option value="advogado tributário" class="opcoes">Advogado Tributário</option>
-                        <option value="advogado criminal" class="opcoes">Advogado Criminal</option>
+                        <option value="Advogado Administrativo" class="opcoes">Advogado Administrativo</option>
+                        <option value="Advogado Ambiental" class="opcoes">Advogado Ambiental</option>
+                        <option value="Advogado Civil" class="opcoes">Advogado Civil</option>
+                        <option value="Advogado Comercial" class="opcoes">Advogado Comercial</option>
+                        <option value="Advogado Constitucional" class="opcoes">Advogado Constitucional</option>
+                        <option value="Advogado Contratual" class="opcoes">Advogado Contratual</option>
+                        <option value="Advogado Criminal" class="opcoes">Advogado Criminal</option>
+                        <option value="Advogado de relações internacionais" class="opcoes">Advogado de Relações Internacionais</option>
+                        <option value="Advogado do Consumidor" class="opcoes">Advogado do Consumidor</option>
+                        <option value="Advogado Digital" class="opcoes">Advogado Digital</option>
+                        <option value="Advogado Eleitoral" class="opcoes">Advogado Eleitoral</option>
+                        <option value="Advogado Penal" class="opcoes">Advogado Penal</option>
+                        <option value="Advogado Previdenciário" class="opcoes">Advogado Previdenciário</option>
+                        <option value="Advogado Trabalhista" class="opcoes">Advogado Trabalhista</option>
+                        <option value="Advogado Tributário" class="opcoes">Advogado Tributário</option>
                     </select>
                 </div>
             </div>

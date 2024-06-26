@@ -48,97 +48,40 @@
         </div>
 
         <div class="row justify-content-center f-advogados">
-            <div class="col-9 card p-2 mt-2">
-                <div class="row">
-                    <div class="col-6" style="border-right: 1px solid gray;">
-                        <p class="m-0 nome-advogado">Nome do Advogado</p>
-                        <div class="star-rating">
-                            <input type="radio" id="star5" name="rating" value="5" />
-                            <label for="star5" title="5 estrelas">☆</label>
-                            <input type="radio" id="star4" name="rating" value="4" />
-                            <label for="star4" title="4 estrelas">☆</label>
-                            <input type="radio" id="star3" name="rating" value="3" />
-                            <label for="star3" title="3 estrelas">☆</label>
-                            <input type="radio" id="star2" name="rating" value="2" />
-                            <label for="star2" title="2 estrelas">☆</label>
-                            <input type="radio" id="star1" name="rating" value="1" />
-                            <label for="star1" title="1 estrela">☆</label>
-                        </div>
-                        <p class="m-0">Número de avaliações: 7</p>
-                        <p class="m-0">Serviços: Advogado Civil</p>
-                    </div>
-                    <div class="row col-5 ms-2">
-                        <div class="col-4">
-                            <img src="../images/advogado.png" alt="" width="100px;">
-                        </div>
-                        <div class="col-8">
-                            <p class="mt-1 m-0 nome-advogado">Sobre o Profissional</p>
-                            <p class="m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. In quibusdam sed deleniti cupiditate.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-9 card p-2 mt-2">
-                <div class="row">
-                    <div class="col-6" style="border-right: 1px solid gray;">
-                        <p class="m-0 nome-advogado">Nome do Advogado</p>
-                        <div class="star-rating">
-                            <input type="radio" id="star5" name="rating" value="5" />
-                            <label for="star5" title="5 estrelas">☆</label>
-                            <input type="radio" id="star4" name="rating" value="4" />
-                            <label for="star4" title="4 estrelas">☆</label>
-                            <input type="radio" id="star3" name="rating" value="3" />
-                            <label for="star3" title="3 estrelas">☆</label>
-                            <input type="radio" id="star2" name="rating" value="2" />
-                            <label for="star2" title="2 estrelas">☆</label>
-                            <input type="radio" id="star1" name="rating" value="1" />
-                            <label for="star1" title="1 estrela">☆</label>
-                        </div>
-                        <p class="m-0">Número de avaliações: 7</p>
-                        <p class="m-0">Serviços: Advogado Civil</p>
-                    </div>
-                    <div class="row col-5 ms-2">
-                        <div class="col-4">
-                            <img src="../images/advogado.png" alt="" width="100px;">
-                        </div>
-                        <div class="col-8">
-                            <p class="mt-1 m-0 nome-advogado">Sobre o Profissional</p>
-                            <p class="m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. In quibusdam sed deleniti cupiditate.</p>
+            @foreach($advogados as $advogado)
+                @if($advogado)
+                    <div class="col-9 card p-2 mt-2">
+                        <div class="row">
+                            <div class="col-6" style="border-right: 1px solid gray;">
+                                <p class="m-0 nome-advogado">{{ $advogado->nome }}</p>
+                                <div class="star-rating">
+                                    <input type="radio" id="star5" name="rating" value="5" />
+                                    <label for="star5" title="5 estrelas">☆</label>
+                                    <input type="radio" id="star4" name="rating" value="4" />
+                                    <label for="star4" title="4 estrelas">☆</label>
+                                    <input type="radio" id="star3" name="rating" value="3" />
+                                    <label for="star3" title="3 estrelas">☆</label>
+                                    <input type="radio" id="star2" name="rating" value="2" />
+                                    <label for="star2" title="2 estrelas">☆</label>
+                                    <input type="radio" id="star1" name="rating" value="1" />
+                                    <label for="star1" title="1 estrela">☆</label>
+                                </div>
+                                <p class="m-0">Número de avaliações: 7</p>
+                                <p class="m-0">Serviços: {{ $advogado->advogado->tipoAdvogado }}</p>
+                            </div>
+                            <div class="row col-5 ms-2">
+                                <div class="col-4">
+                                    <img src="../images/advogado.png" alt="" width="100px;">
+                                </div>
+                                <div class="col-8">
+                                    <p class="mt-1 m-0 nome-advogado">Sobre o Profissional</p>
+                                    <p class="m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. In quibusdam sed deleniti cupiditate.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="col-9 card p-2 mt-2">
-                <div class="row">
-                    <div class="col-6" style="border-right: 1px solid gray;">
-                        <p class="m-0 nome-advogado">Nome do Advogado</p>
-                        <div class="star-rating">
-                            <input type="radio" id="star5" name="rating" value="5" />
-                            <label for="star5" title="5 estrelas">☆</label>
-                            <input type="radio" id="star4" name="rating" value="4" />
-                            <label for="star4" title="4 estrelas">☆</label>
-                            <input type="radio" id="star3" name="rating" value="3" />
-                            <label for="star3" title="3 estrelas">☆</label>
-                            <input type="radio" id="star2" name="rating" value="2" />
-                            <label for="star2" title="2 estrelas">☆</label>
-                            <input type="radio" id="star1" name="rating" value="1" />
-                            <label for="star1" title="1 estrela">☆</label>
-                        </div>
-                        <p class="m-0">Número de avaliações: 7</p>
-                        <p class="m-0">Serviços: Advogado Civil</p>
-                    </div>
-                    <div class="row col-5 ms-2">
-                        <div class="col-4">
-                            <img src="../images/advogado.png" alt="" width="100px;">
-                        </div>
-                        <div class="col-8">
-                            <p class="mt-1 m-0 nome-advogado">Sobre o Profissional</p>
-                            <p class="m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. In quibusdam sed deleniti cupiditate.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
+                @endif
+            @endforeach
         </div>
 
     

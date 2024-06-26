@@ -76,13 +76,10 @@ Route::get('/', function () {
 
 // PERFIL
 
-Route::get('/perfil-advogado', function () {
-    return view('perfil.perfil-advogado');
-})->name('perfil-advogado');
-
-Route::get('/perfil-cliente', function () {
-    return view('perfil.perfil-cliente');
-})->name('perfil-cliente');
+Route::controller(App\Http\Controllers\PerfilController::class)->group(function() {
+    Route::get('/perfil-advogado/{usuario_id}', 'advogado')->name('perfil-advogado');
+    Route::get('/perfil-cliente/{usuario_id}', 'cliente')->name('perfil-cliente');
+});
 
 Route::get('/perfil-advogado-cliente', function () {
     return view('perfil.visto-pelo.advogado');

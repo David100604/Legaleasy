@@ -11,6 +11,9 @@ class AdvogadoController extends Controller
 
         $usuario = \App\Models\Usuario::find($usuario_id);
 
-        return view('advogados.advogados', compact('usuario'));
+        $advogados = \App\Models\Usuario::Where("tipoConta", "like", "Advogado")->with('advogado')->get();
+
+        return view('advogados.advogados', ['advogados' => $advogados], compact('usuario'));
     }
+
 }

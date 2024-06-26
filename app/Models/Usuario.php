@@ -34,4 +34,9 @@ class Usuario extends Model
     {
         return $this->hasOne(dadosCurriculares::class, 'advogado_id');
     }
+
+    public function advogado()
+    {
+        return $this->hasOne(Advogado::class, 'usuario_id');
+    }
 }
