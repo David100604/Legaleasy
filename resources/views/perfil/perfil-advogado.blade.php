@@ -28,7 +28,7 @@
         <div class="row">
             <div class="col-md-3 text-center">
                 <div class="profile-picture">
-                    <img src="../images/foto-de-perfil.jpeg" class="rounded-circle mb-3" alt="Profile Picture" width="150">
+                    <img src="{{ asset('images/' . $usuario->foto) }}" class="rounded-circle mb-3" alt="Profile Picture" width="150">
                     <button class="edit-button" data-toggle="modal" data-target="#editProfilePictureModal">
                         <i class="fa fa-edit edit-icon"></i>
                     </button>
@@ -200,11 +200,11 @@
                         </button>
                     </div>
                     <div class="modal-body">
-                        <form id="editProfilePictureForm" method="POST" enctype="multipart/form-data" action="#">
+                        <form id="editProfilePictureForm" method="POST" enctype="multipart/form-data" action="{{ route('advogados.editar-foto', ['usuario_id' => $usuario->usuario_id]) }}">
                             @csrf
                             <div class="form-group">
-                                <label for="profilePicture">Escolha uma nova imagem de perfil</label>
-                                <input type="file" class="form-control-file" id="profilePicture" name="profile_picture" required>
+                                <label for="imagem">Escolha uma nova imagem de perfil</label>
+                                <input type="file" class="form-control-file" id="imagem" name="imagem" required>
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>

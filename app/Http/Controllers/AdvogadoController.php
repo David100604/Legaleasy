@@ -16,6 +16,41 @@ class AdvogadoController extends Controller
         return view('advogados.advogados', compact('advogados', 'usuario'));
     }
 
+    public function salvarImagem(Request $request)
+    {
+        if ($request->hasFile('imagem') && $request->file('imagem')->isValid()) {
+            $requestImage = $request->imagem;
+
+            $extension = $requestImage->extension();
+
+            $imageName = md5('/advogados/' . $requestImage->getClientOriginalName()) . '_' . strtotime("now") . "." . $extension;
+
+            $request->imagem->move(public_path('images'), $imageName);
+            
+            return $imageName;
+        } else {
+            return null;
+        }
+    }
+
+    public function editar_foto(Request $request, $usuario_id)
+    {
+        $usuario = \App\Models\Usuario::find($usuario_id);
+
+        if (!$usuario) {
+            return redirect()->back()->withErrors(['error' => 'Usuário não encontrado']);
+        }
+
+        if($request->hasFile('imagem')){
+            $usuario->foto = $this->salvarImagem($request);
+            $usuario->save();
+        } else{
+            $usuario->foto = $usuario->foto;
+        }
+
+        return view('perfil.perfil-advogado', compact('usuario'));
+    }
+
     public function search(Request $request, $usuario_id)
     {
         if (empty($request->nome) && empty($request->tipoAdvogado)) {

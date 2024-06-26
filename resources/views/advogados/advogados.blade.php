@@ -75,7 +75,7 @@
                             </div>
                             <div class="row col-5 ms-2">
                                 <div class="col-4">
-                                    <img src="{{ asset('images/advogado.png') }}" alt="" width="100px;">
+                                    <img src="{{ asset('images/' . $advogado->foto) }}" width="100px;" height="100px;">
                                 </div>
                                 <div class="col-8">
                                     <p class="mt-1 m-0 nome-advogado">Sobre o Profissional</p>
