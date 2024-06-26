@@ -51,9 +51,6 @@
         <a class="align-self-center col-xl-2 col-7 m-1 py-1 py-sm-2 btn btn-dark mx-lg-3" href="javascript:window.history.go (-1)">
             VOLTAR
         </a>
-        <button type="submit" class="btn-azul align-self-center col-xl-2 col-7 m-1 py-1 py-sm-2 btn mx-lg-3">
-            PRÓXIMO
-        </button>
         <button type="submit" class="btn-branca align-self-center col-xl-2 col-7 m-1 py-1 py-sm-2 mx-lg-3  btn">
             INCIAR CONVERSA
         </button>
