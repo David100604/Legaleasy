@@ -110,3 +110,42 @@
 .linhamenor{
     width: 8%;
 }
+
+
+    /* Estilos para o popup */
+    .modal {
+        display: none; /* Esconder por padrão */
+        position: fixed; /* Posição fixa para cobrir a tela inteira */
+        z-index: 1; /* Z-index alto para estar acima de outros elementos */
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto; /* Adicionar scroll se necessário */
+        background-color: rgba(0, 0, 0, 0.5); /* Fundo escuro semi-transparente */
+    }
+
+    .modal-content {
+        background-color: #fefefe;
+        margin: 15% auto; /* Centralizar na tela */
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%;
+        max-width: 600px; /* Largura máxima */
+        text-align: center;
+        border-radius: 10px;
+    }
+
+    .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
