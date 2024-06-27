@@ -11,19 +11,13 @@ class PerfilController extends Controller
     public function cliente($usuario_id){
 
         $usuario = \App\Models\Usuario::find($usuario_id);
-        $casos = \App\Models\Caso::all(); 
+        $casos = \App\Models\Caso::where('cliente', 'like', '%' . $usuario->nomeUsuario . '%')->get(); 
 
 
         return view('perfil.perfil-cliente', ['casos' =>$casos],compact('usuario'));
         
     }
 
-    public function casocliente(Request $request, $usuario_id){
-        $usuario = \App\Models\Usuario::find($request->usuario_id); 
-        $casos = \App\Models\Caso::all(); 
-        
-
-    }
 
     public function advogado($usuario_id){
 

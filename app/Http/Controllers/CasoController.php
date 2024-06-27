@@ -50,7 +50,7 @@ class CasoController extends Controller
         $caso->descricao = $request->descricao;
         $caso->tipoCaso = $request->tipoCaso;
         $caso->arquivo = $this->salvarArquivo($request);
-        $caso->cliente = $usuario->nome;
+        $caso->cliente = $usuario->nomeUsuario;
 
         $caso->save();
 

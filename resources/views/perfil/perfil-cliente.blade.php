@@ -30,25 +30,16 @@
                     <div class="card-header">Histórico de casos (em andamento)</div>
                     <div class="card-body">
                         <div class="row">
-                            <div class="col-md-6">
                             @foreach($casos as $caso)
-                                <div class="card mb-2">
-                                    <div class="card-body">
-                                        <h5 id="" class="titulo col-xl-4 text-center" style="text-transform: uppercase;">{{ $caso->titulo }}</h5>
-                                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                    </div>
-                                
-                                </div>
-                            @endforeach
-                            </div>
                             <div class="col-md-6">
                                 <div class="card mb-2">
                                     <div class="card-body">
-                                        <h5 class="card-title">Teste 2</h5>
-                                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                        <h5 id="" class="titulo col-xl-12 text-center" style="text-transform: uppercase;">{{ $caso->titulo }}</h5>
+                                        <p class="card-text">{{ $caso->descricao }}</p>
                                     </div>
                                 </div>
                             </div>
+                            @endforeach
                         </div>
                     </div>
                 </div>
