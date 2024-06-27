@@ -51,6 +51,21 @@ class LoginController extends Controller
         }
     }
 
+//     public function store(Request $request)
+// {
+//     $credentials = $request->only('email', 'senha');
+
+//     if (Auth::attempt($credentials)) {
+//         // Supondo que você tenha um campo 'tipo' no modelo de usuário
+//         $tipoConta = Auth::user()->tipo; // Pode ser 'cliente', 'advogado' ou 'admin'
+
+//         return response()->json(['success' => true, 'tipo' => $tipoConta]);
+//     }
+
+//     return response()->json(['success' => false, 'message' => 'Credenciais inválidas'], 401);
+// }
+
+
     public function destroy()
     {
         return redirect()->route('home');
