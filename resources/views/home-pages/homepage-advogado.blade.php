@@ -96,62 +96,27 @@
                 Casos abertos
             </div>
             <div class="card-body card-lista-body p-2">
-                <div class="col-12 card p-2 mt-2">
-                    <div class="row">
-                        <div class="row col-15 ms-5">
-                            <div class="col-9">
-                                <p class="mt-1 m-0 nome-advogado card-title-centered">Código do caso: #8171418</p>
-                                <p class="m-0">Título do caso: </p>
-                                <p class="m-0">Descrição de caso: </p>
+                @foreach ($casos as $caso)
+                @if ($caso)
+            
+                    <div class="col-12 card p-2 mt-2">
+                        <div class="row">
+                            <div class="row col-15 ms-5">
+                                <div class="col-9">
+                                    <p class="mt-1 m-0 nome-advogado card-title-centered">Código do caso: #{{ $caso->caso_id}}</p>
+                                    <p class="m-0">Título do caso: {{ $caso->titulo}}</p>
+                                    <p class="m-0">Tipo de caso: {{ $caso->tipoCaso}} </p>
+                                </div>
                             </div>
                         </div>
                     </div>
+                @endif
+            @endforeach
+            <div class="row justify-content-around mt-3">
+                <div class="col-5">
+                    <button class="btn btn-dark w-100">Mostrar Mais Casos</button>
                 </div>
-
-                <div class="col-12 card p-2 mt-2">
-                    <div class="row">
-                        <div class="row col-15 ms-5">
-                            <div class="col-9">
-                                <p class="mt-1 m-0 nome-advogado card-title-centered">Código do caso: #1726895</p>
-                                <p class="m-0">Título do caso: </p>
-                                <p class="m-0">Descrição de caso: </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 card p-2 mt-2">
-                    <div class="row">
-                        <div class="row col-15 ms-5">
-                            <div class="col-9">
-                                <p class="mt-1 m-0 nome-advogado card-title-centered">Código do caso: #4395893</p>
-                                <p class="m-0">Título do caso: </p>
-                                <p class="m-0">Descrição de caso: </p>
-                            </div>
-                        </div>
-                    </div>
-                </div> 
-
-                <div class="col-12 card p-2 mt-2">
-                    <div class="row">
-                        <div class="row col-15 ms-5">
-                            <div class="col-9">
-                                <p class="mt-1 m-0 nome-advogado card-title-centered">Código do caso: #1516279</p>
-                                <p class="m-0">Título do caso: </p>
-                                <p class="m-0">Descrição de caso: </p>
-                            </div>
-                        </div>
-                    </div>
-                </div> 
-                    
-                <div class="row justify-content-around mt-3">
-                    <div class="col-5">
-                        <button class="btn btn-light w-100 border-dark">Mostrar menos</button>
-                    </div>
-                    <div class="col-5">
-                        <button class="btn btn-dark w-100">Mostrar mais</button>
-                    </div>
-                </div>
+            </div>
             </div>
         </div>
     </div>
