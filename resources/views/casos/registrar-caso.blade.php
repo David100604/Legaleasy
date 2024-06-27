@@ -184,7 +184,51 @@
             </footer>
         </div>
     </div>
+    
+    <!-- POP-UP CADASTRO DE CASO -->
+     
+        <div id="popup" class="modal">
+        <div class="modal-content">
+            <span class="close" data-url="{{ route('home-advogado', ['usuario_id' => $usuario->usuario_id]) }}"> &times;</span>
+            <p>Caso cadastrado com sucesso!</p>
+        </div>
+    </div>
 
     
 </body>
+
+    <script>
+            // Encontrar o elemento do popup
+        var popup = document.getElementById('popup');
+
+        // Encontrar o botão para fechar o popup
+        var closeBtn = popup.querySelector('.close');
+
+        // Função para mostrar o popup
+        function showPopup() {
+            popup.style.display = 'block';
+        }
+
+        // Fechar o popup quando clicar no botão de fechar
+        closeBtn.addEventListener('click', function() {
+            var url = this.getAttribute('data-url'); // Obter a URL do atributo data-url
+
+            // Redirecionar para a URL especificada
+            window.location.href = url;
+        });
+
+        // Mostrar o popup ao cadastrar o caso (simulado com um alerta simples)
+        var form = document.querySelector('form');
+        form.addEventListener('submit', function(event) {
+            event.preventDefault(); // Evitar o envio real do formulário para este exemplo
+
+            // Aqui você pode adicionar lógica de validação e envio do formulário
+
+            // Após o sucesso (simulado com um timeout)
+            setTimeout(function() {
+                showPopup(); // Mostrar o popup de sucesso
+                form.reset(); // Limpar o formulário se necessário
+            }, 1000); // Tempo em milissegundos até mostrar o popup (1 segundo no exemplo)
+        });
+    </script>
 </html>
