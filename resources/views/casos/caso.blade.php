@@ -65,9 +65,13 @@
             <button type="submit" class="btn-branca align-self-center col-xl-2 col-7 m-1 py-1 py-sm-2 mx-lg-3  btn">
                 INICIAR CONVERSA
             </button>
-            <button type="submit" class="btn-excluir align-self-center col-xl-2 col-7 m-1 py-1 py-sm-2 mx-lg-3  btn">
-                EXCLUIR
-            </button>
+            <form action="{{ route('caso.excluir', ['usuario_id' => $usuario->usuario_id, 'caso_id' => $caso->caso_id]) }}" method="POST" class="align-self-center col-xl-2 col-7">
+                @csrf
+                @method('DELETE')
+                <button type="submit" class="btn-excluir align-self-center col-xl-11 col-12 m-1 py-1 py-sm-2 mx-lg-3 btn">
+                    Excluir
+                </button>
+            </form>
         @endif
         <img class="linhamenor align-self-center d-none d-xl-block ms-lg-3" src="{{ asset('images/linhamenor.png') }}" alt="">
     </div>

@@ -117,4 +117,17 @@ class CasoController extends Controller
      return view('casos.caso', compact('caso'), compact('usuario'));
     //    return redirect()->route('casos-abertos')->with('success', 'Caso criado com sucesso!');
      }
+
+     public function destroy($usuario_id, $caso_id)
+    {
+        $caso = \App\Models\Caso::find($caso_id);
+
+        $caso->delete();
+
+        $usuario = \App\Models\Usuario::find($usuario_id);
+        $casos = \App\Models\Caso::all();
+            
+        return view('perfil.perfil-cliente', ['casos' => $casos], compact('usuario'));
+
+    }
 }
