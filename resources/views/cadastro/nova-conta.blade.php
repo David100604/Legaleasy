@@ -2,6 +2,8 @@
 
 @section('content')
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+
     <section class="d-flex flex-column justify-content-center">
 
         <div class="row justify-content-center">
@@ -25,7 +27,6 @@
 
         <form id="form-cadastro" action="{{ route('tipo-conta.incluir') }}" method="POST" style="height: 50vh" class="d-flex flex-column justify-content-between">
             @csrf
-            <!-- <input type="hidden" name="tipoConta" id="tipoContaInput"> -->
 
             <div id="inputs-cadastro" class="row justify-content-center mt-1">
                 <div class="col-5 col-md-4 text-left d-flex flex-column">
@@ -43,28 +44,23 @@
             </div>
 
         </form>
-        <!-- <script>
-            // Captura o evento de envio do formulário
-            document.querySelector('form').addEventListener('submit', function(event) {
-                // Captura o valor selecionado no select
-                var tipoContaSelecionado = document.getElementById('tipo-conta').value;
-                // Atribui o valor selecionado ao campo oculto
-                document.getElementById('tipoContaInput').value = tipoContaSelecionado;
-            });
-        </script> -->
 
         <script>
             document.getElementById('form-cadastro').addEventListener('submit', function(event) {
                 const tipoConta = document.getElementById('tipo-conta').value;
                 if (tipoConta === 'Selecione') {
                     event.preventDefault();
-                    alert('Por favor, selecione um tipo de conta antes de prosseguir.');
+                    Swal.fire({
+                        icon: 'warning',
+                        title: 'Atenção',
+                        text: 'Por favor, selecione um tipo de conta antes de prosseguir.'
+                    });
                 }
             });
         </script>
 
     </section>
 
-
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 @endsection
