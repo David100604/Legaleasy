@@ -17,7 +17,9 @@ class HomeController extends Controller
     public function advogado($usuario_id){
 
         $usuario = \App\Models\Usuario::find($usuario_id);
+        $casos = \App\Models\Caso::all();
+        
 
-        return view('home-pages.homepage-advogado', compact('usuario'));
+        return view('home-pages.homepage-advogado', ['casos' => $casos], compact('usuario'));
     }
 }
