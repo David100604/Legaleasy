@@ -96,21 +96,7 @@
                     </div>
                     <section class="row justify-content-center card-group">
                         <div class="row col-9 col-lg-12 justify-content-around">
-                            <div class="p-2 col-12 col-md-5 col-lg-2 mt-3 card">
-                                <center>
-                                    <h3 class="titulo" >Converse da maneira que preferir</h3>
-                                    
-                                    <p class="paragrafozin">Fale com um advogado diretamente pelo chat
-                                        da LegalEasy, ou passe suas informações de contato.
-                                    </p>
-                                </center>
-                                <div>
-                                    <center>
-                                        <h5><a class="btn btn-secondary btn-sm" id="saiba-mais" href="" style="color: #ffffff;">Saiba Mais</a></h5>
-                                    </center>
-                                </div> 
-                            </div>
-                            <div class="p-2 col-12 col-md-5 col-lg-2 mt-3 card">
+                            <div class="p-2 col-12 col-md-5 col-lg-3 mt-3 card">
                                 <center>
                                     <h3 class="titulo">Registre seu caso em aberto na plataforma</h3>
                             
@@ -124,7 +110,7 @@
                                     </center>
                                 </div> 
                             </div>
-                            <div class="p-2 col-12 col-md-5 col-lg-2 mt-3 card">
+                            <div class="p-2 col-12 col-md-5 col-lg-3 mt-3 card">
                                 <center>
                                     <h3 class="titulo">Contate um advogado diretamente</h3>
                                 
@@ -138,7 +124,7 @@
                                     </center>
                                 </div> 
                             </div>
-                            <div class="p-2 col-12 col-md-5 col-lg-2 mt-3 card">
+                            <div class="p-2 col-12 col-md-5 col-lg-3 mt-3 card">
                                 <center>
                                     <h3 class="titulo">Suporte a defensoria pública</h3>
 

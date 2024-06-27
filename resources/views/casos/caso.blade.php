@@ -60,7 +60,7 @@
                 VOLTAR
             </a>
             <button type="submit" class="btn-branca align-self-center col-xl-2 col-7 m-1 py-1 py-sm-2 mx-lg-3  btn">
-                INCIAR CONVERSA
+                INICIAR CONVERSA
             </button>
             <button type="submit" class="btn-excluir align-self-center col-xl-2 col-7 m-1 py-1 py-sm-2 mx-lg-3  btn">
                 EXCLUIR
