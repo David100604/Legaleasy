@@ -23,7 +23,7 @@
         </div>
 
 
-        <form action="{{ route('tipo-conta.incluir') }}" method="POST" style="height: 50vh" class="d-flex flex-column justify-content-between">
+        <form id="form-cadastro" action="{{ route('tipo-conta.incluir') }}" method="POST" style="height: 50vh" class="d-flex flex-column justify-content-between">
             @csrf
             <!-- <input type="hidden" name="tipoConta" id="tipoContaInput"> -->
 
@@ -52,6 +52,16 @@
                 document.getElementById('tipoContaInput').value = tipoContaSelecionado;
             });
         </script> -->
+
+        <script>
+            document.getElementById('form-cadastro').addEventListener('submit', function(event) {
+                const tipoConta = document.getElementById('tipo-conta').value;
+                if (tipoConta === 'Selecione') {
+                    event.preventDefault();
+                    alert('Por favor, selecione um tipo de conta antes de prosseguir.');
+                }
+            });
+        </script>
 
     </section>
 
