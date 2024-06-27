@@ -96,7 +96,7 @@
                 Casos abertos
             </div>
             <div class="card-body card-lista-body p-2">
-                @foreach ($casos as $caso)
+            @foreach ($casos as $caso)
                 @if ($caso)
             
                     <div class="col-12 card p-2 mt-2">
@@ -109,6 +109,7 @@
                                 </div>
                             </div>
                         </div>
+                        
                     </div>
                 @endif
             @endforeach
