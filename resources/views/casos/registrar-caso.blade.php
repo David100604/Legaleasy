@@ -45,8 +45,6 @@
                             <li class="my-3 side-item"><a href="{{ route('casos-abertos', ['usuario_id' => $usuario->usuario_id]) }}">Casos Abertos</a></li>
                             <li class="my-3 side-item"><a href="{{ route('registrar-caso', ['usuario_id' => $usuario->usuario_id]) }}">Registrar Caso</a></li>
                             <li class="my-3 side-item"><a href="{{ route('advogados.index', ['usuario_id' => $usuario->usuario_id]) }}">Advogados</a></li>
-                            <li class="my-3 side-item"><a href="">Perfil</a></li>
-                            <li class="my-3 side-item"><a href="">Mensagens</a></li>
                             <li class="my-3 side-item"><a href="">Notificações</a></li>
                         </ul>
                     </nav>

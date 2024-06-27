@@ -13,23 +13,23 @@
             <div id="inputs-pesquisa" class="my-2 row justify-content-center mt-1">
                 <div class="col-9 text-left d-flex flex-column">
                     <select id="tipo-advogado" name="tipoAdvogado" class="form-select" aria-label="">
-                            <option disabled selected class="opcoes">Selecione uma categoria</option>
-                            <option value="Administrativo" class="opcoes">Administrativo</option>
-                            <option value="Ambiental" class="opcoes">Ambiental</option>
-                            <option value="Civil" class="opcoes">Civil</option>
-                            <option value="Comercial" class="opcoes">Comercial</option>
-                            <option value="Constitucional" class="opcoes">Constitucional</option>
-                            <option value="Contratual" class="opcoes">Contratual</option>
-                            <option value="Relações Internacionais" class="opcoes">Relações Internacionais</option>
-                            <option value="Direitos do Consumidor" class="opcoes">Direitos do Consumidor</option>
-                            <option value="Digital" class="opcoes">Digital</option>
-                            <option value="Eleitoral" class="opcoes">Eleitoral</option>
-                            <option value="Penal" class="opcoes">Penal</option>
-                            <option value="Previdenciário" class="opcoes">Previdenciário</option>
-                            <option value="Trabalhista" class="opcoes">Trabalhistas</option>
-                            <option value="Tributário" class="opcoes">Tributário</option>
-                            <option value="Criminal" class="opcoes">Criminal</option>
-                        </select>
+                        <option disabled selected class="opcoes">Selecione uma categoria</option>
+                        <option value="Administrativo" class="opcoes">Administrativo</option>
+                        <option value="Ambiental" class="opcoes">Ambiental</option>
+                        <option value="Civil" class="opcoes">Civil</option>
+                        <option value="Comercial" class="opcoes">Comercial</option>
+                        <option value="Constitucional" class="opcoes">Constitucional</option>
+                        <option value="Contratual" class="opcoes">Contratual</option>
+                        <option value="Relações Internacionais" class="opcoes">Relações Internacionais</option>
+                        <option value="Direitos do Consumidor" class="opcoes">Direitos do Consumidor</option>
+                        <option value="Digital" class="opcoes">Digital</option>
+                        <option value="Eleitoral" class="opcoes">Eleitoral</option>
+                        <option value="Penal" class="opcoes">Penal</option>
+                        <option value="Previdenciário" class="opcoes">Previdenciário</option>
+                        <option value="Trabalhista" class="opcoes">Trabalhistas</option>
+                        <option value="Tributário" class="opcoes">Tributário</option>
+                        <option value="Criminal" class="opcoes">Criminal</option>
+                    </select>
                 </div>
 
                 <div class="my-2 col-9 d-flex justify-content-between">
