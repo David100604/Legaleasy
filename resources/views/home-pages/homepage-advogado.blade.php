@@ -96,24 +96,6 @@
                 Casos abertos
             </div>
             <div class="card-body card-lista-body p-2">
-                <div class="row justify-content-around mt-3">
-                    <div class="col-5">
-                        <button class="btn btn-light w-100 border-dark">Mostrar menos</button>
-                    </div>
-                    <div class="col-5">
-                        <button class="btn btn-dark w-100">Mostrar mais</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="card col-10 card-custom-width m-5">
-            <div class="card-header card-lista-header text-center">
-                Requisições de serviço
-            </div>
-            <div class="card-body card-lista-body p-2">
-                
                 @foreach ($casos as $caso)
                 @if ($caso)
             
