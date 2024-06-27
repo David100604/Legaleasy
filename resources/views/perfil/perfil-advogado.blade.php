@@ -4,6 +4,7 @@
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
 
+
 <style>
     .edit-button {
         position: absolute;
@@ -48,7 +49,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> 
 
         <div class="row">
             <div class="col-md-6">

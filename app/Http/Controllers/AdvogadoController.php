@@ -48,7 +48,14 @@ class AdvogadoController extends Controller
             $usuario->foto = $usuario->foto;
         }
 
-        return view('perfil.perfil-advogado', compact('usuario'));
+        $casos = \App\Models\Caso::where('cliente', 'like', '%' . $usuario->nomeUsuario . '%')->get(); 
+
+        if ($usuario->tipoConta = "Cliente"){
+            return view('perfil.perfil-cliente', ['casos' =>$casos], compact('usuario'));
+        } else if ($usuario->tipoConta = "Advogado"){
+            return view('perfil.perfil-advogado', compact('usuario'));
+        }
+        
     }
 
     public function editar_sobre(Request $request, $usuario_id)
@@ -68,7 +75,13 @@ class AdvogadoController extends Controller
             $usuario->descricao = $usuario->descricao;
         }
 
-        return view('perfil.perfil-advogado', compact('usuario'));
+        $casos = \App\Models\Caso::where('cliente', 'like', '%' . $usuario->nomeUsuario . '%')->get(); 
+
+        if ($usuario->tipoConta = "Cliente"){
+            return view('perfil.perfil-cliente', ['casos' =>$casos], compact('usuario'));
+        } else if ($usuario->tipoConta = "Advogado"){
+            return view('perfil.perfil-advogado', compact('usuario'));
+        }
     }
 
     public function search(Request $request, $usuario_id)
