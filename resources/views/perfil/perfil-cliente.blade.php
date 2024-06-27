@@ -31,12 +31,15 @@
                     <div class="card-body">
                         <div class="row">
                             <div class="col-md-6">
+                            @foreach($casos as $caso)
                                 <div class="card mb-2">
                                     <div class="card-body">
-                                        <h5 class="card-title">Teste 1</h5>
+                                        <h5 id="" class="titulo col-xl-4 text-center" style="text-transform: uppercase;">{{ $caso->titulo }}</h5>
                                         <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                                     </div>
+                                
                                 </div>
+                            @endforeach
                             </div>
                             <div class="col-md-6">
                                 <div class="card mb-2">
