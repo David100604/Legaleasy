@@ -11,7 +11,7 @@
         </div>
         <div class="row justify-content-center mt-4">
             <div class="col-9 text-left">
-                
+
                 <p><strong class="titulo">Código do caso:</strong> #{{ $caso->caso_id }}</p>
                 <p class="description"><strong class="titulo">Descrição do caso:</strong>
                 <br>{{ $caso->descricao }}</p>
@@ -28,7 +28,7 @@
             <h4 id="titulo" class="titulo col-xl-4 text-center">DOCUMENTOS EM ANEXO</h4>
             <img class="linha-branca align-self-center col-xl-4 d-none d-xl-block" src="{{ asset('images/linha-branca-direita.png')}}" alt="">
         </div>
-        
+
         <div class="row justify-content-center w-100">
             <div class="col-md-4">
                 <div class="card">
@@ -38,7 +38,7 @@
                             <img class="p-2 my-4" src="{{ asset('images/arquivo.png')}}" alt="">
                         </center>
                         <div class="row justify-content-center">
-                            
+
                             <a href="{{ route('file.download', ['filename' => $caso->arquivo]) }}" class="btn btn-secondary col-9">Fazer download</a>
                         </div>
                     </div>
@@ -68,8 +68,8 @@
             <form action="{{ route('caso.excluir', ['usuario_id' => $usuario->usuario_id, 'caso_id' => $caso->caso_id]) }}" method="POST" class="align-self-center col-xl-2 col-7">
                 @csrf
                 @method('DELETE')
-                <button type="submit" class="btn-excluir align-self-center col-xl-11 col-12 m-1 py-1 py-sm-2 mx-lg-3 btn">
-                    Excluir
+                <button type="submit"  onclick="return confirm('Tem certeza que deseja excluir este item?')" class="btn-excluir align-self-center col-xl-11 col-12 m-1 py-1 py-sm-2 mx-lg-3 btn">
+                    EXCLUIR
                 </button>
             </form>
         @endif

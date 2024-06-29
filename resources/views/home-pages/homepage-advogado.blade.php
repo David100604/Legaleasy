@@ -19,7 +19,7 @@
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
         </div>
-        
+
         <div class="carousel-inner">
           <div class="carousel-item active">
                 <img src="../images/Escolhida-Capa.jpg" class="d-block w-100" alt="...">
@@ -98,7 +98,7 @@
             <div class="card-body card-lista-body p-2">
             @foreach ($casos as $caso)
                 @if ($caso)
-            
+
                     <div class="col-12 card p-2 mt-2">
                         <div class="row">
                             <div class="row col-15 ms-5">
@@ -109,13 +109,13 @@
                                 </div>
                             </div>
                         </div>
-                        
+
                     </div>
                 @endif
             @endforeach
             <div class="row justify-content-around mt-3">
                 <div class="col-5">
-                    <button class="btn btn-dark w-100">Mostrar Mais Casos</button>
+                <button class="btn btn-dark w-100" onclick="window.location='{{ route('casos-abertos', ['usuario_id' => $usuario->usuario_id]) }}'">Mostrar Mais Casos</button>
                 </div>
             </div>
             </div>

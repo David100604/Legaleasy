@@ -3,7 +3,7 @@
 @section('content')
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    
+
     <section class="d-flex flex-column justify-content-center">
 
 
@@ -39,6 +39,9 @@
                         <label for="oab" class="f-texto">Número da OAB *</label>
                         <i class="fa-solid fa-envelope position-absolute" style="top: 40px; left: 8px;"></i>
                         <input type="text" class="p-2 ps-4" id="oab" name="oab" placeholder="UFoooooo" required>
+                        @error('oab')
+                            <div>{{ $message }}</div>
+                        @enderror
                     </div>
                 </div>
                 <div class="col-8 col-lg-4 text-left d-flex flex-column ps-lg-5 mt-lg-3">

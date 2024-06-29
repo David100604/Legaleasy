@@ -24,6 +24,13 @@ class DadosCurricularesController extends Controller
      */
     public function store(Request $request)
     {
+        $validatedData = $request->validate([
+            'oab' => ['required', 'regex:/^[A-Z]{2}\d{6}$/']
+        ], [
+            'oab.required' => 'O campo Número da OAB é obrigatório.',
+            'oab.regex' => 'O número da OAB é inválido. Formato correto: UFoooooo.',
+        ]);
+
 
         $dados = new \App\Models\DadosCurriculares;
         $dados->OAB = $request->oab;
