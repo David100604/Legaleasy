@@ -51,6 +51,7 @@ class CasoController extends Controller
         $caso->tipoCaso = $request->tipoCaso;
         $caso->arquivo = $this->salvarArquivo($request);
         $caso->cliente = $usuario->nomeUsuario;
+        $caso->usuario_id = $usuario->usuario_id;
 
         $caso->save();
 
@@ -74,6 +75,24 @@ class CasoController extends Controller
         } else {
             return null;
         }
+    }
+
+    public function iniciarConversa($usuario_id, $destinatario_id){
+
+        $usuario = \App\Models\Usuario::find($usuario_id);
+
+        $destinatario = \App\Models\Usuario::find($destinatario_id);
+
+        $telefone = "55" . $destinatario->telefone;
+
+        $mensagem = "Olá! Estou entrando em contato através do seu site.";
+
+        $url_whatsapp = "https://api.whatsapp.com/send";
+
+        $link_whatsapp = $url_whatsapp . "?phone=" . $telefone . "&text=" . urlencode($mensagem);
+
+
+        return redirect()->away($link_whatsapp);
     }
 
     public function casosAbertos($usuario_id){

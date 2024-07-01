@@ -47,6 +47,7 @@ Route::controller(App\Http\Controllers\CasoController::class)->group(function(){
     Route::get('/caso/{caso_id}/{usuario_id}', 'caso')->name('caso');
     Route::post('/caso/pesquisar/{usuario_id}', 'search')->name('caso.pesquisar');
     Route::delete('/caso/deletar/{usuario_id}/{caso_id}', 'destroy')->name('caso.excluir');
+    Route::get('/conversa/{usuario_id}/{destinatario_id}', 'iniciarConversa')->name('conversa');
 });
 
 // LOGIN

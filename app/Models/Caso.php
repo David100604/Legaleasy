@@ -11,7 +11,7 @@ class Caso extends Model
 
     protected $primaryKey = 'caso_id';
     protected $table = 'casos';
-    protected $fillable = ['titulo', 'descricao', 'tipoCaso', 'arquivo', 'cliente'];
+    protected $fillable = ['titulo', 'descricao', 'tipoCaso', 'arquivo', 'cliente', 'usuario_id'];
 
     use HasFactory;
 

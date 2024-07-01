@@ -17,7 +17,6 @@
                 <br>{{ $caso->descricao }}</p>
                 <p><strong class="titulo">Categoria do caso:</strong> {{ $caso->tipoCaso }}</p>
                 <p><strong class="titulo">Cliente:</strong> {{ $caso->cliente }}</p>
-                <p><strong class="titulo">Gratificação:</strong> R$ XXXX,XX</p>
                 <p><strong class="titulo">Data de criação:</strong> 04/04/2024</p>
             </div>
         </div>
@@ -52,9 +51,10 @@
             <a class="align-self-center col-xl-2 col-7 m-1 py-1 py-sm-2 btn btn-dark mx-lg-3" href="javascript:window.history.go (-1)">
                 VOLTAR
             </a>
-            <button type="submit" class="btn-branca align-self-center col-xl-2 col-7 m-1 py-1 py-sm-2 mx-lg-3  btn">
+            <a target="_blank" href="{{ route('conversa', [ 'usuario_id' => $usuario->usuario_id, 'destinatario_id' => $caso->usuario_id]) }}" 
+                type="submit" class="btn-branca align-self-center col-xl-2 col-7 m-1 py-1 py-sm-2 mx-lg-3  btn">
                 INICIAR CONVERSA
-            </button>
+            </a>
             <button type="submit" class="btn-branca align-self-center col-xl-2 col-7 m-1 py-1 py-sm-2 mx-lg-3  btn">
                 ASSUMIR CASO
             </button>
@@ -62,9 +62,10 @@
             <a class="align-self-center col-xl-2 col-7 m-1 py-1 py-sm-2 btn btn-dark mx-lg-3" href="javascript:window.history.go (-1)">
                 VOLTAR
             </a>
-            <button type="submit" class="btn-branca align-self-center col-xl-2 col-7 m-1 py-1 py-sm-2 mx-lg-3  btn">
+            <a target="_blank" href="{{ route('conversa', [ 'usuario_id' => $usuario->usuario_id, 'destinatario_id' => $caso->usuario_id]) }}" 
+                type="submit" class="btn-branca align-self-center col-xl-2 col-7 m-1 py-1 py-sm-2 mx-lg-3  btn">
                 INICIAR CONVERSA
-            </button>
+            </a>
             <form action="{{ route('caso.excluir', ['usuario_id' => $usuario->usuario_id, 'caso_id' => $caso->caso_id]) }}" method="POST" class="align-self-center col-xl-2 col-7">
                 @csrf
                 @method('DELETE')
